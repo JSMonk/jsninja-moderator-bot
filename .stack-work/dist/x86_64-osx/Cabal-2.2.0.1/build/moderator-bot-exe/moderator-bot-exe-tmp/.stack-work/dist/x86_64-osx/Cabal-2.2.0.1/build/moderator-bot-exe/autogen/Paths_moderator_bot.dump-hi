@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-10 20:57:35.844977 UTC
+2018-10-10 23:01:17.181148 UTC
 
 interface main:Paths_moderator_bot 8043
-  interface hash: 927ec6141b5ebd544488b8157489813f
-  ABI hash: e00086f9e55c45ed5c37daa6384c80da
+  interface hash: b4666d61eb8fa627c212117cde60430f
+  ABI hash: b96971f018a9ed88f8c9e2e099be95e5
   export-list hash: b16075bed0750011e69f635e35eaced9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 517b89ada116a77de4cfb0c38c63803c
@@ -40,7 +40,7 @@ import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
 import  -/  base-4.11.1.0:System.Environment 052ec29b676ed8efc1decd97140a27e3
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
 addDependentFile "/Users/js_monk/.stack/programs/x86_64-osx/ghc-8.4.3/lib/ghc-8.4.3/include/ghcversion.h" 61cc4580d32de09862d412848a79cd26
-addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/moderator-bot-exe/autogen/cabal_macros.h" 38096c68d80d8a38a7190bdc0d1257f8
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/moderator-bot-exe/autogen/cabal_macros.h" d112e15afbae915565c157d649f3c328
 2de56ee59cf14ccfa02c7330f7a25e77
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -368,14 +368,14 @@ f018629f315538628063c5125c95a894
 acf361bb35a9fa44bfa57e6d5be94ef2
   getDynLibDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("moderator_bot_dynlibdir"#) -}
-f72f1f384d0f318bd2b40b4729e3a5b9
+3c6d7d9d5c139478a931726d7b1a3030
   getLibDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_moderator_bot.getLibDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-71199f7297a70f180947833302290582
+0f62447dd0e4b943350272d8a8feef67
   getLibDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -387,7 +387,7 @@ f72f1f384d0f318bd2b40b4729e3a5b9
                    Paths_moderator_bot.getLibDir5
                    Paths_moderator_bot.getLibDir2
                    eta) -}
-4c2232514ce5b092856c72e148d00dd3
+0524796eade4ec50a113ea556d2f0eaf
   getLibDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -419,14 +419,14 @@ f72f1f384d0f318bd2b40b4729e3a5b9
                              wild
                              eta
                         1# -> (# eta, Paths_moderator_bot.getLibDir3 #) } } } } }) -}
-bd8dcea52dc3f3ba2cc18a5fee452e32
+63515b0d149c7f90ed87afe0056d6d02
   getLibDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_moderator_bot.getLibDir4) -}
-93da5732b50ceefe348626c761aae8fb
+c877a4e2060ee3bf76b74b93a3d063e4
   getLibDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/Users/js_monk/Projects/moderator-bot/.stack-work/install/x86_64-osx/lts-12.11/8.4.3/lib/x86_64-osx-ghc-8.4.3/moderator-bot-0.1.0.0-Dsdv8RCCFn04CrLg5XWQU8-moderator-bot-exe"#) -}
+     Unfolding: ("/Users/js_monk/Projects/moderator-bot/.stack-work/install/x86_64-osx/lts-12.11/8.4.3/lib/x86_64-osx-ghc-8.4.3/moderator-bot-0.1.0.0-Ck3bETENnZ78zngpzp7v79-moderator-bot-exe"#) -}
 86558e412375fdccd58dbd66888a99b2
   getLibDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld

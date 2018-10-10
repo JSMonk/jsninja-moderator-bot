@@ -7,6 +7,7 @@ import Control.Monad (void)
 import API (deleteMessage, banUser)
 import Data.Maybe (isJust, fromJust, isNothing)
 import Data.Text (Text, unpack, pack)
+import Heroku (runHerokuPing)
 import Servant.Client (ClientM)
 import System.Environment (getEnv)
 import Telegram.Bot.API
@@ -90,4 +91,6 @@ serveBot :: IO ()
 serveBot = do
   putStrLn "Moderator bot started"
   token <- Token . pack <$> getEnv "TELEGRAM_TOKEN"
+  port <- getEnv "PORT"
+  runHerokuPing port
   run token

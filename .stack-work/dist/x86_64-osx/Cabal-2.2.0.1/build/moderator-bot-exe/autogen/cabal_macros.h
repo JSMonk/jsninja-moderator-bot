@@ -155,7 +155,7 @@
 #endif /* MIN_TOOL_VERSION_runghc */
 
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "moderator-bot-0.1.0.0-Dsdv8RCCFn04CrLg5XWQU8-moderator-bot-exe"
+#define CURRENT_COMPONENT_ID "moderator-bot-0.1.0.0-Ck3bETENnZ78zngpzp7v79-moderator-bot-exe"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

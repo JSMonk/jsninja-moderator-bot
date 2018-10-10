@@ -66,6 +66,17 @@
   (major1) == 0 && (major2) == 14 && (minor) <= 0)
 #endif /* MIN_VERSION_servant_client */
 
+/* package servant-server-0.14.1 */
+#ifndef VERSION_servant_server
+#define VERSION_servant_server "0.14.1"
+#endif /* VERSION_servant_server */
+#ifndef MIN_VERSION_servant_server
+#define MIN_VERSION_servant_server(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  14 || \
+  (major1) == 0 && (major2) == 14 && (minor) <= 1)
+#endif /* MIN_VERSION_servant_server */
+
 /* package servant-0.14.1 */
 #ifndef VERSION_servant
 #define VERSION_servant "0.14.1"
@@ -87,6 +98,28 @@
   (major1) == 1 && (major2) <  3 || \
   (major1) == 1 && (major2) == 3 && (minor) <= 1)
 #endif /* MIN_VERSION_aeson */
+
+/* package wai-3.2.1.2 */
+#ifndef VERSION_wai
+#define VERSION_wai "3.2.1.2"
+#endif /* VERSION_wai */
+#ifndef MIN_VERSION_wai
+#define MIN_VERSION_wai(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 1)
+#endif /* MIN_VERSION_wai */
+
+/* package warp-3.2.25 */
+#ifndef VERSION_warp
+#define VERSION_warp "3.2.25"
+#endif /* VERSION_warp */
+#ifndef MIN_VERSION_warp
+#define MIN_VERSION_warp(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 25)
+#endif /* MIN_VERSION_warp */
 
 /* tool alex-3.2.4 */
 #ifndef TOOL_VERSION_alex
@@ -210,10 +243,10 @@
 #endif /* MIN_TOOL_VERSION_runghc */
 
 #ifndef CURRENT_PACKAGE_KEY
-#define CURRENT_PACKAGE_KEY "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+#define CURRENT_PACKAGE_KEY "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
 #endif /* CURRENT_PACKAGE_KEY */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+#define CURRENT_COMPONENT_ID "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

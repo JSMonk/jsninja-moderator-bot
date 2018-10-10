@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-10 20:57:34.163449 UTC
+2018-10-10 23:01:15.169949 UTC
 
-interface moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ:API [family instance module] 8043
-  interface hash: 1cfd2b5221eb42a0050ca8311c2fb545
-  ABI hash: 9caf2a3d6127ad0a13369e9da0cc86dc
-  export-list hash: a50f5444f51a5869c2abcf801941fda9
-  orphan hash: bbd1bebc04f9fc7dcca720e7d09b2a21
+interface moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt:API [family instance module] 8043
+  interface hash: dda2c7c20ab65520f77c6d638a8948b4
+  ABI hash: 3cdd0f297a2d53c02cc131afd0f3f7be
+  export-list hash: 2dd25d93b4fe8f40c3388de23aad6cfc
+  orphan hash: 529301d933a0e5f048dc94a1a6411464
   flag hash: a095c279f5c55715a4bc1695f0bb7b89
   opt_hash: 14e536840aca4e889cad654e6f9b79c1
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -191,7 +191,7 @@ import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.Internal.Utils 97767bc68d
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.MakingRequests 8c19ad86a20364240643274fc55deccd
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.Types df7d31f53399293cb49dfb8ffda16667
 import  -/  text-1.2.3.1:Data.Text 084e5e9d9e353b790b1093ddc9e8062b
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fFromJSONDeleteMessageRequest ::
     Data.Aeson.Types.FromJSON.FromJSON API.DeleteMessageRequest
   DFunId
@@ -200,10 +200,10 @@ import  -/  text-1.2.3.1:Data.Text 084e5e9d9e353b790b1093ddc9e8062b
                   @ API.DeleteMessageRequest
                   API.$fFromJSONDeleteMessageRequest_$cparseJSON
                   API.$fFromJSONDeleteMessageRequest_$cparseJSONList -}
-b99ee72368808c43fe262b5cc49bec56
+62da57a2dbb46dc94ce262280abbdacb
   $fFromJSONDeleteMessageRequest1 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: (", encountered "#) -}
-62beaaba610246b5147b9f30664e487f
+d953627b94c195259d1d9baad7abe1bb
   $fFromJSONDeleteMessageRequest10 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -214,7 +214,7 @@ b99ee72368808c43fe262b5cc49bec56
             ('GHC.Generics.MetaData
                "DeleteMessageRequest"
                "API"
-               "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+               "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                'GHC.Types.False)
             (GHC.Generics.C1
                ('GHC.Generics.MetaCons
@@ -243,7 +243,7 @@ b99ee72368808c43fe262b5cc49bec56
                             Data.Aeson.Types.Generic.Zero a1) ->
                  case w of ww { Data.Aeson.Types.Internal.Options ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
                  API.$w$dGFromJSON @ a1 ww1 ww2 ww3 ww4 ww5 ww6 ww7 w1 }) -}
-b580bc985c2089e2ac8b53b88503b5f3
+01726bf589e3046091285d50388838cf
   $fFromJSONDeleteMessageRequest11 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -420,7 +420,7 @@ b580bc985c2089e2ac8b53b88503b5f3
                                                           (GHC.Generics.Rec0
                                                              Telegram.Bot.API.Types.MessageId))
                                       a)>_R))) -}
-ef78e3c61380b9b287850ec1d345e8a7
+3ab53436946d0dc5756f40a9c8ec0afd
   $fFromJSONDeleteMessageRequest12 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -649,7 +649,7 @@ ef78e3c61380b9b287850ec1d345e8a7
                                                   (GHC.Generics.Rec0
                                                      Telegram.Bot.API.Types.MessageId))
                               a2>_R))) -}
-23ccfbbeb6383918af854569d8dfd78d
+367d60efccd5eedae257d701ac2e3bc2
   $fFromJSONDeleteMessageRequest13 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -856,7 +856,7 @@ ef78e3c61380b9b287850ec1d345e8a7
                                     'GHC.Generics.DecidedLazy)
                                  (GHC.Generics.Rec0 Telegram.Bot.API.Types.MessageId))
                               a2>_R))) -}
-47267e56d8d1280501be103ec2e1443e
+30171bb8b937680241915baf1a491277
   $fFromJSONDeleteMessageRequest14 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -879,14 +879,14 @@ ef78e3c61380b9b287850ec1d345e8a7
                    Telegram.Bot.API.Types.$fFromJSONMessageId
                    @ a2
                    w3) -}
-d267182401aed8eae35bb641f6e70d05
+7333ffee0e006bf55295cecb3e0824a6
   $fFromJSONDeleteMessageRequest15 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONDeleteMessageRequest16) -}
-e682a66535ec2c66564505eb44e349c7
+91560ee97a520c96f138a0355d2adc28
   $fFromJSONDeleteMessageRequest16 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("deleteMessageMessageId"#) -}
-490579295646657c93af2b0e386c0af7
+7d6f584a615ddeee2144b9a36cb3265f
   $fFromJSONDeleteMessageRequest17 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -908,17 +908,17 @@ e682a66535ec2c66564505eb44e349c7
                    Telegram.Bot.API.Types.$fFromJSONChatId
                    @ a2
                    w3) -}
-f925620054623d7a928bf1e19cf8bdff
+254efb5f11534b6b0e95ad12b3d9ba08
   $fFromJSONDeleteMessageRequest18 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONDeleteMessageRequest19) -}
-a07aef661ef8114eb612b8fc8f6d4bac
+c48b499f4382fdd27345c87410c772a4
   $fFromJSONDeleteMessageRequest19 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("deleteMessageChatId"#) -}
-451ab2e9ee17c708251baa3c7e942212
+ad2443a7c0b5cba84995564f4a56bb24
   $fFromJSONDeleteMessageRequest2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("[a]"#) -}
-1570705d9351c001621f3d4a675267ba
+db294330f5ca258892b948773f0a057d
   $fFromJSONDeleteMessageRequest20 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -985,7 +985,7 @@ a07aef661ef8114eb612b8fc8f6d4bac
                                                  (GHC.Generics.Rec0
                                                     Telegram.Bot.API.Types.MessageId)>_N))
                    API.$fFromJSONDeleteMessageRequest_$s$fConstructorMetaMetaCons) -}
-8033512dbe1286a05d8521d7049524ca
+69618af6bf478bbc61e862d675a1aa9f
   $fFromJSONDeleteMessageRequest21 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -1018,7 +1018,7 @@ a07aef661ef8114eb612b8fc8f6d4bac
                    (contentsFieldName :: GHC.Base.String)
                    (eta :: Data.Aeson.Types.Internal.Object) ->
                  API.$fFromJSONDeleteMessageRequest13 @ a opts fargs eta) -}
-82d88b3be3f4d80aebd7b26a2e9c06f5
+efc06806629d757d00970f77aa35e631
   $fFromJSONDeleteMessageRequest22 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -1104,7 +1104,7 @@ a07aef661ef8114eb612b8fc8f6d4bac
                                                     'GHC.Generics.DecidedLazy)
                                                  (GHC.Generics.Rec0
                                                     Telegram.Bot.API.Types.MessageId)>_N))) -}
-cf9be72e02f970585a7f03e45ae5688f
+14249cbbfc0e857cf1b62db6a46046fc
   $fFromJSONDeleteMessageRequest23 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -1157,7 +1157,7 @@ cf9be72e02f970585a7f03e45ae5688f
                         wild
                    Data.Aeson.Types.Internal.Object obj
                    -> API.$fFromJSONDeleteMessageRequest13 @ a opts fargs obj }) -}
-faf40e51d804428590bad5e5afb84439
+a33011bf07d7cba86b1fb39673c7689c
   $fFromJSONDeleteMessageRequest24 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -1267,7 +1267,7 @@ faf40e51d804428590bad5e5afb84439
                                                               (GHC.Generics.K1
                                                                  GHC.Generics.R
                                                                  Telegram.Bot.API.Types.MessageId)>_N))) -}
-1e62e6873ae3b36afe1322d2a55a9014
+2112a58bbfae6bf48cfb46a5b795c312
   $fFromJSONDeleteMessageRequest25 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -1295,18 +1295,18 @@ faf40e51d804428590bad5e5afb84439
                    (w3 :: GHC.Types.Int)
                    (w4 :: GHC.Types.Int) ->
                  API.$w$dFromProduct @ a1 w2 w3) -}
-23c5cfc9ade7cfa155a9840d426186bf
+75ef58d89b8a7eeb7b9c2446751eaeb1
   $fFromJSONDeleteMessageRequest26 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: (" is either floating or will cause over or underflow: "#) -}
-a6cf6e82440423c469bde23ca364df56
+919ef0be462a770a093203f47a0af44f
   $fFromJSONDeleteMessageRequest27 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONDeleteMessageRequest28) -}
-4880696f9524ef469c939eaeae5d9769
+bd7fd90393afcc2e711750d41fc8825a
   $fFromJSONDeleteMessageRequest28 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Int32"#) -}
-139e9e58ecbcbe606103301c86731f9f
+3ce49e02d1d8bab910f301d247acccbd
   $fFromJSONDeleteMessageRequest29 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -1334,42 +1334,42 @@ a6cf6e82440423c469bde23ca364df56
                    (w3 :: GHC.Types.Int)
                    (w4 :: GHC.Types.Int) ->
                  API.$w$dFromProduct1 @ a1 w2 w3) -}
-e664680e058c38c6cedf8fbd87513930
+5706d7b3a9d75571e39e6b1bab3c4ebb
   $fFromJSONDeleteMessageRequest3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("expected "#) -}
-77253fcd35ba5a55dda57f318e7b8a3a
+61a609218f4291971e211cf7668d5b31
   $fFromJSONDeleteMessageRequest30 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: (", encountered floating number "#) -}
-11f9071bdf3ba2bc6a1937c4662ac8c9
+8d5491dade570ecf64cf19a8c4c4ba6c
   $fFromJSONDeleteMessageRequest31 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONDeleteMessageRequest32) -}
-b1a76085554c5532828062dad1271cc9
+6298901bdc3b8480c0b79adce95027dd
   $fFromJSONDeleteMessageRequest32 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Integer"#) -}
-1a7f880bd83221412b07e9a92dfe05e5
+3c91602ff540ffa701b02f1d698a9c16
   $fFromJSONDeleteMessageRequest4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONDeleteMessageRequest5) -}
-9c48b785f0d83d30cf92f98e5f244951
+58e4220b0fa52ced1ee9213f8c6c0584
   $fFromJSONDeleteMessageRequest5 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"#) -}
-d6cbe8f5e8284873117142bc905fa57f
+     Unfolding: ("moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"#) -}
+4af71f1cd93968d6c20fbd77d7bf68b0
   $fFromJSONDeleteMessageRequest6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONDeleteMessageRequest7) -}
-43cb5d520ccece99d4d898816a459257
+80930446f58faecab61476b12a753c4b
   $fFromJSONDeleteMessageRequest7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("API"#) -}
-829b0bf4019113e711a1b2df4fff8164
+957bb663e58012a113927af446dae19b
   $fFromJSONDeleteMessageRequest8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONDeleteMessageRequest9) -}
-6f38a86815618b75544384762463ce08
+40aab5908c7cf38e2e7b4900c5f6c4f1
   $fFromJSONDeleteMessageRequest9 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("DeleteMessageRequest"#) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fFromJSONDeleteMessageRequest_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser API.DeleteMessageRequest
@@ -1378,7 +1378,7 @@ d6cbe8f5e8284873117142bc905fa57f
                    @ ('GHC.Generics.MetaData
                         "DeleteMessageRequest"
                         "API"
-                        "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                        "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                         'GHC.Types.False)
                    @ (GHC.Generics.C1
                         ('GHC.Generics.MetaCons
@@ -1412,7 +1412,7 @@ d6cbe8f5e8284873117142bc905fa57f
                                                                                   ('GHC.Generics.MetaData
                                                                                      "DeleteMessageRequest"
                                                                                      "API"
-                                                                                     "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                                                                     "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                                                                      'GHC.Types.False)
                                                                                   (GHC.Generics.C1
                                                                                      ('GHC.Generics.MetaCons
@@ -1438,7 +1438,7 @@ d6cbe8f5e8284873117142bc905fa57f
                                                                                                          (GHC.Generics.Rec0
                                                                                                             Telegram.Bot.API.Types.MessageId)))>_N)
                    API.$fFromJSONDeleteMessageRequest_$s$fDatatypeMetaMetaData) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fFromJSONDeleteMessageRequest_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser [API.DeleteMessageRequest]
@@ -1497,14 +1497,14 @@ d6cbe8f5e8284873117142bc905fa57f
                             1# -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
                       } in
                       API.$fFromJSONDeleteMessageRequest_go 0# ($wgo 0#) } }) -}
-1f831dadfeac4bf84167c711ddef606f
+af601b35bd7b765b398fa8f513d27446
   $fFromJSONDeleteMessageRequest_$d~~ ::
     (GHC.Generics.M1
        GHC.Generics.D
        ('GHC.Generics.MetaData
           "DeleteMessageRequest"
           "API"
-          "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+          "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
           'GHC.Types.False)
        (GHC.Generics.C1
           ('GHC.Generics.MetaCons
@@ -1528,7 +1528,7 @@ d6cbe8f5e8284873117142bc905fa57f
                     ('GHC.Generics.MetaData
                        "DeleteMessageRequest"
                        "API"
-                       "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                       "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                        'GHC.Types.False)
                     (GHC.Generics.C1
                        ('GHC.Generics.MetaCons
@@ -1557,7 +1557,7 @@ d6cbe8f5e8284873117142bc905fa57f
                         ('GHC.Generics.MetaData
                            "DeleteMessageRequest"
                            "API"
-                           "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                           "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                            'GHC.Types.False)
                         (GHC.Generics.C1
                            ('GHC.Generics.MetaCons
@@ -1582,7 +1582,7 @@ d6cbe8f5e8284873117142bc905fa57f
                         ('GHC.Generics.MetaData
                            "DeleteMessageRequest"
                            "API"
-                           "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                           "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                            'GHC.Types.False)
                         (GHC.Generics.C1
                            ('GHC.Generics.MetaCons
@@ -1607,7 +1607,7 @@ d6cbe8f5e8284873117142bc905fa57f
                          ('GHC.Generics.MetaData
                             "DeleteMessageRequest"
                             "API"
-                            "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                            "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                             'GHC.Types.False)
                          (GHC.Generics.C1
                             ('GHC.Generics.MetaCons
@@ -1627,7 +1627,7 @@ d6cbe8f5e8284873117142bc905fa57f
                                                    'GHC.Generics.DecidedLazy)
                                                 (GHC.Generics.Rec0
                                                    Telegram.Bot.API.Types.MessageId)))>_N) -}
-4db264dc49beb75050ea5db7ccbdf851
+8251ac48ca238b6d7ef2b4ca88455c5d
   $fFromJSONDeleteMessageRequest_$s$fConstructorMetaMetaCons ::
     GHC.Generics.Constructor
       ('GHC.Generics.MetaCons
@@ -1664,13 +1664,13 @@ d6cbe8f5e8284873117142bc905fa57f
                                  'GHC.Generics.PrefixI
                                  'GHC.Types.True) f1 a) ->
                    GHC.Types.True) -}
-eac4b84161e06bbf21c03621d75dd8c9
+02ce48b79be4f09b917da1257de8dd33
   $fFromJSONDeleteMessageRequest_$s$fDatatypeMetaMetaData ::
     GHC.Generics.Datatype
       ('GHC.Generics.MetaData
          "DeleteMessageRequest"
          "API"
-         "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+         "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
          'GHC.Types.False)
   {- Strictness: m, Inline: CONLIKE,
      Unfolding: DFun:.
@@ -1678,7 +1678,7 @@ eac4b84161e06bbf21c03621d75dd8c9
                   @ ('GHC.Generics.MetaData
                        "DeleteMessageRequest"
                        "API"
-                       "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                       "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                        'GHC.Types.False)
                   (\ @ k
                      @ t :: GHC.Generics.Meta -> (k -> *) -> k -> *
@@ -1687,7 +1687,7 @@ eac4b84161e06bbf21c03621d75dd8c9
                      (ds :: t ('GHC.Generics.MetaData
                                  "DeleteMessageRequest"
                                  "API"
-                                 "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                 "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                  'GHC.Types.False) f a) ->
                    API.$fFromJSONDeleteMessageRequest8)
                   (\ @ k
@@ -1697,7 +1697,7 @@ eac4b84161e06bbf21c03621d75dd8c9
                      (ds :: t ('GHC.Generics.MetaData
                                  "DeleteMessageRequest"
                                  "API"
-                                 "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                 "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                  'GHC.Types.False) f a) ->
                    API.$fFromJSONDeleteMessageRequest6)
                   (\ @ k
@@ -1707,7 +1707,7 @@ eac4b84161e06bbf21c03621d75dd8c9
                      (ds :: t ('GHC.Generics.MetaData
                                  "DeleteMessageRequest"
                                  "API"
-                                 "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                 "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                  'GHC.Types.False) f a) ->
                    API.$fFromJSONDeleteMessageRequest4)
                   (\ @ k
@@ -1717,10 +1717,10 @@ eac4b84161e06bbf21c03621d75dd8c9
                      (ds :: t ('GHC.Generics.MetaData
                                  "DeleteMessageRequest"
                                  "API"
-                                 "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                 "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                  'GHC.Types.False) f a) ->
                    GHC.Types.False) -}
-c1bf8e75d6ba084c00d3da60ab65f9ad
+0bc26bb0e52976ad1f41f3467bfbea08
   $fFromJSONDeleteMessageRequest_$s$fSelectorMetaMetaSel ::
     GHC.Generics.Selector
       ('GHC.Generics.MetaSel
@@ -1776,7 +1776,7 @@ c1bf8e75d6ba084c00d3da60ab65f9ad
                                   'GHC.Generics.NoSourceStrictness
                                   'GHC.Generics.DecidedLazy) f a) ->
                    GHC.Generics.DecidedLazy) -}
-297774c115b7c4cadba816a85f03d67e
+bd502003dcc0ecc43e5b1e5a37c01a07
   $fFromJSONDeleteMessageRequest_$s$fSelectorMetaMetaSel1 ::
     GHC.Generics.Selector
       ('GHC.Generics.MetaSel
@@ -1832,13 +1832,13 @@ c1bf8e75d6ba084c00d3da60ab65f9ad
                                   'GHC.Generics.NoSourceStrictness
                                   'GHC.Generics.DecidedLazy) f a) ->
                    GHC.Generics.DecidedLazy) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fFromJSONDeleteMessageRequest_go ::
     GHC.Prim.Int#
     -> [Data.Aeson.Types.Internal.Value]
     -> Data.Aeson.Types.Internal.Parser [API.DeleteMessageRequest]
   {- Arity: 2, Strictness: <L,U><S,1*U> -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fFromJSONKickChatMemberRequest ::
     Data.Aeson.Types.FromJSON.FromJSON API.KickChatMemberRequest
   DFunId
@@ -1847,18 +1847,18 @@ c1bf8e75d6ba084c00d3da60ab65f9ad
                   @ API.KickChatMemberRequest
                   API.$fFromJSONKickChatMemberRequest_$cparseJSON
                   API.$fFromJSONKickChatMemberRequest_$cparseJSONList -}
-46b6cfa5a7f194e4f57203a7f56bcafe
+51e1859653c56bf8ea4452c320a30495
   $fFromJSONKickChatMemberRequest1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONKickChatMemberRequest2) -}
-e2d7283d3af7604ca82d43d9ca4185e2
+768e3b21c1ac6f12c7af0b15722392c5
   $fFromJSONKickChatMemberRequest10 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONKickChatMemberRequest11) -}
-5f77a51baab0fd3cc7aa2cec47cc637a
+d557b1a1d5dcf6203e8ccc2a6b24b23f
   $fFromJSONKickChatMemberRequest11 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("kickMessageChatId"#) -}
-064bf3d9f2bd3c0773371f9189b3a0e8
+86f07b93298f287050fd77fdeacf4c5b
   $fFromJSONKickChatMemberRequest12 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -1925,7 +1925,7 @@ e2d7283d3af7604ca82d43d9ca4185e2
                                                  (GHC.Generics.Rec0
                                                     Telegram.Bot.API.Types.UserId)>_N))
                    API.$fFromJSONKickChatMemberRequest_$s$fConstructorMetaMetaCons) -}
-a282daf2dbb78f1f99054ddf9d7f27b8
+02d3373358165def11154611196a8f2f
   $fFromJSONKickChatMemberRequest13 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -1958,7 +1958,7 @@ a282daf2dbb78f1f99054ddf9d7f27b8
                    (contentsFieldName :: GHC.Base.String)
                    (eta :: Data.Aeson.Types.Internal.Object) ->
                  API.$fFromJSONKickChatMemberRequest6 @ a opts fargs eta) -}
-78f8ea70691d6a1c1ee6de82905f67d4
+35c3d5f25a2d5c92d01bfe513aa7bb35
   $fFromJSONKickChatMemberRequest14 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2044,7 +2044,7 @@ a282daf2dbb78f1f99054ddf9d7f27b8
                                                     'GHC.Generics.DecidedLazy)
                                                  (GHC.Generics.Rec0
                                                     Telegram.Bot.API.Types.UserId)>_N))) -}
-035f9dd0f3abaf1bdbb2106ec3a6afeb
+ce03b040aa71790603da9862093282d3
   $fFromJSONKickChatMemberRequest15 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2097,7 +2097,7 @@ a282daf2dbb78f1f99054ddf9d7f27b8
                         wild
                    Data.Aeson.Types.Internal.Object obj
                    -> API.$fFromJSONKickChatMemberRequest6 @ a opts fargs obj }) -}
-a6f812fa15fc74ac92397bb3862e758e
+ff9b393efcdcaab681c87d7ba680e7d4
   $fFromJSONKickChatMemberRequest16 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2205,7 +2205,7 @@ a6f812fa15fc74ac92397bb3862e758e
                                                               (GHC.Generics.K1
                                                                  GHC.Generics.R
                                                                  Telegram.Bot.API.Types.UserId)>_N))) -}
-b3eeb28d0bad521bce9c96a8015111b0
+4a4859498f16c83b792a80b369712a4d
   $fFromJSONKickChatMemberRequest17 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2233,7 +2233,7 @@ b3eeb28d0bad521bce9c96a8015111b0
                    (w3 :: GHC.Types.Int)
                    (w4 :: GHC.Types.Int) ->
                  API.$w$dFromProduct2 @ a1 w2 w3) -}
-88ccff2648ef93ea083d6d6a560f4b7c
+7db2ecf7db60fae6b57ff6d8fe511b38
   $fFromJSONKickChatMemberRequest18 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2261,10 +2261,10 @@ b3eeb28d0bad521bce9c96a8015111b0
                    (w3 :: GHC.Types.Int)
                    (w4 :: GHC.Types.Int) ->
                  API.$w$dFromProduct3 @ a1 w2 w3) -}
-237e1ee268dcca214eb2523f3fcf928f
+880fcb9b3347b07c791910a95c914350
   $fFromJSONKickChatMemberRequest2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("KickChatMemberRequest"#) -}
-088f490d04268b9a2bbeaa5a46c72f19
+6e83c0c40c6c8ff1a92fa89c74b06797
   $fFromJSONKickChatMemberRequest3 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2275,7 +2275,7 @@ b3eeb28d0bad521bce9c96a8015111b0
             ('GHC.Generics.MetaData
                "KickChatMemberRequest"
                "API"
-               "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+               "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                'GHC.Types.False)
             (GHC.Generics.C1
                ('GHC.Generics.MetaCons
@@ -2304,7 +2304,7 @@ b3eeb28d0bad521bce9c96a8015111b0
                             Data.Aeson.Types.Generic.Zero a1) ->
                  case w of ww { Data.Aeson.Types.Internal.Options ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
                  API.$w$dGFromJSON1 @ a1 ww1 ww2 ww3 ww4 ww5 ww6 ww7 w1 }) -}
-8364cd9ae5e91e6ab42b6465421cc82a
+86282e860fabf4877613e3a2fa2ba936
   $fFromJSONKickChatMemberRequest4 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2485,7 +2485,7 @@ b3eeb28d0bad521bce9c96a8015111b0
                                                           (GHC.Generics.Rec0
                                                              Telegram.Bot.API.Types.UserId))
                                       a)>_R))) -}
-b5b06ec38ffcdaf4705ebffe64c5f512
+bd62bc0002ab98fc99f5d39035c0375e
   $fFromJSONKickChatMemberRequest5 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2713,7 +2713,7 @@ b5b06ec38ffcdaf4705ebffe64c5f512
                                                      'GHC.Generics.DecidedLazy)
                                                   (GHC.Generics.Rec0 Telegram.Bot.API.Types.UserId))
                               a2>_R))) -}
-e82eac34b3158289a4de17caa76f58f3
+a1080a45527725a3df4ee7d0b73ec6c2
   $fFromJSONKickChatMemberRequest6 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2919,7 +2919,7 @@ e82eac34b3158289a4de17caa76f58f3
                                     'GHC.Generics.DecidedLazy)
                                  (GHC.Generics.Rec0 Telegram.Bot.API.Types.UserId))
                               a2>_R))) -}
-3560cea20bb0027fdd219e552a64efe1
+bae0f75585789f2d99a5125535c531a9
   $fFromJSONKickChatMemberRequest7 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.FromJSON.FromArgs
@@ -2941,14 +2941,14 @@ e82eac34b3158289a4de17caa76f58f3
                    Telegram.Bot.API.Types.$fFromJSONUserId
                    @ a2
                    w3) -}
-cd5354f0849c90059e846222ec7c6340
+a6cacd489f11f39854475aa4d8b5c4ee
   $fFromJSONKickChatMemberRequest8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$fFromJSONKickChatMemberRequest9) -}
-71f3b0de1c5e8db68ac153f57866e406
+e6a627eb61128929ce49bac6a3900f5f
   $fFromJSONKickChatMemberRequest9 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("kickMessageUserId"#) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fFromJSONKickChatMemberRequest_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser API.KickChatMemberRequest
@@ -2957,7 +2957,7 @@ cd5354f0849c90059e846222ec7c6340
                    @ ('GHC.Generics.MetaData
                         "KickChatMemberRequest"
                         "API"
-                        "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                        "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                         'GHC.Types.False)
                    @ (GHC.Generics.C1
                         ('GHC.Generics.MetaCons
@@ -2991,7 +2991,7 @@ cd5354f0849c90059e846222ec7c6340
                                                                                    ('GHC.Generics.MetaData
                                                                                       "KickChatMemberRequest"
                                                                                       "API"
-                                                                                      "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                                                                      "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                                                                       'GHC.Types.False)
                                                                                    (GHC.Generics.C1
                                                                                       ('GHC.Generics.MetaCons
@@ -3017,7 +3017,7 @@ cd5354f0849c90059e846222ec7c6340
                                                                                                           (GHC.Generics.Rec0
                                                                                                              Telegram.Bot.API.Types.UserId)))>_N)
                    API.$fFromJSONKickChatMemberRequest_$s$fDatatypeMetaMetaData) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fFromJSONKickChatMemberRequest_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser [API.KickChatMemberRequest]
@@ -3076,14 +3076,14 @@ cd5354f0849c90059e846222ec7c6340
                             1# -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
                       } in
                       API.$fFromJSONKickChatMemberRequest_go 0# ($wgo 0#) } }) -}
-55a605019905562c90ee80aedfdbe0bf
+b901bddba5fed2c50b1db7b4926f99b5
   $fFromJSONKickChatMemberRequest_$d~~ ::
     (GHC.Generics.M1
        GHC.Generics.D
        ('GHC.Generics.MetaData
           "KickChatMemberRequest"
           "API"
-          "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+          "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
           'GHC.Types.False)
        (GHC.Generics.C1
           ('GHC.Generics.MetaCons
@@ -3107,7 +3107,7 @@ cd5354f0849c90059e846222ec7c6340
                     ('GHC.Generics.MetaData
                        "KickChatMemberRequest"
                        "API"
-                       "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                       "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                        'GHC.Types.False)
                     (GHC.Generics.C1
                        ('GHC.Generics.MetaCons
@@ -3136,7 +3136,7 @@ cd5354f0849c90059e846222ec7c6340
                         ('GHC.Generics.MetaData
                            "KickChatMemberRequest"
                            "API"
-                           "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                           "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                            'GHC.Types.False)
                         (GHC.Generics.C1
                            ('GHC.Generics.MetaCons
@@ -3160,7 +3160,7 @@ cd5354f0849c90059e846222ec7c6340
                         ('GHC.Generics.MetaData
                            "KickChatMemberRequest"
                            "API"
-                           "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                           "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                            'GHC.Types.False)
                         (GHC.Generics.C1
                            ('GHC.Generics.MetaCons
@@ -3184,7 +3184,7 @@ cd5354f0849c90059e846222ec7c6340
                          ('GHC.Generics.MetaData
                             "KickChatMemberRequest"
                             "API"
-                            "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                            "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                             'GHC.Types.False)
                          (GHC.Generics.C1
                             ('GHC.Generics.MetaCons
@@ -3204,7 +3204,7 @@ cd5354f0849c90059e846222ec7c6340
                                                    'GHC.Generics.DecidedLazy)
                                                 (GHC.Generics.Rec0
                                                    Telegram.Bot.API.Types.UserId)))>_N) -}
-9ab7076673221bd7543b7ff695f80fc0
+944da5225dfbb7ffe7a4e6a86529f4e9
   $fFromJSONKickChatMemberRequest_$s$fConstructorMetaMetaCons ::
     GHC.Generics.Constructor
       ('GHC.Generics.MetaCons
@@ -3241,13 +3241,13 @@ cd5354f0849c90059e846222ec7c6340
                                  'GHC.Generics.PrefixI
                                  'GHC.Types.True) f1 a) ->
                    GHC.Types.True) -}
-69c8dc7efc53ae1208c87f8db80a936f
+b0c5db6ce9485da84bfb1c5f77ce06ec
   $fFromJSONKickChatMemberRequest_$s$fDatatypeMetaMetaData ::
     GHC.Generics.Datatype
       ('GHC.Generics.MetaData
          "KickChatMemberRequest"
          "API"
-         "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+         "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
          'GHC.Types.False)
   {- Strictness: m, Inline: CONLIKE,
      Unfolding: DFun:.
@@ -3255,7 +3255,7 @@ cd5354f0849c90059e846222ec7c6340
                   @ ('GHC.Generics.MetaData
                        "KickChatMemberRequest"
                        "API"
-                       "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                       "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                        'GHC.Types.False)
                   (\ @ k
                      @ t :: GHC.Generics.Meta -> (k -> *) -> k -> *
@@ -3264,7 +3264,7 @@ cd5354f0849c90059e846222ec7c6340
                      (ds :: t ('GHC.Generics.MetaData
                                  "KickChatMemberRequest"
                                  "API"
-                                 "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                 "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                  'GHC.Types.False) f a) ->
                    API.$fFromJSONKickChatMemberRequest1)
                   (\ @ k
@@ -3274,7 +3274,7 @@ cd5354f0849c90059e846222ec7c6340
                      (ds :: t ('GHC.Generics.MetaData
                                  "KickChatMemberRequest"
                                  "API"
-                                 "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                 "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                  'GHC.Types.False) f a) ->
                    API.$fFromJSONDeleteMessageRequest6)
                   (\ @ k
@@ -3284,7 +3284,7 @@ cd5354f0849c90059e846222ec7c6340
                      (ds :: t ('GHC.Generics.MetaData
                                  "KickChatMemberRequest"
                                  "API"
-                                 "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                 "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                  'GHC.Types.False) f a) ->
                    API.$fFromJSONDeleteMessageRequest4)
                   (\ @ k
@@ -3294,10 +3294,10 @@ cd5354f0849c90059e846222ec7c6340
                      (ds :: t ('GHC.Generics.MetaData
                                  "KickChatMemberRequest"
                                  "API"
-                                 "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                 "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                  'GHC.Types.False) f a) ->
                    GHC.Types.False) -}
-83ccb456e744d635b95ab131df240fd7
+5cc670df97c1198807f2fdfa0d6f84b2
   $fFromJSONKickChatMemberRequest_$s$fSelectorMetaMetaSel ::
     GHC.Generics.Selector
       ('GHC.Generics.MetaSel
@@ -3353,7 +3353,7 @@ cd5354f0849c90059e846222ec7c6340
                                   'GHC.Generics.NoSourceStrictness
                                   'GHC.Generics.DecidedLazy) f a) ->
                    GHC.Generics.DecidedLazy) -}
-f718664c4a370750104ea97584beef6c
+2dfc2f9fc9322e6248af33762c6c3fa4
   $fFromJSONKickChatMemberRequest_$s$fSelectorMetaMetaSel1 ::
     GHC.Generics.Selector
       ('GHC.Generics.MetaSel
@@ -3409,13 +3409,13 @@ f718664c4a370750104ea97584beef6c
                                   'GHC.Generics.NoSourceStrictness
                                   'GHC.Generics.DecidedLazy) f a) ->
                    GHC.Generics.DecidedLazy) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fFromJSONKickChatMemberRequest_go ::
     GHC.Prim.Int#
     -> [Data.Aeson.Types.Internal.Value]
     -> Data.Aeson.Types.Internal.Parser [API.KickChatMemberRequest]
   {- Arity: 2, Strictness: <L,U><S,1*U> -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fGenericDeleteMessageRequest ::
     GHC.Generics.Generic API.DeleteMessageRequest
   DFunId
@@ -3432,7 +3432,7 @@ f718664c4a370750104ea97584beef6c
                                   <'GHC.Generics.MetaData
                                      "DeleteMessageRequest"
                                      "API"
-                                     "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                     "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                      'GHC.Types.False>_P
                                   <GHC.Generics.M1
                                      GHC.Generics.C
@@ -3461,7 +3461,7 @@ f718664c4a370750104ea97584beef6c
                                                             GHC.Generics.R
                                                             Telegram.Bot.API.Types.MessageId))>_R) ; Sub (Sym (API.Rep_DeleteMessageRequest[0]))) <x>_N)
                   API.$fGenericDeleteMessageRequest_$cto -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fGenericDeleteMessageRequest1 ::
     API.DeleteMessageRequest
     -> GHC.Generics.M1
@@ -3566,7 +3566,7 @@ f718664c4a370750104ea97584beef6c
                                                (GHC.Generics.K1
                                                   GHC.Generics.R
                                                   Telegram.Bot.API.Types.MessageId)>_R) <x>_N) }) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fGenericDeleteMessageRequest_$cto ::
     GHC.Generics.Rep API.DeleteMessageRequest x
     -> API.DeleteMessageRequest
@@ -3581,7 +3581,7 @@ f718664c4a370750104ea97584beef6c
                                                                      <'GHC.Generics.MetaData
                                                                         "DeleteMessageRequest"
                                                                         "API"
-                                                                        "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                                                        "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                                                         'GHC.Types.False>_P
                                                                      <GHC.Generics.M1
                                                                         GHC.Generics.C
@@ -3674,7 +3674,7 @@ f718664c4a370750104ea97584beef6c
                                                                            <GHC.Generics.R>_P
                                                                            <Telegram.Bot.API.Types.MessageId>_R
                                                                            <x>_P) }) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fGenericKickChatMemberRequest ::
     GHC.Generics.Generic API.KickChatMemberRequest
   DFunId
@@ -3691,7 +3691,7 @@ f718664c4a370750104ea97584beef6c
                                   <'GHC.Generics.MetaData
                                      "KickChatMemberRequest"
                                      "API"
-                                     "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                     "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                      'GHC.Types.False>_P
                                   <GHC.Generics.M1
                                      GHC.Generics.C
@@ -3719,7 +3719,7 @@ f718664c4a370750104ea97584beef6c
                                                             GHC.Generics.R
                                                             Telegram.Bot.API.Types.UserId))>_R) ; Sub (Sym (API.Rep_KickChatMemberRequest[0]))) <x>_N)
                   API.$fGenericKickChatMemberRequest_$cto -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fGenericKickChatMemberRequest1 ::
     API.KickChatMemberRequest
     -> GHC.Generics.M1
@@ -3824,7 +3824,7 @@ f718664c4a370750104ea97584beef6c
                                                (GHC.Generics.K1
                                                   GHC.Generics.R
                                                   Telegram.Bot.API.Types.UserId)>_R) <x>_N) }) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fGenericKickChatMemberRequest_$cto ::
     GHC.Generics.Rep API.KickChatMemberRequest x
     -> API.KickChatMemberRequest
@@ -3839,7 +3839,7 @@ f718664c4a370750104ea97584beef6c
                                                                       <'GHC.Generics.MetaData
                                                                          "KickChatMemberRequest"
                                                                          "API"
-                                                                         "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                                                         "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                                                          'GHC.Types.False>_P
                                                                       <GHC.Generics.M1
                                                                          GHC.Generics.C
@@ -3932,7 +3932,7 @@ f718664c4a370750104ea97584beef6c
                                                                         <GHC.Generics.R>_P
                                                                         <Telegram.Bot.API.Types.UserId>_R
                                                                         <x>_P) }) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fToJSONDeleteMessageRequest ::
     Data.Aeson.Types.ToJSON.ToJSON API.DeleteMessageRequest
   DFunId
@@ -3943,7 +3943,7 @@ f718664c4a370750104ea97584beef6c
                   API.$fToJSONDeleteMessageRequest_$ctoEncoding
                   API.$fToJSONDeleteMessageRequest_$ctoJSONList
                   API.$fToJSONDeleteMessageRequest_$ctoEncodingList -}
-12972690fd3bb53ab70e74cf3d427fd7
+ba77904cf7da1e82b5cc8729843432ab
   $fToJSONDeleteMessageRequest1 :: Data.Aeson.Types.Internal.Options
   {- Strictness: m,
      Unfolding: (Data.Aeson.Types.Internal.Options
@@ -3954,11 +3954,11 @@ f718664c4a370750104ea97584beef6c
                    Data.Aeson.Types.Internal.defaultTaggedObject
                    GHC.Types.False
                    GHC.Types.False) -}
-69bb5283595ca81c1c4afa82d7170ed9
+27051d71e8fd521480b97e8eb42fdac3
   $fToJSONDeleteMessageRequest2 :: [GHC.Base.String]
   {- Unfolding: (Telegram.Bot.API.Internal.Utils.camelWords
                    API.$fFromJSONDeleteMessageRequest8) -}
-e3a635a47ec1e1899c856dbaaa608eb7
+e243f5e03f2892b027e0810b2089dc90
   $fToJSONDeleteMessageRequest3 :: GHC.Base.String
   {- Unfolding: (case GHC.Base.map
                         @ [GHC.Types.Char]
@@ -3977,7 +3977,7 @@ e3a635a47ec1e1899c856dbaaa608eb7
                            @ [GHC.Types.Char]
                            Telegram.Bot.API.Internal.Utils.wordsToSnake_xs
                            xs1) }) -}
-20be344c048a6f7e446c130c623bd99b
+5c93ec9336317e6ee8935b5625831754
   $fToJSONDeleteMessageRequest4 :: GHC.Base.String
   {- Unfolding: (case GHC.Base.map
                         @ [GHC.Types.Char]
@@ -3997,7 +3997,7 @@ e3a635a47ec1e1899c856dbaaa608eb7
                            @ [GHC.Types.Char]
                            Telegram.Bot.API.Internal.Utils.wordsToSnake_xs
                            xs1) }) -}
-bbc91c37b084d2259053e139084a1ad2
+fcf62b837201a6e27cfe67982eee5144
   $fToJSONDeleteMessageRequest5 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.ToJSON.ToArgs
@@ -4046,7 +4046,7 @@ bbc91c37b084d2259053e139084a1ad2
                  case w2 of ww { GHC.Generics.:*: ww1 ww2 ->
                  case API.$w$dConsToJSON' @ a1 w ww1 ww2 of ww3 { Unit# ww4 ->
                  Data.Aeson.Types.Internal.Object ww4 } }) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fToJSONDeleteMessageRequest_$ctoEncoding ::
     API.DeleteMessageRequest -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>, Inline: (sat-args=0),
@@ -4119,7 +4119,7 @@ bbc91c37b084d2259053e139084a1ad2
                 (<API.DeleteMessageRequest>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fToJSONDeleteMessageRequest_$ctoEncodingList ::
     [API.DeleteMessageRequest] -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Inline: (sat-args=0),
@@ -4127,7 +4127,7 @@ bbc91c37b084d2259053e139084a1ad2
                 (Data.Aeson.Encoding.Internal.list
                    @ API.DeleteMessageRequest
                    API.$fToJSONDeleteMessageRequest_$ctoEncoding) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fToJSONDeleteMessageRequest_$ctoJSON ::
     API.DeleteMessageRequest -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>m1,
@@ -4195,7 +4195,7 @@ bbc91c37b084d2259053e139084a1ad2
                                                               <GHC.Generics.K1
                                                                  GHC.Generics.R
                                                                  Telegram.Bot.API.Types.MessageId>_R) <GHC.Types.Any>_N)) }) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   $fToJSONDeleteMessageRequest_$ctoJSONList ::
     [API.DeleteMessageRequest] -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
@@ -4232,7 +4232,7 @@ bbc91c37b084d2259053e139084a1ad2
                                      API.$fToJSONDeleteMessageRequest_$ctoJSON)
                                   n1
                                   x)))))) -}
-cdb1f304cb1279bba6e8b6ab13b488a8
+8f0d635b455fe9be3615537c36c6d8ef
   $fToJSONDeleteMessageRequest_ww1 ::
     GHC.Base.String -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -4245,7 +4245,7 @@ cdb1f304cb1279bba6e8b6ab13b488a8
                            API.$fToJSONDeleteMessageRequest2
                            (Telegram.Bot.API.Internal.Utils.camelWords
                               (GHC.Types.: @ GHC.Types.Char (GHC.Unicode.toUpper c) s))) }) -}
-f311320b64dcafaadde8b930324052b4
+1f085d8d432a320e0e4f826b55ab36fc
   $fToJSONDeleteMessageRequest_ww2 ::
     GHC.Base.String -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -4258,7 +4258,7 @@ f311320b64dcafaadde8b930324052b4
                            API.$fToJSONDeleteMessageRequest2
                            (Telegram.Bot.API.Internal.Utils.camelWords
                               (GHC.Types.: @ GHC.Types.Char (GHC.Unicode.toUpper c) s))) }) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fToJSONKickChatMemberRequest ::
     Data.Aeson.Types.ToJSON.ToJSON API.KickChatMemberRequest
   DFunId
@@ -4269,7 +4269,7 @@ f311320b64dcafaadde8b930324052b4
                   API.$fToJSONKickChatMemberRequest_$ctoEncoding
                   API.$fToJSONKickChatMemberRequest_$ctoJSONList
                   API.$fToJSONKickChatMemberRequest_$ctoEncodingList -}
-fc571d1eeed37f8cd697c5562e132a4a
+c95c81180478f2b82338c4b3ce32b66a
   $fToJSONKickChatMemberRequest1 :: Data.Aeson.Types.Internal.Options
   {- Strictness: m,
      Unfolding: (Data.Aeson.Types.Internal.Options
@@ -4280,11 +4280,11 @@ fc571d1eeed37f8cd697c5562e132a4a
                    Data.Aeson.Types.Internal.defaultTaggedObject
                    GHC.Types.False
                    GHC.Types.False) -}
-83132cc0a3083fa46fca4769f3f085a3
+9ea47d9fc868c3bad1a8d0757f0e8bd9
   $fToJSONKickChatMemberRequest2 :: [GHC.Base.String]
   {- Unfolding: (Telegram.Bot.API.Internal.Utils.camelWords
                    API.$fFromJSONKickChatMemberRequest1) -}
-cf5b03d287ed71ddc48034a9ddc70865
+714d647c459d4bd31a2c74ea246a7d89
   $fToJSONKickChatMemberRequest3 :: GHC.Base.String
   {- Unfolding: (case GHC.Base.map
                         @ [GHC.Types.Char]
@@ -4303,7 +4303,7 @@ cf5b03d287ed71ddc48034a9ddc70865
                            @ [GHC.Types.Char]
                            Telegram.Bot.API.Internal.Utils.wordsToSnake_xs
                            xs1) }) -}
-6f9d02d387011082be9a4c88e5dc7860
+c83ac3f2fe52c46399c58c6999d23934
   $fToJSONKickChatMemberRequest4 :: GHC.Base.String
   {- Unfolding: (case GHC.Base.map
                         @ [GHC.Types.Char]
@@ -4323,7 +4323,7 @@ cf5b03d287ed71ddc48034a9ddc70865
                            @ [GHC.Types.Char]
                            Telegram.Bot.API.Internal.Utils.wordsToSnake_xs
                            xs1) }) -}
-a464bf72413a9d50706d2b4c71f56eee
+b77cf005cc8525e2050d79a904412583
   $fToJSONKickChatMemberRequest5 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.ToJSON.ToArgs
@@ -4372,7 +4372,7 @@ a464bf72413a9d50706d2b4c71f56eee
                  case w2 of ww { GHC.Generics.:*: ww1 ww2 ->
                  case API.$w$dConsToJSON'1 @ a1 w ww1 ww2 of ww3 { Unit# ww4 ->
                  Data.Aeson.Types.Internal.Object ww4 } }) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fToJSONKickChatMemberRequest_$ctoEncoding ::
     API.KickChatMemberRequest -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>, Inline: (sat-args=0),
@@ -4445,7 +4445,7 @@ a464bf72413a9d50706d2b4c71f56eee
                 (<API.KickChatMemberRequest>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fToJSONKickChatMemberRequest_$ctoEncodingList ::
     [API.KickChatMemberRequest]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -4454,7 +4454,7 @@ a464bf72413a9d50706d2b4c71f56eee
                 (Data.Aeson.Encoding.Internal.list
                    @ API.KickChatMemberRequest
                    API.$fToJSONKickChatMemberRequest_$ctoEncoding) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fToJSONKickChatMemberRequest_$ctoJSON ::
     API.KickChatMemberRequest -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>m1,
@@ -4522,7 +4522,7 @@ a464bf72413a9d50706d2b4c71f56eee
                                                               <GHC.Generics.K1
                                                                  GHC.Generics.R
                                                                  Telegram.Bot.API.Types.UserId>_R) <GHC.Types.Any>_N)) }) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   $fToJSONKickChatMemberRequest_$ctoJSONList ::
     [API.KickChatMemberRequest] -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
@@ -4559,7 +4559,7 @@ a464bf72413a9d50706d2b4c71f56eee
                                      API.$fToJSONKickChatMemberRequest_$ctoJSON)
                                   n1
                                   x)))))) -}
-f25f265518d28e301e20730394882b33
+0cc13900f065f47cf75c8930aae08dd1
   $fToJSONKickChatMemberRequest_ww1 ::
     GHC.Base.String -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -4572,7 +4572,7 @@ f25f265518d28e301e20730394882b33
                            API.$fToJSONKickChatMemberRequest2
                            (Telegram.Bot.API.Internal.Utils.camelWords
                               (GHC.Types.: @ GHC.Types.Char (GHC.Unicode.toUpper c) s))) }) -}
-6ad337526eb138578d077fb2fe7d5d98
+c65faa177ba6f7c458b85f703a56a490
   $fToJSONKickChatMemberRequest_ww2 ::
     GHC.Base.String -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -4585,7 +4585,7 @@ f25f265518d28e301e20730394882b33
                            API.$fToJSONKickChatMemberRequest2
                            (Telegram.Bot.API.Internal.Utils.camelWords
                               (GHC.Types.: @ GHC.Types.Char (GHC.Unicode.toUpper c) s))) }) -}
-fc92dd587bee499ae076e8ed4ca8b6c9
+9967424e4a015577c89c3a96c7c38a54
   $s$fFromJSONResponse ::
     Data.Aeson.Types.FromJSON.FromJSON
       (Telegram.Bot.API.MakingRequests.Response
@@ -4600,21 +4600,21 @@ fc92dd587bee499ae076e8ed4ca8b6c9
                   (Telegram.Bot.API.MakingRequests.$fFromJSONResponse_$cparseJSONList
                      @ Telegram.Bot.API.Types.Message
                      Telegram.Bot.API.Types.$fFromJSONMessage) -}
-01c9b2f2a5b927c66fc87dacfaddee33
+2783a3438260fc7973d54f3db206ab41
   $s$fHasClientm:>4_$cclientWithRoute1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$s$fHasClientm:>4_$cclientWithRoute2) -}
-e714a49efe58645cece403781b59e2dc
+a8c9803ac35bec1e01698da407c3836e
   $s$fHasClientm:>4_$cclientWithRoute2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("kickChatMember"#) -}
-2e8f508cdaca476cc2aa3fc560b781fa
+4d01996e2d5f54f815e64e133fb0c24f
   $s$fHasClientm:>4_$cclientWithRoute4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    API.$s$fHasClientm:>4_$cclientWithRoute5) -}
-ab0a6e68648986c86276382e3c384833
+5b6ecc80369a6724f0cdf0b6d7da6aa4
   $s$fHasClientm:>4_$cclientWithRoute5 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("deleteMessage"#) -}
-20ddcef27f45b8ff3e3a8db68c1549a6
+27a78e2c36f483f8d4bcd985df2dabbf
   $s$fHasClientm:>4_$cclientWithRoute_$d~~ ::
     ('[Servant.API.ContentTypes.JSON] :: [*])
     GHC.Types.~~ ('[Servant.API.ContentTypes.JSON] :: [*])
@@ -4625,7 +4625,7 @@ ab0a6e68648986c86276382e3c384833
                    @ '[Servant.API.ContentTypes.JSON]
                    @ '[Servant.API.ContentTypes.JSON]
                    @~ <'[Servant.API.ContentTypes.JSON]>_N) -}
-e332aeffce5ba83e871812a745a693a2
+477f01dc4068d4c58139d384d7a50b7d
   $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>1 ::
     Servant.Client.Core.Internal.HasClient.HasClient
       Servant.Client.Internal.HttpClient.ClientM
@@ -4892,7 +4892,7 @@ e332aeffce5ba83e871812a745a693a2
                                                                                                        '[Servant.API.ContentTypes.JSON]
                                                                                                        (Telegram.Bot.API.MakingRequests.Response
                                                                                                           Telegram.Bot.API.Types.Message)>_N))) -}
-254ce5b741747561302be30573a9b5eb
+ce397bde7d43f3ebddfffb15aaa0e401
   $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>5 ::
     Servant.Client.Core.Internal.HasClient.HasClient
       Servant.Client.Internal.HttpClient.ClientM
@@ -5173,7 +5173,7 @@ e332aeffce5ba83e871812a745a693a2
                                                                                                        '[Servant.API.ContentTypes.JSON]
                                                                                                        (Telegram.Bot.API.MakingRequests.Response
                                                                                                           Telegram.Bot.API.Types.Message)>_N))) -}
-f02514d140fcdc8a4c211affaaf1c1a6
+1736695414c34b29e49103f2be26e037
   $s$fHasClientm:>4_$cclientWithRoute_$s$fMimeUnrenderTYPEJSONa ::
     Servant.API.ContentTypes.MimeUnrender
       Servant.API.ContentTypes.JSON
@@ -5199,91 +5199,91 @@ f02514d140fcdc8a4c211affaaf1c1a6
                           Telegram.Bot.API.Types.Message)
                      API.$s$fFromJSONResponse
                      eta) -}
-e04be400e7a711fbc21a39c2ce00831d
+a952b47dbc0dc1d8ac5b47e18476fb09
   $tc'DeleteMessageRequest :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   4962390779553202183##
-                   10939220353850773065##
+                   16703254221165656869##
+                   1943577320931855275##
                    API.$trModule
                    API.$tc'DeleteMessageRequest2
                    0#
                    API.$tc'DeleteMessageRequest1) -}
-007458a8858b2a563a4af49fbb21d4fb
+258c38eb224919dc0076185e7594def9
   $tc'DeleteMessageRequest1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-10b96a694adbe745456cab78edeabce5
+fbe66f7c7098fc93153715a4a8d9c142
   $tc'DeleteMessageRequest2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS API.$tc'DeleteMessageRequest3) -}
-04a172ac4f26e00b28739995ec1ebcc3
+9b2a7bca2f03ece44511a04c32a48827
   $tc'DeleteMessageRequest3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'DeleteMessageRequest"#) -}
-63055cf3dd5e6f1995ac4dbe8ce4de2e
+76fdc639cb98ebdcfe4d580207b4a343
   $tc'KickChatMemberRequest :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   10465473474795656626##
-                   5150251133953029142##
+                   2016218016774326300##
+                   3647888053993867183##
                    API.$trModule
                    API.$tc'KickChatMemberRequest2
                    0#
                    API.$tc'KickChatMemberRequest1) -}
-b71c4ee1df054eaa010005f14a5eae89
+cda1b2d0c67b0ce2f346ce2cc9ab4229
   $tc'KickChatMemberRequest1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-5c15442d6d7af9e46819240395abfc29
+92e2217b182ac7beba1674cb10377ee4
   $tc'KickChatMemberRequest2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS API.$tc'KickChatMemberRequest3) -}
-9f5bc80dbe7d90cbeec7a1590d77f9db
+681f0a6e924777b8644b407f1e3f9bd5
   $tc'KickChatMemberRequest3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'KickChatMemberRequest"#) -}
-d2fb2744ec9b03f2f2ed652c395f8af4
+de13ca5507a7b2c0e59a504b7f911424
   $tcDeleteMessageRequest :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   4547696078274927428##
-                   6579996695164306399##
+                   12977417455527936242##
+                   8881247287967117033##
                    API.$trModule
                    API.$tcDeleteMessageRequest1
                    0#
                    GHC.Types.krep$*) -}
-b305731ace17408433fe254c40b9d2d5
+cddad114153fe65bdea32ae6fc1e536b
   $tcDeleteMessageRequest1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    API.$fFromJSONDeleteMessageRequest9) -}
-e4e9ae440d521656e8caa2e29aab05e0
+c95c3521437775da5b33734afe3a98e3
   $tcKickChatMemberRequest :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   15463198140487478766##
-                   16374368544951980958##
+                   7895125820416264608##
+                   3131048629722072400##
                    API.$trModule
                    API.$tcKickChatMemberRequest1
                    0#
                    GHC.Types.krep$*) -}
-2bb67603c9fb714706aa181baa232cbb
+81a498c85769affbe98cc775c3a5e271
   $tcKickChatMemberRequest1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    API.$fFromJSONKickChatMemberRequest2) -}
-e5376d7218f80498e922f056a99a0b56
+6ede1924658c03100e4f7c21784cc8ba
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module API.$trModule2 API.$trModule1) -}
-cdb6834a94649ea6ccb481370d5c1d54
+50778ed64c6c9a99ba4e9987649f1db6
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    API.$fFromJSONDeleteMessageRequest7) -}
-99662f7292931e411eb90c433c5cc7b9
+86b7c1523a69872d46b761b26679d017
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    API.$fFromJSONDeleteMessageRequest5) -}
-94994f32ad2488ef77d9081155de2c50
+50f69f9693a0fccb22087f94675f976d
   $w$dConsToJSON' ::
     Data.Aeson.Types.Internal.Options
     -> GHC.Generics.S1
@@ -5408,7 +5408,7 @@ cdb6834a94649ea6ccb481370d5c1d54
                            @ Data.Text.Internal.Text
                            @ Data.Aeson.Types.Internal.Value) of ww2 { Data.Aeson.Types.Internal.Object ww3 ->
                  (# ww3 #) }) -}
-11082fb67dc44cb1a2f98cac730938cf
+ddfd66b5db3b57430e18f7b7ece9a661
   $w$dConsToJSON'1 ::
     Data.Aeson.Types.Internal.Options
     -> GHC.Generics.S1
@@ -5533,7 +5533,7 @@ cdb6834a94649ea6ccb481370d5c1d54
                            @ Data.Text.Internal.Text
                            @ Data.Aeson.Types.Internal.Value) of ww2 { Data.Aeson.Types.Internal.Object ww3 ->
                  (# ww3 #) }) -}
-d396302a45ed7a090a0081e025c0002a
+060e442eddb00585f96f63c8f2948317
   $w$dFromProduct ::
     Data.Aeson.Types.Internal.Array
     -> GHC.Types.Int
@@ -5696,7 +5696,7 @@ d396302a45ed7a090a0081e025c0002a
                                  'GHC.Generics.DecidedLazy)
                               (GHC.Generics.K1 GHC.Generics.R Telegram.Bot.API.Types.MessageId)
                               a1>_R))) -}
-8b492171f771f997f885362536d04d79
+2b416d83620cfbbff02ec318c23a5614
   $w$dFromProduct1 ::
     Data.Aeson.Types.Internal.Array
     -> GHC.Types.Int
@@ -5866,7 +5866,7 @@ d396302a45ed7a090a0081e025c0002a
                                  'GHC.Generics.DecidedLazy)
                               (GHC.Generics.K1 GHC.Generics.R Telegram.Bot.API.Types.ChatId)
                               a1>_R))) -}
-c08545d8415ab4a640961656e74a80a7
+ed0b2d833c1134e73c98351cc6b4f07e
   $w$dFromProduct2 ::
     Data.Aeson.Types.Internal.Array
     -> GHC.Types.Int
@@ -6028,7 +6028,7 @@ c08545d8415ab4a640961656e74a80a7
                                  'GHC.Generics.DecidedLazy)
                               (GHC.Generics.K1 GHC.Generics.R Telegram.Bot.API.Types.UserId)
                               a1>_R))) -}
-59ba82085e13272503c4340d33054972
+c7ec283cd4d4e762854fb23df56c32c1
   $w$dFromProduct3 ::
     Data.Aeson.Types.Internal.Array
     -> GHC.Types.Int
@@ -6198,7 +6198,7 @@ c08545d8415ab4a640961656e74a80a7
                                  'GHC.Generics.DecidedLazy)
                               (GHC.Generics.K1 GHC.Generics.R Telegram.Bot.API.Types.ChatId)
                               a1>_R))) -}
-c6ad6811248b5ca6623451cb226b0b0d
+09ec0bfd9e9179e39d5e6f4687d9888e
   $w$dGFromJSON ::
     (GHC.Base.String -> GHC.Base.String)
     -> (GHC.Base.String -> GHC.Base.String)
@@ -6216,7 +6216,7 @@ c6ad6811248b5ca6623451cb226b0b0d
             ('GHC.Generics.MetaData
                "DeleteMessageRequest"
                "API"
-               "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+               "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                'GHC.Types.False)
             (GHC.Generics.M1
                GHC.Generics.C
@@ -6272,7 +6272,7 @@ c6ad6811248b5ca6623451cb226b0b0d
                    @ ('GHC.Generics.MetaData
                         "DeleteMessageRequest"
                         "API"
-                        "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                        "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                         'GHC.Types.False)
                    API.$fFromJSONDeleteMessageRequest23
                      `cast`
@@ -6327,7 +6327,7 @@ c6ad6811248b5ca6623451cb226b0b0d
                    ww5
                    ww6
                    w) -}
-b2335152248cd1792d09cb520046eabc
+f0069ef72295fba56a5716ee023b3551
   $w$dGFromJSON1 ::
     (GHC.Base.String -> GHC.Base.String)
     -> (GHC.Base.String -> GHC.Base.String)
@@ -6345,7 +6345,7 @@ b2335152248cd1792d09cb520046eabc
             ('GHC.Generics.MetaData
                "KickChatMemberRequest"
                "API"
-               "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+               "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                'GHC.Types.False)
             (GHC.Generics.M1
                GHC.Generics.C
@@ -6401,7 +6401,7 @@ b2335152248cd1792d09cb520046eabc
                    @ ('GHC.Generics.MetaData
                         "KickChatMemberRequest"
                         "API"
-                        "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                        "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                         'GHC.Types.False)
                    API.$fFromJSONKickChatMemberRequest15
                      `cast`
@@ -6456,7 +6456,7 @@ b2335152248cd1792d09cb520046eabc
                    ww5
                    ww6
                    w) -}
-9e14798a78b37b04d4cec0554ec63a74
+807c9b19103c6d4a0c4e5b6219d907ec
   type BanUser =
     "kickChatMember"
     Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
@@ -6465,7 +6465,7 @@ b2335152248cd1792d09cb520046eabc
                                              '[Servant.API.ContentTypes.JSON]
                                              (Telegram.Bot.API.MakingRequests.Response
                                                 Telegram.Bot.API.Types.Message))
-b8c0387962fa564d32b5d552996c5814
+9b811ad2f29394a0216e244ea0935d7a
   type DeleteMessage =
     "deleteMessage"
     Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
@@ -6474,22 +6474,22 @@ b8c0387962fa564d32b5d552996c5814
                                              '[Servant.API.ContentTypes.JSON]
                                              (Telegram.Bot.API.MakingRequests.Response
                                                 Telegram.Bot.API.Types.Message))
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   data DeleteMessageRequest
     = DeleteMessageRequest {deleteMessageChatId :: Telegram.Bot.API.Types.ChatId,
                             deleteMessageMessageId :: Telegram.Bot.API.Types.MessageId}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   data KickChatMemberRequest
     = KickChatMemberRequest {kickMessageChatId :: Telegram.Bot.API.Types.ChatId,
                              kickMessageUserId :: Telegram.Bot.API.Types.UserId}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   axiom API.Rep_DeleteMessageRequest::
       GHC.Generics.Rep API.DeleteMessageRequest
         = GHC.Generics.D1
             ('GHC.Generics.MetaData
                "DeleteMessageRequest"
                "API"
-               "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+               "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                'GHC.Types.False)
             (GHC.Generics.C1
                ('GHC.Generics.MetaCons
@@ -6508,14 +6508,14 @@ b8c0387962fa564d32b5d552996c5814
                                       'GHC.Generics.NoSourceStrictness
                                       'GHC.Generics.DecidedLazy)
                                    (GHC.Generics.Rec0 Telegram.Bot.API.Types.MessageId)))
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   axiom API.Rep_KickChatMemberRequest::
       GHC.Generics.Rep API.KickChatMemberRequest
         = GHC.Generics.D1
             ('GHC.Generics.MetaData
                "KickChatMemberRequest"
                "API"
-               "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+               "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                'GHC.Types.False)
             (GHC.Generics.C1
                ('GHC.Generics.MetaCons
@@ -6534,7 +6534,7 @@ b8c0387962fa564d32b5d552996c5814
                                       'GHC.Generics.NoSourceStrictness
                                       'GHC.Generics.DecidedLazy)
                                    (GHC.Generics.Rec0 Telegram.Bot.API.Types.UserId)))
-d2c4cac1ccc9cf395d72197ecbe82242
+c28cdfe5fa64fc12b1f9c9e16f3cea58
   banUser ::
     Telegram.Bot.API.GettingUpdates.Update
     -> Servant.Client.Internal.HttpClient.ClientM
@@ -6617,7 +6617,7 @@ d2c4cac1ccc9cf395d72197ecbe82242
                               GHC.Base.Just a1
                               -> case a1 of wild3 { Telegram.Bot.API.Types.User ds46 ds47 ds48 ds49 ds50 ds51 ->
                                  ds46 } } } }))) -}
-c0100bf788010c566654f4fbab865cab
+2a3ba3852a5ee296f19750949b07e8d3
   deleteMessage ::
     Telegram.Bot.API.GettingUpdates.Update
     -> Servant.Client.Internal.HttpClient.ClientM
@@ -6695,7 +6695,7 @@ c0100bf788010c566654f4fbab865cab
                          GHC.Base.Just a1
                          -> case a1 of wild1 { Telegram.Bot.API.Types.Message ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ds30 ds31 ds32 ds33 ds34 ds35 ds36 ds37 ->
                             ds1 } }))) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   deleteMessageChatId ::
     API.DeleteMessageRequest -> Telegram.Bot.API.Types.ChatId
   RecSel Left API.DeleteMessageRequest
@@ -6703,7 +6703,7 @@ c0100bf788010c566654f4fbab865cab
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: API.DeleteMessageRequest) ->
                  case ds of wild { API.DeleteMessageRequest ds1 ds2 -> ds1 }) -}
-87415afefaa3a7706849a2a00eb1b08c
+2d74d13070094ec563ba88cbec5595f9
   deleteMessageMessageId ::
     API.DeleteMessageRequest -> Telegram.Bot.API.Types.MessageId
   RecSel Left API.DeleteMessageRequest
@@ -6711,7 +6711,7 @@ c0100bf788010c566654f4fbab865cab
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: API.DeleteMessageRequest) ->
                  case ds of wild { API.DeleteMessageRequest ds1 ds2 -> ds2 }) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   kickMessageChatId ::
     API.KickChatMemberRequest -> Telegram.Bot.API.Types.ChatId
   RecSel Left API.KickChatMemberRequest
@@ -6719,7 +6719,7 @@ c0100bf788010c566654f4fbab865cab
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: API.KickChatMemberRequest) ->
                  case ds of wild { API.KickChatMemberRequest ds1 ds2 -> ds1 }) -}
-18bacb8074fed03fd13f3b0f70c8eee6
+a08ca440bfcfbc508850abab1ef74f34
   kickMessageUserId ::
     API.KickChatMemberRequest -> Telegram.Bot.API.Types.UserId
   RecSel Left API.KickChatMemberRequest
@@ -6769,34 +6769,34 @@ family instance GHC.Generics.Rep [API.DeleteMessageRequest]
                                          v1
                                          v2
   = API.$fFromJSONKickChatMemberRequest_$s$fConstructorMetaMetaCons
-"SPEC/API $fDatatypeMetaMetaData @ "DeleteMessageRequest" @ "API" @ "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ" @ 'False" [orphan] forall (v3 :: GHC.Generics.SingI
+"SPEC/API $fDatatypeMetaMetaData @ "DeleteMessageRequest" @ "API" @ "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt" @ 'False" [orphan] forall (v3 :: GHC.Generics.SingI
                                                                                                                                                       'GHC.Types.False)
                                                                                                                                              (v2 :: GHC.TypeLits.KnownSymbol
-                                                                                                                                                      "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ")
+                                                                                                                                                      "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt")
                                                                                                                                              (v1 :: GHC.TypeLits.KnownSymbol
                                                                                                                                                       "API")
                                                                                                                                              (v :: GHC.TypeLits.KnownSymbol
                                                                                                                                                      "DeleteMessageRequest")
   GHC.Generics.$fDatatypeMetaMetaData @ "DeleteMessageRequest"
                                       @ "API"
-                                      @ "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                      @ "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                       @ 'GHC.Types.False
                                       v
                                       v1
                                       v2
                                       v3
   = API.$fFromJSONDeleteMessageRequest_$s$fDatatypeMetaMetaData
-"SPEC/API $fDatatypeMetaMetaData @ "KickChatMemberRequest" @ "API" @ "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ" @ 'False" [orphan] forall (v3 :: GHC.Generics.SingI
+"SPEC/API $fDatatypeMetaMetaData @ "KickChatMemberRequest" @ "API" @ "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt" @ 'False" [orphan] forall (v3 :: GHC.Generics.SingI
                                                                                                                                                        'GHC.Types.False)
                                                                                                                                               (v2 :: GHC.TypeLits.KnownSymbol
-                                                                                                                                                       "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ")
+                                                                                                                                                       "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt")
                                                                                                                                               (v1 :: GHC.TypeLits.KnownSymbol
                                                                                                                                                        "API")
                                                                                                                                               (v :: GHC.TypeLits.KnownSymbol
                                                                                                                                                       "KickChatMemberRequest")
   GHC.Generics.$fDatatypeMetaMetaData @ "KickChatMemberRequest"
                                       @ "API"
-                                      @ "moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"
+                                      @ "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
                                       @ 'GHC.Types.False
                                       v
                                       v1

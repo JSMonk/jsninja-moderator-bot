@@ -28,6 +28,7 @@ library
   exposed-modules:
       Lib
       API 
+      Heroku
   hs-source-dirs:
       src
   build-depends:
@@ -36,8 +37,11 @@ library
     , text
     , regex-pcre
     , servant-client 
+    , servant-server
     , servant
     , aeson
+    , wai
+    , warp
   default-language: Haskell2010
 
 executable moderator-bot-exe
