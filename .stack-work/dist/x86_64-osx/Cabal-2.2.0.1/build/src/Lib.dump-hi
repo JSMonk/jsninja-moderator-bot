@@ -1,0 +1,458 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-10 20:57:34.744954 UTC
+
+interface moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ:Lib 8043
+  interface hash: a97f52decd225705b3759d0f2932fb92
+  ABI hash: 9ce2d5e6be7036dab780f246412ee517
+  export-list hash: 2a62f66de098ce7637b0d9b09e32f37c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: be022818a1059e1d97974599f911b559
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.serveBot
+module dependencies: API
+package dependencies: StateVar-1.1.1.1 aeson-1.3.1.1 array-0.5.2.0
+                      asn1-encoding-0.9.5 asn1-parse-0.9.4 asn1-types-0.3.2 async-2.2.1
+                      attoparsec-0.13.2.2 attoparsec-iso8601-1.0.1.0 base-4.11.1.0
+                      base-compat-0.10.4 base-orphans-0.7 base64-bytestring-1.0.0.1
+                      basement-0.0.8 bifunctors-5.5.3 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bytestring-0.10.8.2 case-insensitive-1.2.0.11
+                      cereal-0.5.7.0 comonad-5.0.4 connection-0.2.8 containers-0.5.11.0
+                      contravariant-1.4.1 cookie-0.4.4 cron-0.6.1 cryptonite-0.25
+                      data-default-class-0.1.2.0 deepseq-1.4.3.0 directory-1.3.1.5
+                      distributive-0.5.3 dlist-0.8.0.5 exceptions-0.10.0 filepath-1.4.2
+                      free-5.0.2 generics-sop-0.3.2.0 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 hourglass-0.2.12 http-api-data-0.3.8.1
+                      http-client-0.5.13.1 http-client-tls-0.3.5.3 http-media-0.7.1.2
+                      http-types-0.12.2 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.2
+                      memory-0.14.16 monad-control-1.0.2.3 mtl-2.2.2 network-2.6.3.6
+                      network-uri-2.6.1.0 parsec-3.1.13.0 pem-0.2.4 pretty-1.1.3.6
+                      primitive-0.6.3.0 process-1.6.3.0 profunctors-5.2.2 random-1.1
+                      regex-base-0.93.2 regex-pcre-0.94.4 safe-0.3.17 scientific-0.3.6.2
+                      semigroupoids-5.2.2 servant-0.14.1 servant-client-0.14
+                      servant-client-core-0.14.1 singleton-bool-0.1.4 socks-0.5.6
+                      stm-2.4.5.1 streaming-commons-0.2.1.0 string-conversions-0.4.0.1
+                      tagged-0.8.5 telegram-bot-simple-0.2.0 template-haskell-2.13.0.0
+                      text-1.2.3.1 th-abstraction-0.2.8.0 th-lift-0.7.11
+                      th-lift-instances-0.1.11 time-1.8.0.2 time-locale-compat-0.1.1.5
+                      tls-1.4.1 transformers-0.5.5.0 transformers-base-0.4.5.2
+                      transformers-compat-0.6.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+                      uri-bytestring-0.3.2.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vault-0.3.1.2 vector-0.12.0.1 x509-1.7.4 x509-store-1.6.6
+                      x509-system-1.6.6 x509-validation-1.6.10 zlib-0.6.2
+orphans: generics-sop-0.3.2.0:Generics.SOP.Instances
+         generics-sop-0.3.2.0:Generics.SOP.Constraint
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.11:Language.Haskell.TH.Lift
+         http-client-0.5.13.1:Network.HTTP.Client.Request
+         basement-0.0.8:Basement.UArray.Base basement-0.0.8:Basement.Block
+         network-2.6.3.6:Network.Socket stm-2.4.5.1:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         regex-pcre-0.94.4:Text.Regex.PCRE.String
+         regex-pcre-0.94.4:Text.Regex.PCRE.Sequence
+         regex-pcre-0.94.4:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-0.94.4:Text.Regex.PCRE.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         basement-0.0.8:Basement.Block.Base basement-0.0.8:Basement.Monad
+                         basement-0.0.8:Basement.MutableBuilder basement-0.0.8:Basement.Nat
+                         basement-0.0.8:Basement.NonEmpty
+                         basement-0.0.8:Basement.Numerical.Subtractive
+                         basement-0.0.8:Basement.PrimType basement-0.0.8:Basement.String
+                         basement-0.0.8:Basement.String.Encoding.ASCII7
+                         basement-0.0.8:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.8:Basement.String.Encoding.UTF16
+                         basement-0.0.8:Basement.String.Encoding.UTF32
+                         basement-0.0.8:Basement.Types.OffsetSize
+                         basement-0.0.8:Basement.UArray.Base
+                         basement-0.0.8:Basement.UTF8.Base
+                         bifunctors-5.5.3:Data.Bifunctor.Biff
+                         bifunctors-5.5.3:Data.Bifunctor.Clown
+                         bifunctors-5.5.3:Data.Bifunctor.Flip
+                         bifunctors-5.5.3:Data.Bifunctor.Join
+                         bifunctors-5.5.3:Data.Bifunctor.Joker
+                         bifunctors-5.5.3:Data.Bifunctor.Product
+                         bifunctors-5.5.3:Data.Bifunctor.Sum
+                         bifunctors-5.5.3:Data.Bifunctor.Tannen
+                         bifunctors-5.5.3:Data.Bifunctor.Wrapped
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         cron-0.6.1:System.Cron.Types cryptonite-0.25:Crypto.ECC
+                         cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool dlist-0.8.0.5:Data.DList
+                         free-5.0.2:Control.Monad.Free free-5.0.2:Control.Monad.Trans.Free
+                         generics-sop-0.3.2.0:Generics.SOP.BasicFunctors
+                         generics-sop-0.3.2.0:Generics.SOP.GGP
+                         generics-sop-0.3.2.0:Generics.SOP.Instances
+                         generics-sop-0.3.2.0:Generics.SOP.NP
+                         generics-sop-0.3.2.0:Generics.SOP.NS
+                         ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         http-api-data-0.3.8.1:Web.Internal.FormUrlEncoded
+                         http-client-0.5.13.1:Network.HTTP.Client
+                         moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ:API
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         servant-0.14.1:Servant.API.ContentTypes
+                         servant-0.14.1:Servant.API.Generic
+                         servant-0.14.1:Servant.API.IsSecure
+                         servant-0.14.1:Servant.API.Stream servant-0.14.1:Servant.API.Verbs
+                         servant-0.14.1:Servant.Links
+                         servant-client-0.14:Servant.Client.Internal.HttpClient
+                         servant-client-core-0.14.1:Servant.Client.Core.Internal.BaseUrl
+                         servant-client-core-0.14.1:Servant.Client.Core.Internal.HasClient
+                         servant-client-core-0.14.1:Servant.Client.Core.Internal.Request
+                         tagged-0.8.5:Data.Tagged
+                         telegram-bot-simple-0.2.0:Telegram.Bot.API.GettingUpdates
+                         telegram-bot-simple-0.2.0:Telegram.Bot.API.MakingRequests
+                         telegram-bot-simple-0.2.0:Telegram.Bot.API.Methods
+                         telegram-bot-simple-0.2.0:Telegram.Bot.API.Types
+                         telegram-bot-simple-0.2.0:Telegram.Bot.API.UpdatingMessages
+                         telegram-bot-simple-0.2.0:Telegram.Bot.Simple.Reply
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uri-bytestring-0.3.2.0:URI.ByteString.Types
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+                         zlib-0.6.2:Codec.Compression.Zlib.Stream
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.Environment 052ec29b676ed8efc1decd97140a27e3
+import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  API 9caf2a3d6127ad0a13369e9da0cc86dc
+  exports: a50f5444f51a5869c2abcf801941fda9
+  banUser d2c4cac1ccc9cf395d72197ecbe82242
+  deleteMessage c0100bf788010c566654f4fbab865cab
+import  -/  regex-pcre-0.94.4:Text.Regex.PCRE 7cf82165bfebf50df3cbf3b5c3ff2886
+import  -/  regex-pcre-0.94.4:Text.Regex.PCRE.Wrap a87f8397990453bf15dad9a918c5c5a4
+import  -/  servant-client-0.14:Servant.Client ea1dced3f8279a9d759caf8528fbf520
+import  -/  servant-client-0.14:Servant.Client.Internal.HttpClient 8f2e1fb49f970679591c696f24735c2c
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API 6ca018101f90c5e6d749d9ba865258f8
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.GettingUpdates 0d80d428e89ab6f501996a4170ff5b30
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.MakingRequests 8c19ad86a20364240643274fc55deccd
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.Types df7d31f53399293cb49dfb8ffda16667
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple 5315b359b40a18341dcbc1b2d6482c1e
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.BotApp fdf66262ec6d9bfa61c490466ac7b7ef
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.BotApp.Internal 736f5ce4b8e0ec4167fca6d7c76843ba
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.Conversation 4515e6d7c19614db47b75832491ed0d3
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.Eff 135610dffc1d99daaeed5d48bcb02028
+import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.UpdateParser 62e81d05f63792e77f988a8d61f597d5
+import  -/  text-1.2.3.1:Data.Text 084e5e9d9e353b790b1093ddc9e8062b
+import  -/  text-1.2.3.1:Data.Text.Internal 65b2a62b0918b56ea0591106f5d77acc
+import  -/  text-1.2.3.1:Data.Text.Show 6160c4f890e5da05d66a5bf5e472bc99
+87978ad7641778813ef3e4a0f794f28e
+  $tc'NoOp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2300371605841321668##
+                   5127671832304950545##
+                   Lib.$trModule
+                   Lib.$tc'NoOp2
+                   0#
+                   Lib.$tc'NoOp1) -}
+7c85a76b993a53bafca1d5a9d4235077
+  $tc'NoOp1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+d0dee1903b0048ad70e77b422a00808f
+  $tc'NoOp2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'NoOp3) -}
+f67d1756cdbf664ab3c4aa5367c2d090
+  $tc'NoOp3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NoOp"#) -}
+0c98d13dda975b5e7c693f52e51c97c8
+  $tc'ReactOnMessage :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14445987506746643875##
+                   18080375956575754556##
+                   Lib.$trModule
+                   Lib.$tc'ReactOnMessage2
+                   0#
+                   Lib.$tc'ReactOnMessage1) -}
+3fe3e4b0fa2929670393418c8c724abd
+  $tc'ReactOnMessage1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+67d94176eb8f1d44efae94a43413570a
+  $tc'ReactOnMessage2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'ReactOnMessage3) -}
+8cc7d972c36d8e1e7b4490f054e5392e
+  $tc'ReactOnMessage3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ReactOnMessage"#) -}
+02c76a3f0972485cb1cc1de4e7e94ad7
+  $tc'ShouldBeDeleted :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15810927598778871642##
+                   15167189047980634871##
+                   Lib.$trModule
+                   Lib.$tc'ShouldBeDeleted1
+                   0#
+                   Lib.$tc'ReactOnMessage1) -}
+75397ffe1443e2e52b0fdbfa3f9dbcb3
+  $tc'ShouldBeDeleted1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'ShouldBeDeleted2) -}
+0abe848ccae4b4d2396560419b48dd68
+  $tc'ShouldBeDeleted2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ShouldBeDeleted"#) -}
+a24785c5fa8b3e5e7efc1ce7657c84f2
+  $tcAction :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8228772360067692340##
+                   15631208020273870795##
+                   Lib.$trModule
+                   Lib.$tcAction1
+                   0#
+                   GHC.Types.krep$*) -}
+99029278e5ab35c95035a87408b94781
+  $tcAction1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tcAction2) -}
+87f7c70a3561c9599c6523942b175265
+  $tcAction2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Action"#) -}
+4d5015c89af120583da11a71393dcbc4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule3 Lib.$trModule1) -}
+a6be34b01dc937212e50d5d7c567b770
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$trModule2) -}
+2762fc73311f31e679b08fa357c70577
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Lib"#) -}
+f09adb7552a37a2dea829b178773fbc3
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$trModule4) -}
+e26a50ac5aa01715361be5d624d1d31e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("moderator-bot-0.1.0.0-74dRHnyoZmoJktW4VT3EXZ"#) -}
+61fa56408df699f2cbd8fbe93865f410
+  $wouter ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+98e70228bcb58067abf17b4b08d1f642
+  data Action
+    = NoOp
+    | ShouldBeDeleted Telegram.Bot.API.GettingUpdates.Update
+    | ReactOnMessage Telegram.Bot.API.GettingUpdates.Update
+82b8659f19a8e5f26a0373acb281917e
+  type Model = ()
+999e6cd32ba8c032bb799d82490f2b75
+  serveBot :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.serveBot1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+4e4a41483f3c661b7b87ee8d8124dadd
+  serveBot1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Lib.serveBot7
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv3
+                        Lib.serveBot_name
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case ipv5 of wild {
+                   GHC.Base.Nothing
+                   -> case System.Environment.getEnv2 ipv4 Lib.serveBot_name
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                      of {}
+                   GHC.Base.Just x
+                   -> case Network.HTTP.Client.Manager.newManager1
+                             Network.HTTP.Client.TLS.tlsManagerSettings
+                             ipv4 of ds { (#,#) ipv6 ipv7 ->
+                      case Lib.serveBot5
+                             Telegram.Bot.API.GettingUpdates.updateChatId
+                             Lib.serveBot2 of ww { Telegram.Bot.Simple.BotApp.Internal.BotApp ww1 ww2 ww3 ww4 ->
+                      case Telegram.Bot.Simple.BotApp.$wstartBot
+                             @ (Data.HashMap.Base.HashMap
+                                  (GHC.Base.Maybe Telegram.Bot.API.Types.ChatId) Lib.Model)
+                             @ (GHC.Base.Maybe Telegram.Bot.API.Types.ChatId, Lib.Action)
+                             ww1
+                             ww2
+                             ww3
+                             ww4
+                             (Servant.Client.Internal.HttpClient.ClientEnv
+                                ipv7
+                                (case Telegram.Bot.API.MakingRequests.$wbotBaseUrl
+                                        (case GHC.Magic.runRW#
+                                                @ ('GHC.Types.TupleRep
+                                                     '['GHC.Types.TupleRep '[],
+                                                       'GHC.Types.LiftedRep])
+                                                @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                     Data.Text.Internal.Text #)
+                                                (\ (s1 :: GHC.Prim.State#
+                                                            GHC.Prim.RealWorld)[OneShot] ->
+                                                 case GHC.Prim.newByteArray#
+                                                        @ GHC.Prim.RealWorld
+                                                        10#
+                                                        s1 of ds4 { (#,#) ipv8 ipv9 ->
+                                                 Lib.$wouter
+                                                   ipv9
+                                                   4#
+                                                   x
+                                                   0#
+                                                   ipv8 }) of ds4 { (#,#) ipv8 ipv9 ->
+                                         ipv9
+                                           `cast`
+                                         (Sym (Telegram.Bot.API.MakingRequests.N:Token[0])) }) of ww7 { (#,,,#) ww8 ww9 ww10 ww11 ->
+                                 Servant.Client.Core.Internal.BaseUrl.BaseUrl ww8 ww9 ww10 ww11 })
+                                (GHC.Base.Nothing
+                                   @ (GHC.Conc.Sync.TVar Network.HTTP.Client.Types.CookieJar)))
+                             ipv6 of ds4 { (#,#) ipv8 ipv9 ->
+                      (# ipv8, GHC.Tuple.() #) } } } } } } }) -}
+06d1d7e5d09666c2506678ea7a868223
+  serveBot2 ::
+    Telegram.Bot.Simple.BotApp.Internal.BotApp Lib.Model Lib.Action
+  {- Strictness: m,
+     Unfolding: (Telegram.Bot.Simple.BotApp.Internal.BotApp
+                   @ Lib.Model
+                   @ Lib.Action
+                   GHC.Tuple.()
+                   Lib.serveBot4
+                   Lib.serveBot3
+                   (GHC.Types.[]
+                      @ (Telegram.Bot.Simple.BotApp.Internal.BotJob
+                           Lib.Model Lib.Action))) -}
+b904c46d4a080e326cb4e161a0ee3de6
+  serveBot3 ::
+    Lib.Action
+    -> Lib.Model -> Telegram.Bot.Simple.Eff.Eff Lib.Action Lib.Model
+  {- Arity: 2, Strictness: <S,1*U><L,U>m -}
+e495f628609b458138f4a14ec56d401e
+  serveBot4 ::
+    Telegram.Bot.API.GettingUpdates.Update
+    -> Lib.Model -> GHC.Base.Maybe Lib.Action
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m2,
+     Unfolding: (\ (x :: Telegram.Bot.API.GettingUpdates.Update)
+                   (y :: Lib.Model) ->
+                 GHC.Base.Just @ Lib.Action (Lib.ReactOnMessage x)) -}
+debaaa7df54bd6d7533807665f3a4f3f
+  serveBot5 ::
+    (Telegram.Bot.API.GettingUpdates.Update
+     -> GHC.Base.Maybe Telegram.Bot.API.Types.ChatId)
+    -> Telegram.Bot.Simple.BotApp.Internal.BotApp Lib.Model Lib.Action
+    -> Telegram.Bot.Simple.BotApp.Internal.BotApp
+         (Data.HashMap.Base.HashMap
+            (GHC.Base.Maybe Telegram.Bot.API.Types.ChatId) Lib.Model)
+         (GHC.Base.Maybe Telegram.Bot.API.Types.ChatId, Lib.Action)
+  {- Unfolding: (Telegram.Bot.Simple.Conversation.conversationBot
+                   @ Telegram.Bot.API.Types.ChatId
+                   @ Lib.Model
+                   @ Lib.Action
+                   Telegram.Bot.API.Types.$fEqChatId
+                   Telegram.Bot.API.Types.$fHashableChatId) -}
+7554c8d5cd009dad0f6e37dad9d3791a
+  serveBot6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("TELEGRAM_TOKEN"#) -}
+37a7f287cec8269a7bccd937252437a3
+  serveBot7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.serveBot8) -}
+131afbcef8fb498b455f39b9869b7eb3
+  serveBot8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Moderator bot started"#) -}
+3a5419e0b84e1b54d521340bf5bddecf
+  serveBot_name :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# Lib.serveBot6) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

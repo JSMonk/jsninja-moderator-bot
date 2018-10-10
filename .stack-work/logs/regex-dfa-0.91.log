@@ -1,0 +1,18 @@
+[1 of 2] Compiling Main             ( /private/var/folders/tq/x36_lkbx7h5dkyjsfvnwl_300000gn/T/stack95197/regex-dfa-0.91/Setup.hs, /private/var/folders/tq/x36_lkbx7h5dkyjsfvnwl_300000gn/T/stack95197/regex-dfa-0.91/.stack-work/dist/x86_64-osx/Cabal-2.2.0.1/setup/Main.o )
+[2 of 2] Compiling StackSetupShim   ( /Users/js_monk/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /private/var/folders/tq/x36_lkbx7h5dkyjsfvnwl_300000gn/T/stack95197/regex-dfa-0.91/.stack-work/dist/x86_64-osx/Cabal-2.2.0.1/setup/StackSetupShim.o )
+Linking /private/var/folders/tq/x36_lkbx7h5dkyjsfvnwl_300000gn/T/stack95197/regex-dfa-0.91/.stack-work/dist/x86_64-osx/Cabal-2.2.0.1/setup/setup ...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Configuring regex-dfa-0.91...
+Warning: No 'build-type' specified. If you do not need a custom Setup.hs or
+./configure script then use 'build-type: Simple'.
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Preprocessing library for regex-dfa-0.91..
+Building library for regex-dfa-0.91..
+
+[;1mText/Regex/DFA/Wrap.hs:1:16: [;1m[31merror:[0m[0m[;1m [[;1m[31m-Werror[0m[0m[;1m][0m[0m[;1m
+    -fglasgow-exts is deprecated: Use individual extensions instead[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m1 |[0m[0m {-# OPTIONS_GHC[;1m[31m -fglasgow-exts  -fno-warn-orphans [0m[0m#-}
+[;1m[34m  |[0m[0m[;1m[31m                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
