@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-10 23:01:17.057662 UTC
+2018-10-11 22:00:35.267659 UTC
 
 interface main:Main 8043
-  interface hash: d6d7b4ee21d81ed5b39174f605a3e3ff
-  ABI hash: 4aeab1e6551213282c5f26b159b89ec8
-  export-list hash: 87807008bfb858a8ec997910b4ca0e84
+  interface hash: 37c8ad04bf0551151b4fc075f9e42f16
+  ABI hash: ef61cb2487c2f8d5b50cb65df2a9e546
+  export-list hash: 1d53fab90074930a483a90dbcac771be
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 6e98dad605f377bd1dc9509132b326b4
   opt_hash: 14e536840aca4e889cad654e6f9b79c1
@@ -16,43 +16,36 @@ interface main:Main 8043
 exports:
   Main.main
 module dependencies:
-package dependencies: StateVar-1.1.1.1 aeson-1.3.1.1 appar-0.1.4
-                      array-0.5.2.0 asn1-encoding-0.9.5 asn1-parse-0.9.4 asn1-types-0.3.2
-                      async-2.2.1 attoparsec-0.13.2.2 attoparsec-iso8601-1.0.1.0
-                      auto-update-0.1.4 base-4.11.1.0 base-compat-0.10.4 base-orphans-0.7
-                      base64-bytestring-1.0.0.1 basement-0.0.8 bifunctors-5.5.3
-                      binary-0.8.5.1 blaze-builder-0.4.1.0 blaze-html-0.9.1.1
-                      blaze-markup-0.8.2.2 bsb-http-chunked-0.0.0.4 byteorder-1.0.4
-                      bytestring-0.10.8.2 case-insensitive-1.2.0.11 cereal-0.5.7.0
-                      comonad-5.0.4 connection-0.2.8 containers-0.5.11.0
+package dependencies: StateVar-1.1.1.1 aeson-1.3.1.1 array-0.5.2.0
+                      asn1-encoding-0.9.5 asn1-parse-0.9.4 asn1-types-0.3.2 async-2.2.1
+                      attoparsec-0.13.2.2 attoparsec-iso8601-1.0.1.0 base-4.11.1.0
+                      base-compat-0.10.4 base-orphans-0.7 base64-bytestring-1.0.0.1
+                      basement-0.0.8 bifunctors-5.5.3 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bytestring-0.10.8.2 case-insensitive-1.2.0.11
+                      cereal-0.5.7.0 comonad-5.0.4 connection-0.2.8 containers-0.5.11.0
                       contravariant-1.4.1 cookie-0.4.4 cron-0.6.1 cryptonite-0.25
                       data-default-class-0.1.2.0 deepseq-1.4.3.0 directory-1.3.1.5
-                      distributive-0.5.3 dlist-0.8.0.5 exceptions-0.10.0
-                      file-embed-0.0.10.1 filepath-1.4.2 free-5.0.2 generics-sop-0.3.2.0
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
-                      hourglass-0.2.12 http-api-data-0.3.8.1 http-client-0.5.13.1
-                      http-client-tls-0.3.5.3 http-date-0.0.8 http-media-0.7.1.2
-                      http-types-0.12.2 http2-1.6.3 integer-gmp-1.0.2.0
-                      integer-logarithms-1.0.2.2 iproute-1.7.5 memory-0.14.16
-                      mime-types-0.1.0.8 moderator-bot-0.1.0.0 monad-control-1.0.2.3
+                      distributive-0.5.3 dlist-0.8.0.5 exceptions-0.10.0 filepath-1.4.2
+                      free-5.0.2 generics-sop-0.3.2.0 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 hourglass-0.2.12 http-api-data-0.3.8.1
+                      http-client-0.5.13.1 http-client-tls-0.3.5.3 http-media-0.7.1.2
+                      http-types-0.12.2 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.2
+                      memory-0.14.16 moderator-bot-0.1.0.0 monad-control-1.0.2.3
                       mtl-2.2.2 network-2.6.3.6 network-uri-2.6.1.0 parsec-3.1.13.0
                       pem-0.2.4 pretty-1.1.3.6 primitive-0.6.3.0 process-1.6.3.0
-                      profunctors-5.2.2 psqueues-0.2.7.0 random-1.1 regex-base-0.93.2
-                      regex-pcre-0.94.4 resourcet-1.2.1 safe-0.3.17 scientific-0.3.6.2
-                      semigroupoids-5.2.2 servant-0.14.1 servant-client-0.14
-                      servant-client-core-0.14.1 servant-server-0.14.1
-                      simple-sendfile-0.2.27 singleton-bool-0.1.4 socks-0.5.6 stm-2.4.5.1
-                      streaming-commons-0.2.1.0 string-conversions-0.4.0.1 tagged-0.8.5
-                      telegram-bot-simple-0.2.0 template-haskell-2.13.0.0 text-1.2.3.1
-                      th-abstraction-0.2.8.0 th-lift-0.7.11 th-lift-instances-0.1.11
-                      time-1.8.0.2 time-locale-compat-0.1.1.5 tls-1.4.1
-                      transformers-0.5.5.0 transformers-base-0.4.5.2
-                      transformers-compat-0.6.2 unix-2.7.2.2 unix-compat-0.5.1
-                      unliftio-core-0.1.2.0 unordered-containers-0.2.9.0
-                      uri-bytestring-0.3.2.0 utf8-string-1.0.1.1 uuid-types-1.0.3
-                      vault-0.3.1.2 vector-0.12.0.1 wai-3.2.1.2 wai-app-static-3.1.6.2
-                      warp-3.2.25 word8-0.1.3 x509-1.7.4 x509-store-1.6.6
-                      x509-system-1.6.6 x509-validation-1.6.10 zlib-0.6.2
+                      profunctors-5.2.2 random-1.1 regex-base-0.93.2 regex-pcre-0.94.4
+                      safe-0.3.17 scientific-0.3.6.2 semigroupoids-5.2.2 servant-0.14.1
+                      servant-client-0.14 servant-client-core-0.14.1 singleton-bool-0.1.4
+                      socks-0.5.6 stm-2.4.5.1 streaming-commons-0.2.1.0
+                      string-conversions-0.4.0.1 tagged-0.8.5 telegram-bot-simple-0.2.0
+                      template-haskell-2.13.0.0 text-1.2.3.1 th-abstraction-0.2.8.0
+                      th-lift-0.7.11 th-lift-instances-0.1.11 time-1.8.0.2
+                      time-locale-compat-0.1.1.5 tls-1.4.1 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 transformers-compat-0.6.2 unix-2.7.2.2
+                      unordered-containers-0.2.9.0 uri-bytestring-0.3.2.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vault-0.3.1.2 vector-0.12.0.1
+                      x509-1.7.4 x509-store-1.6.6 x509-system-1.6.6
+                      x509-validation-1.6.10 zlib-0.6.2
 orphans: generics-sop-0.3.2.0:Generics.SOP.Instances
          generics-sop-0.3.2.0:Generics.SOP.Constraint
          th-lift-instances-0.1.11:Instances.TH.Lift
@@ -144,8 +137,7 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
                          http-api-data-0.3.8.1:Web.Internal.FormUrlEncoded
-                         http-client-0.5.13.1:Network.HTTP.Client iproute-1.7.5:Data.IP.Addr
-                         iproute-1.7.5:Data.IP.Range moderator-bot-0.1.0.0:API
+                         http-client-0.5.13.1:Network.HTTP.Client moderator-bot-0.1.0.0:API
                          monad-control-1.0.2.3:Control.Monad.Trans.Control
                          network-uri-2.6.1.0:Network.URI
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
@@ -153,7 +145,6 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
                          servant-0.14.1:Servant.API.ContentTypes
                          servant-0.14.1:Servant.API.Generic
                          servant-0.14.1:Servant.API.IsSecure
@@ -163,10 +154,6 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          servant-client-core-0.14.1:Servant.Client.Core.Internal.BaseUrl
                          servant-client-core-0.14.1:Servant.Client.Core.Internal.HasClient
                          servant-client-core-0.14.1:Servant.Client.Core.Internal.Request
-                         servant-server-0.14.1:Servant.Server.Internal
-                         servant-server-0.14.1:Servant.Server.Internal.BasicAuth
-                         servant-server-0.14.1:Servant.Server.Internal.Handler
-                         servant-server-0.14.1:Servant.Server.Internal.RoutingApplication
                          tagged-0.8.5:Data.Tagged
                          telegram-bot-simple-0.2.0:Telegram.Bot.API.GettingUpdates
                          telegram-bot-simple-0.2.0:Telegram.Bot.API.MakingRequests
@@ -189,7 +176,7 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          zlib-0.6.2:Codec.Compression.Zlib.Stream
 import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
-import  -/  moderator-bot-0.1.0.0:Lib 24b78e432c12c95012cdc4193add2db3
+import  -/  moderator-bot-0.1.0.0:Lib e98cc4692a84fde40417fd5ed3596e33
 be86c9d078d3acbf19ba91fe74a24273
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -208,12 +195,12 @@ e5875966b74dad2d29772660b8a75e33
 d026be77cb9ced20e35a61514e0458aa
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-3dcea0d538354a50051ae8ddd1705bd3
+9c860643dce125e17302d5245fa9bce1
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Lib.serveBot1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-4709fa78844a9b632f296637a1b7ef03
+3710c930492df80f0837129d2af64db8
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

@@ -37,13 +37,13 @@ instance FromJSON KickChatMemberRequest where parseJSON = gparseJSON
 
 type DeleteMessage = "deleteMessage" 
   :> ReqBody '[JSON] DeleteMessageRequest
-  :> Post '[JSON] (Response Message)
+  :> Post '[JSON] (Response Bool)
 
 type BanUser = "kickChatMember"
   :> ReqBody '[JSON] KickChatMemberRequest
-  :> Post '[JSON] (Response Message)
+  :> Post '[JSON] (Response Bool)
 
-deleteMessage :: Update -> ClientM (Response Message)
+deleteMessage :: Update -> ClientM (Response Bool)
 deleteMessage upd = 
   client (Proxy @DeleteMessage) $ requestData 
   where
@@ -53,7 +53,7 @@ deleteMessage upd =
     messageId' =  fromJust $ messageMessageId <$> msg
     msg = updateMessage upd
 
-banUser :: Update -> ClientM (Response Message)
+banUser :: Update -> ClientM (Response Bool)
 banUser upd =
   client (Proxy @BanUser) $ requestData
   where

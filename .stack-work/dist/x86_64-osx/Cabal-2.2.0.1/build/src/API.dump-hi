@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-10 23:01:15.169949 UTC
+2018-10-11 22:00:33.626839 UTC
 
 interface moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt:API [family instance module] 8043
-  interface hash: dda2c7c20ab65520f77c6d638a8948b4
-  ABI hash: 3cdd0f297a2d53c02cc131afd0f3f7be
-  export-list hash: 2dd25d93b4fe8f40c3388de23aad6cfc
-  orphan hash: 529301d933a0e5f048dc94a1a6411464
+  interface hash: 4b2046275acee0509955f83c7df8d5a7
+  ABI hash: 2358079fd5fc567253e097c0ee110efb
+  export-list hash: c255850f3d21c8a81b19c8206ff29b49
+  orphan hash: fc19c189994905dc97c77d391dd0383b
   flag hash: a095c279f5c55715a4bc1695f0bb7b89
   opt_hash: 14e536840aca4e889cad654e6f9b79c1
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -4585,21 +4585,19 @@ c65faa177ba6f7c458b85f703a56a490
                            API.$fToJSONKickChatMemberRequest2
                            (Telegram.Bot.API.Internal.Utils.camelWords
                               (GHC.Types.: @ GHC.Types.Char (GHC.Unicode.toUpper c) s))) }) -}
-9967424e4a015577c89c3a96c7c38a54
+d7a2296d5b6908882ac1d0df1feb3ead
   $s$fFromJSONResponse ::
     Data.Aeson.Types.FromJSON.FromJSON
-      (Telegram.Bot.API.MakingRequests.Response
-         Telegram.Bot.API.Types.Message)
+      (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
   {- Strictness: m, Inline: CONLIKE,
      Unfolding: DFun:.
-                  @ (Telegram.Bot.API.MakingRequests.Response
-                       Telegram.Bot.API.Types.Message)
+                  @ (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
                   (Telegram.Bot.API.MakingRequests.$fFromJSONResponse_$cparseJSON
-                     @ Telegram.Bot.API.Types.Message
-                     Telegram.Bot.API.Types.$fFromJSONMessage)
+                     @ GHC.Types.Bool
+                     Data.Aeson.Types.FromJSON.$fFromJSONBool)
                   (Telegram.Bot.API.MakingRequests.$fFromJSONResponse_$cparseJSONList
-                     @ Telegram.Bot.API.Types.Message
-                     Telegram.Bot.API.Types.$fFromJSONMessage) -}
+                     @ GHC.Types.Bool
+                     Data.Aeson.Types.FromJSON.$fFromJSONBool) -}
 2783a3438260fc7973d54f3db206ab41
   $s$fHasClientm:>4_$cclientWithRoute1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
@@ -4625,7 +4623,7 @@ a8c9803ac35bec1e01698da407c3836e
                    @ '[Servant.API.ContentTypes.JSON]
                    @ '[Servant.API.ContentTypes.JSON]
                    @~ <'[Servant.API.ContentTypes.JSON]>_N) -}
-477f01dc4068d4c58139d384d7a50b7d
+bf39a02b92d2272762c30c3f65b505bc
   $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>1 ::
     Servant.Client.Core.Internal.HasClient.HasClient
       Servant.Client.Internal.HttpClient.ClientM
@@ -4635,8 +4633,7 @@ a8c9803ac35bec1e01698da407c3836e
                             'Network.HTTP.Types.Method.POST
                             200
                             '[Servant.API.ContentTypes.JSON]
-                            (Telegram.Bot.API.MakingRequests.Response
-                               Telegram.Bot.API.Types.Message))
+                            (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool))
   {- Strictness: m, Inline: CONLIKE,
      Unfolding: DFun: @ mods :: [*] @ cts :: [*].
                   @ Servant.Client.Internal.HttpClient.ClientM
@@ -4646,8 +4643,7 @@ a8c9803ac35bec1e01698da407c3836e
                                           'Network.HTTP.Types.Method.POST
                                           200
                                           '[Servant.API.ContentTypes.JSON]
-                                          (Telegram.Bot.API.MakingRequests.Response
-                                             Telegram.Bot.API.Types.Message))
+                                          (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool))
                   Servant.Client.Internal.HttpClient.$fRunClientClientM
                   (\ (eta :: Data.Proxy.Proxy
                                Servant.Client.Internal.HttpClient.ClientM)
@@ -4661,7 +4657,7 @@ a8c9803ac35bec1e01698da407c3836e
                                                       200
                                                       '[Servant.API.ContentTypes.JSON]
                                                       (Telegram.Bot.API.MakingRequests.Response
-                                                         Telegram.Bot.API.Types.Message)))
+                                                         GHC.Types.Bool)))
                      (eta2 :: Servant.Client.Core.Internal.Request.Request)
                      (body :: API.DeleteMessageRequest) ->
                    case eta1 of wild { Data.Proxy.Proxy ->
@@ -4669,8 +4665,7 @@ a8c9803ac35bec1e01698da407c3836e
                      @ Network.HTTP.Types.Method.StdMethod
                      @ Servant.Client.Internal.HttpClient.ClientM
                      @ Servant.API.ContentTypes.JSON
-                     @ (Telegram.Bot.API.MakingRequests.Response
-                          Telegram.Bot.API.Types.Message)
+                     @ (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
                      @ 'Network.HTTP.Types.Method.POST
                      @ '[Servant.API.ContentTypes.JSON]
                      @ '[]
@@ -4693,8 +4688,7 @@ a8c9803ac35bec1e01698da407c3836e
                              'Network.HTTP.Types.Method.POST
                              200
                              '[Servant.API.ContentTypes.JSON]
-                             (Telegram.Bot.API.MakingRequests.Response
-                                Telegram.Bot.API.Types.Message)))
+                             (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)))
                      (case eta2 of wild1 { Servant.Client.Core.Internal.Request.Request ds ds1 ds2 ds3 ds4 ds5 ds6 ->
                       Servant.Client.Core.Internal.Request.Request
                         @ Data.ByteString.Builder.Internal.Builder
@@ -4785,7 +4779,7 @@ a8c9803ac35bec1e01698da407c3836e
                                                  200
                                                  '[Servant.API.ContentTypes.JSON]
                                                  (Telegram.Bot.API.MakingRequests.Response
-                                                    Telegram.Bot.API.Types.Message))>_R
+                                                    GHC.Types.Bool))>_R
                    ->_R <Servant.Client.Core.Internal.Request.Request>_R
                    ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
                                       <Servant.Client.Internal.HttpClient.ClientM>_N
@@ -4798,7 +4792,7 @@ a8c9803ac35bec1e01698da407c3836e
                                          200
                                          '[Servant.API.ContentTypes.JSON]
                                          (Telegram.Bot.API.MakingRequests.Response
-                                            Telegram.Bot.API.Types.Message)>_N)))
+                                            GHC.Types.Bool)>_N)))
                   (\ @ mon :: * -> *
                      @ mon' :: * -> *
                      (pm :: Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM)
@@ -4810,7 +4804,7 @@ a8c9803ac35bec1e01698da407c3836e
                                                     200
                                                     '[Servant.API.ContentTypes.JSON]
                                                     (Telegram.Bot.API.MakingRequests.Response
-                                                       Telegram.Bot.API.Types.Message)))
+                                                       GHC.Types.Bool)))
                      (f :: forall x. mon x -> mon' x)
                      (cl :: Servant.Client.Core.Internal.HasClient.Client
                               mon
@@ -4821,10 +4815,9 @@ a8c9803ac35bec1e01698da407c3836e
                                                     200
                                                     '[Servant.API.ContentTypes.JSON]
                                                     (Telegram.Bot.API.MakingRequests.Response
-                                                       Telegram.Bot.API.Types.Message)))
+                                                       GHC.Types.Bool)))
                      (a1 :: API.DeleteMessageRequest) ->
-                   f @ (Telegram.Bot.API.MakingRequests.Response
-                          Telegram.Bot.API.Types.Message)
+                   f @ (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
                      (cl
                         `cast`
                       (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
@@ -4837,8 +4830,7 @@ a8c9803ac35bec1e01698da407c3836e
                                    'Network.HTTP.Types.Method.POST
                                    200
                                    '[Servant.API.ContentTypes.JSON]
-                                   (Telegram.Bot.API.MakingRequests.Response
-                                      Telegram.Bot.API.Types.Message)>_N))
+                                   (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)>_N))
                         a1)
                        `cast`
                      (Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
@@ -4847,8 +4839,7 @@ a8c9803ac35bec1e01698da407c3836e
                                <'Network.HTTP.Types.Method.POST>_N
                                <200>_N
                                <'[Servant.API.ContentTypes.JSON]>_N
-                               <Telegram.Bot.API.MakingRequests.Response
-                                  Telegram.Bot.API.Types.Message>_N)))
+                               <Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool>_N)))
                     `cast`
                   (forall (mon :: <* -> *>_N) (mon' :: <* -> *>_N).
                    <Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
@@ -4860,7 +4851,7 @@ a8c9803ac35bec1e01698da407c3836e
                                                  200
                                                  '[Servant.API.ContentTypes.JSON]
                                                  (Telegram.Bot.API.MakingRequests.Response
-                                                    Telegram.Bot.API.Types.Message))>_R
+                                                    GHC.Types.Bool))>_R
                    ->_R <forall x. mon x -> mon' x>_R
                    ->_R <Servant.Client.Core.Internal.HasClient.Client
                            mon
@@ -4871,7 +4862,7 @@ a8c9803ac35bec1e01698da407c3836e
                                                  200
                                                  '[Servant.API.ContentTypes.JSON]
                                                  (Telegram.Bot.API.MakingRequests.Response
-                                                    Telegram.Bot.API.Types.Message))>_R
+                                                    GHC.Types.Bool))>_R
                    ->_R (<API.DeleteMessageRequest>_R
                          ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
                                             <Network.HTTP.Types.Method.StdMethod>_N
@@ -4880,19 +4871,19 @@ a8c9803ac35bec1e01698da407c3836e
                                             <200>_N
                                             <'[Servant.API.ContentTypes.JSON]>_N
                                             <Telegram.Bot.API.MakingRequests.Response
-                                               Telegram.Bot.API.Types.Message>_N))) ; Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
-                                                                                                    <mon'>_N
-                                                                                                    <mods>_N
-                                                                                                    <Servant.API.ContentTypes.JSON>_N
-                                                                                                    <cts>_N
-                                                                                                    <API.DeleteMessageRequest>_N
-                                                                                                    <Servant.API.Verbs.Verb
-                                                                                                       'Network.HTTP.Types.Method.POST
-                                                                                                       200
-                                                                                                       '[Servant.API.ContentTypes.JSON]
-                                                                                                       (Telegram.Bot.API.MakingRequests.Response
-                                                                                                          Telegram.Bot.API.Types.Message)>_N))) -}
-ce397bde7d43f3ebddfffb15aaa0e401
+                                               GHC.Types.Bool>_N))) ; Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                                                                    <mon'>_N
+                                                                                    <mods>_N
+                                                                                    <Servant.API.ContentTypes.JSON>_N
+                                                                                    <cts>_N
+                                                                                    <API.DeleteMessageRequest>_N
+                                                                                    <Servant.API.Verbs.Verb
+                                                                                       'Network.HTTP.Types.Method.POST
+                                                                                       200
+                                                                                       '[Servant.API.ContentTypes.JSON]
+                                                                                       (Telegram.Bot.API.MakingRequests.Response
+                                                                                          GHC.Types.Bool)>_N))) -}
+8898f8091105dedc3f60e190e2bb64e4
   $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>5 ::
     Servant.Client.Core.Internal.HasClient.HasClient
       Servant.Client.Internal.HttpClient.ClientM
@@ -4904,8 +4895,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                             'Network.HTTP.Types.Method.POST
                             200
                             '[Servant.API.ContentTypes.JSON]
-                            (Telegram.Bot.API.MakingRequests.Response
-                               Telegram.Bot.API.Types.Message))
+                            (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool))
   {- Strictness: m, Inline: CONLIKE,
      Unfolding: DFun: @ mods :: [*] @ cts :: [*].
                   @ Servant.Client.Internal.HttpClient.ClientM
@@ -4917,8 +4907,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                           'Network.HTTP.Types.Method.POST
                                           200
                                           '[Servant.API.ContentTypes.JSON]
-                                          (Telegram.Bot.API.MakingRequests.Response
-                                             Telegram.Bot.API.Types.Message))
+                                          (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool))
                   Servant.Client.Internal.HttpClient.$fRunClientClientM
                   (\ (eta :: Data.Proxy.Proxy
                                Servant.Client.Internal.HttpClient.ClientM)
@@ -4932,7 +4921,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                                       200
                                                       '[Servant.API.ContentTypes.JSON]
                                                       (Telegram.Bot.API.MakingRequests.Response
-                                                         Telegram.Bot.API.Types.Message)))
+                                                         GHC.Types.Bool)))
                      (eta2 :: Servant.Client.Core.Internal.Request.Request)
                      (body :: API.KickChatMemberRequest) ->
                    case eta1 of wild { Data.Proxy.Proxy ->
@@ -4940,8 +4929,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                      @ Network.HTTP.Types.Method.StdMethod
                      @ Servant.Client.Internal.HttpClient.ClientM
                      @ Servant.API.ContentTypes.JSON
-                     @ (Telegram.Bot.API.MakingRequests.Response
-                          Telegram.Bot.API.Types.Message)
+                     @ (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
                      @ 'Network.HTTP.Types.Method.POST
                      @ '[Servant.API.ContentTypes.JSON]
                      @ '[]
@@ -4964,8 +4952,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                              'Network.HTTP.Types.Method.POST
                              200
                              '[Servant.API.ContentTypes.JSON]
-                             (Telegram.Bot.API.MakingRequests.Response
-                                Telegram.Bot.API.Types.Message)))
+                             (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)))
                      (case eta2 of wild1 { Servant.Client.Core.Internal.Request.Request ds ds1 ds2 ds3 ds4 ds5 ds6 ->
                       Servant.Client.Core.Internal.Request.Request
                         @ Data.ByteString.Builder.Internal.Builder
@@ -5058,7 +5045,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                                  200
                                                  '[Servant.API.ContentTypes.JSON]
                                                  (Telegram.Bot.API.MakingRequests.Response
-                                                    Telegram.Bot.API.Types.Message))>_R
+                                                    GHC.Types.Bool))>_R
                    ->_R <Servant.Client.Core.Internal.Request.Request>_R
                    ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
                                       <Servant.Client.Internal.HttpClient.ClientM>_N
@@ -5071,7 +5058,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                          200
                                          '[Servant.API.ContentTypes.JSON]
                                          (Telegram.Bot.API.MakingRequests.Response
-                                            Telegram.Bot.API.Types.Message)>_N)))
+                                            GHC.Types.Bool)>_N)))
                   (\ @ mon :: * -> *
                      @ mon' :: * -> *
                      (pm :: Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM)
@@ -5085,7 +5072,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                                     200
                                                     '[Servant.API.ContentTypes.JSON]
                                                     (Telegram.Bot.API.MakingRequests.Response
-                                                       Telegram.Bot.API.Types.Message)))
+                                                       GHC.Types.Bool)))
                      (f :: forall x. mon x -> mon' x)
                      (cl :: Servant.Client.Core.Internal.HasClient.Client
                               mon
@@ -5098,10 +5085,9 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                                     200
                                                     '[Servant.API.ContentTypes.JSON]
                                                     (Telegram.Bot.API.MakingRequests.Response
-                                                       Telegram.Bot.API.Types.Message)))
+                                                       GHC.Types.Bool)))
                      (a1 :: API.KickChatMemberRequest) ->
-                   f @ (Telegram.Bot.API.MakingRequests.Response
-                          Telegram.Bot.API.Types.Message)
+                   f @ (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
                      (cl
                         `cast`
                       (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
@@ -5114,8 +5100,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                    'Network.HTTP.Types.Method.POST
                                    200
                                    '[Servant.API.ContentTypes.JSON]
-                                   (Telegram.Bot.API.MakingRequests.Response
-                                      Telegram.Bot.API.Types.Message)>_N))
+                                   (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)>_N))
                         a1)
                        `cast`
                      (Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
@@ -5124,8 +5109,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                <'Network.HTTP.Types.Method.POST>_N
                                <200>_N
                                <'[Servant.API.ContentTypes.JSON]>_N
-                               <Telegram.Bot.API.MakingRequests.Response
-                                  Telegram.Bot.API.Types.Message>_N)))
+                               <Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool>_N)))
                     `cast`
                   (forall (mon :: <* -> *>_N) (mon' :: <* -> *>_N).
                    <Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
@@ -5139,7 +5123,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                                  200
                                                  '[Servant.API.ContentTypes.JSON]
                                                  (Telegram.Bot.API.MakingRequests.Response
-                                                    Telegram.Bot.API.Types.Message))>_R
+                                                    GHC.Types.Bool))>_R
                    ->_R <forall x. mon x -> mon' x>_R
                    ->_R <Servant.Client.Core.Internal.HasClient.Client
                            mon
@@ -5152,7 +5136,7 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                                  200
                                                  '[Servant.API.ContentTypes.JSON]
                                                  (Telegram.Bot.API.MakingRequests.Response
-                                                    Telegram.Bot.API.Types.Message))>_R
+                                                    GHC.Types.Bool))>_R
                    ->_R (<API.KickChatMemberRequest>_R
                          ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
                                             <Network.HTTP.Types.Method.StdMethod>_N
@@ -5161,42 +5145,38 @@ ce397bde7d43f3ebddfffb15aaa0e401
                                             <200>_N
                                             <'[Servant.API.ContentTypes.JSON]>_N
                                             <Telegram.Bot.API.MakingRequests.Response
-                                               Telegram.Bot.API.Types.Message>_N))) ; Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
-                                                                                                    <mon'>_N
-                                                                                                    <mods>_N
-                                                                                                    <Servant.API.ContentTypes.JSON>_N
-                                                                                                    <cts>_N
-                                                                                                    <API.KickChatMemberRequest>_N
-                                                                                                    <Servant.API.Verbs.Verb
-                                                                                                       'Network.HTTP.Types.Method.POST
-                                                                                                       200
-                                                                                                       '[Servant.API.ContentTypes.JSON]
-                                                                                                       (Telegram.Bot.API.MakingRequests.Response
-                                                                                                          Telegram.Bot.API.Types.Message)>_N))) -}
-1736695414c34b29e49103f2be26e037
+                                               GHC.Types.Bool>_N))) ; Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                                                                    <mon'>_N
+                                                                                    <mods>_N
+                                                                                    <Servant.API.ContentTypes.JSON>_N
+                                                                                    <cts>_N
+                                                                                    <API.KickChatMemberRequest>_N
+                                                                                    <Servant.API.Verbs.Verb
+                                                                                       'Network.HTTP.Types.Method.POST
+                                                                                       200
+                                                                                       '[Servant.API.ContentTypes.JSON]
+                                                                                       (Telegram.Bot.API.MakingRequests.Response
+                                                                                          GHC.Types.Bool)>_N))) -}
+bd93534f3e6d9518f2cec0876ec1a0f9
   $s$fHasClientm:>4_$cclientWithRoute_$s$fMimeUnrenderTYPEJSONa ::
     Servant.API.ContentTypes.MimeUnrender
       Servant.API.ContentTypes.JSON
-      (Telegram.Bot.API.MakingRequests.Response
-         Telegram.Bot.API.Types.Message)
+      (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
   {- Strictness: m, Inline: CONLIKE,
      Unfolding: DFun:.
                   @ *
                   @ Servant.API.ContentTypes.JSON
-                  @ (Telegram.Bot.API.MakingRequests.Response
-                       Telegram.Bot.API.Types.Message)
+                  @ (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
                   Servant.API.ContentTypes.$fAcceptTYPEJSON
                   (\ (ds :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON) ->
                    Servant.API.ContentTypes.eitherDecodeLenient
-                     @ (Telegram.Bot.API.MakingRequests.Response
-                          Telegram.Bot.API.Types.Message)
+                     @ (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
                      API.$s$fFromJSONResponse)
                   (\ (p :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON)
                      (ds :: Network.HTTP.Media.MediaType.Internal.MediaType)
                      (eta :: Data.ByteString.Lazy.Internal.ByteString) ->
                    Servant.API.ContentTypes.eitherDecodeLenient
-                     @ (Telegram.Bot.API.MakingRequests.Response
-                          Telegram.Bot.API.Types.Message)
+                     @ (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
                      API.$s$fFromJSONResponse
                      eta) -}
 a952b47dbc0dc1d8ac5b47e18476fb09
@@ -6456,7 +6436,7 @@ f0069ef72295fba56a5716ee023b3551
                    ww5
                    ww6
                    w) -}
-807c9b19103c6d4a0c4e5b6219d907ec
+974f40c75594762d8ac8ee2f5cd235a1
   type BanUser =
     "kickChatMember"
     Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
@@ -6464,8 +6444,8 @@ f0069ef72295fba56a5716ee023b3551
                         Servant.API.Sub.:> Servant.API.Verbs.Post
                                              '[Servant.API.ContentTypes.JSON]
                                              (Telegram.Bot.API.MakingRequests.Response
-                                                Telegram.Bot.API.Types.Message))
-9b811ad2f29394a0216e244ea0935d7a
+                                                GHC.Types.Bool))
+11456d17977647d48f3dc699935e469a
   type DeleteMessage =
     "deleteMessage"
     Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
@@ -6473,7 +6453,7 @@ f0069ef72295fba56a5716ee023b3551
                         Servant.API.Sub.:> Servant.API.Verbs.Post
                                              '[Servant.API.ContentTypes.JSON]
                                              (Telegram.Bot.API.MakingRequests.Response
-                                                Telegram.Bot.API.Types.Message))
+                                                GHC.Types.Bool))
 2d74d13070094ec563ba88cbec5595f9
   data DeleteMessageRequest
     = DeleteMessageRequest {deleteMessageChatId :: Telegram.Bot.API.Types.ChatId,
@@ -6534,12 +6514,11 @@ a08ca440bfcfbc508850abab1ef74f34
                                       'GHC.Generics.NoSourceStrictness
                                       'GHC.Generics.DecidedLazy)
                                    (GHC.Generics.Rec0 Telegram.Bot.API.Types.UserId)))
-c28cdfe5fa64fc12b1f9c9e16f3cea58
+e1a34e341a2d2b4fb532c5c89f1673c9
   banUser ::
     Telegram.Bot.API.GettingUpdates.Update
     -> Servant.Client.Internal.HttpClient.ClientM
-         (Telegram.Bot.API.MakingRequests.Response
-            Telegram.Bot.API.Types.Message)
+         (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
   {- Arity: 1, Strictness: <L,1*U(A,1*U,A,A,A,A)>,
      Unfolding: (\ (upd :: Telegram.Bot.API.GettingUpdates.Update) ->
                  let {
@@ -6555,7 +6534,7 @@ c28cdfe5fa64fc12b1f9c9e16f3cea58
                        Servant.API.Sub.:> Servant.API.Verbs.Post
                                             '[Servant.API.ContentTypes.JSON]
                                             (Telegram.Bot.API.MakingRequests.Response
-                                               Telegram.Bot.API.Types.Message))
+                                               GHC.Types.Bool))
                     API.$s$fHasClientm:>4_$cclientWithRoute1
                       `cast`
                     (Sym (GHC.TypeLits.N:SSymbol[0]
@@ -6575,7 +6554,7 @@ c28cdfe5fa64fc12b1f9c9e16f3cea58
                                               Servant.API.Sub.:> Servant.API.Verbs.Post
                                                                    '[Servant.API.ContentTypes.JSON]
                                                                    (Telegram.Bot.API.MakingRequests.Response
-                                                                      Telegram.Bot.API.Types.Message))))
+                                                                      GHC.Types.Bool))))
                     Servant.Client.Core.Internal.Request.defaultRequest)
                    `cast`
                  (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
@@ -6589,15 +6568,15 @@ c28cdfe5fa64fc12b1f9c9e16f3cea58
                               200
                               '[Servant.API.ContentTypes.JSON]
                               (Telegram.Bot.API.MakingRequests.Response
-                                 Telegram.Bot.API.Types.Message)>_N) ; (<API.KickChatMemberRequest>_R
-                                                                        ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
-                                                                                      <Network.HTTP.Types.Method.StdMethod>_N
-                                                                                      <Servant.Client.Internal.HttpClient.ClientM>_N
-                                                                                      <'Network.HTTP.Types.Method.POST>_N
-                                                                                      <200>_N
-                                                                                      <'[Servant.API.ContentTypes.JSON]>_N
-                                                                                      <Telegram.Bot.API.MakingRequests.Response
-                                                                                         Telegram.Bot.API.Types.Message>_N)))
+                                 GHC.Types.Bool)>_N) ; (<API.KickChatMemberRequest>_R
+                                                        ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                                                      <Network.HTTP.Types.Method.StdMethod>_N
+                                                                      <Servant.Client.Internal.HttpClient.ClientM>_N
+                                                                      <'Network.HTTP.Types.Method.POST>_N
+                                                                      <200>_N
+                                                                      <'[Servant.API.ContentTypes.JSON]>_N
+                                                                      <Telegram.Bot.API.MakingRequests.Response
+                                                                         GHC.Types.Bool>_N)))
                    (API.KickChatMemberRequest
                       (case msg of wild {
                          GHC.Base.Nothing
@@ -6617,12 +6596,11 @@ c28cdfe5fa64fc12b1f9c9e16f3cea58
                               GHC.Base.Just a1
                               -> case a1 of wild3 { Telegram.Bot.API.Types.User ds46 ds47 ds48 ds49 ds50 ds51 ->
                                  ds46 } } } }))) -}
-2a3ba3852a5ee296f19750949b07e8d3
+4f4f1c4276fd0989baad91a6c77aae87
   deleteMessage ::
     Telegram.Bot.API.GettingUpdates.Update
     -> Servant.Client.Internal.HttpClient.ClientM
-         (Telegram.Bot.API.MakingRequests.Response
-            Telegram.Bot.API.Types.Message)
+         (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
   {- Arity: 1, Strictness: <L,1*U(A,1*U,A,A,A,A)>,
      Unfolding: (\ (upd :: Telegram.Bot.API.GettingUpdates.Update) ->
                  let {
@@ -6638,7 +6616,7 @@ c28cdfe5fa64fc12b1f9c9e16f3cea58
                        Servant.API.Sub.:> Servant.API.Verbs.Post
                                             '[Servant.API.ContentTypes.JSON]
                                             (Telegram.Bot.API.MakingRequests.Response
-                                               Telegram.Bot.API.Types.Message))
+                                               GHC.Types.Bool))
                     API.$s$fHasClientm:>4_$cclientWithRoute4
                       `cast`
                     (Sym (GHC.TypeLits.N:SSymbol[0]
@@ -6658,7 +6636,7 @@ c28cdfe5fa64fc12b1f9c9e16f3cea58
                                               Servant.API.Sub.:> Servant.API.Verbs.Post
                                                                    '[Servant.API.ContentTypes.JSON]
                                                                    (Telegram.Bot.API.MakingRequests.Response
-                                                                      Telegram.Bot.API.Types.Message))))
+                                                                      GHC.Types.Bool))))
                     Servant.Client.Core.Internal.Request.defaultRequest)
                    `cast`
                  (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
@@ -6672,15 +6650,15 @@ c28cdfe5fa64fc12b1f9c9e16f3cea58
                               200
                               '[Servant.API.ContentTypes.JSON]
                               (Telegram.Bot.API.MakingRequests.Response
-                                 Telegram.Bot.API.Types.Message)>_N) ; (<API.DeleteMessageRequest>_R
-                                                                        ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
-                                                                                      <Network.HTTP.Types.Method.StdMethod>_N
-                                                                                      <Servant.Client.Internal.HttpClient.ClientM>_N
-                                                                                      <'Network.HTTP.Types.Method.POST>_N
-                                                                                      <200>_N
-                                                                                      <'[Servant.API.ContentTypes.JSON]>_N
-                                                                                      <Telegram.Bot.API.MakingRequests.Response
-                                                                                         Telegram.Bot.API.Types.Message>_N)))
+                                 GHC.Types.Bool)>_N) ; (<API.DeleteMessageRequest>_R
+                                                        ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                                                      <Network.HTTP.Types.Method.StdMethod>_N
+                                                                      <Servant.Client.Internal.HttpClient.ClientM>_N
+                                                                      <'Network.HTTP.Types.Method.POST>_N
+                                                                      <200>_N
+                                                                      <'[Servant.API.ContentTypes.JSON]>_N
+                                                                      <Telegram.Bot.API.MakingRequests.Response
+                                                                         GHC.Types.Bool>_N)))
                    (API.DeleteMessageRequest
                       (case msg of wild {
                          GHC.Base.Nothing
@@ -6803,28 +6781,28 @@ family instance GHC.Generics.Rep [API.DeleteMessageRequest]
                                       v2
                                       v3
   = API.$fFromJSONKickChatMemberRequest_$s$fDatatypeMetaMetaData
-"SPEC/API $fFromJSONResponse @ Message" [orphan] forall (v :: Data.Aeson.Types.FromJSON.FromJSON
-                                                                Telegram.Bot.API.Types.Message)
-  Telegram.Bot.API.MakingRequests.$fFromJSONResponse @ Telegram.Bot.API.Types.Message
+"SPEC/API $fFromJSONResponse @ Bool" [orphan] forall (v :: Data.Aeson.Types.FromJSON.FromJSON
+                                                             GHC.Types.Bool)
+  Telegram.Bot.API.MakingRequests.$fFromJSONResponse @ GHC.Types.Bool
                                                      v
   = API.$s$fFromJSONResponse
 "SPEC/API $fHasClientm:>5 @ JSON @ DeleteMessageRequest @ ClientM @ (Verb
                                                                       'POST
                                                                       200
                                                                       '[JSON]
-                                                                      (Response Message)) _ _" forall @ mods :: [*]
-                                                                                                                                                                                                                                                                                                                                                                                                                    @ cts :: [*]
-                                                                                                                                                                                                                                                                                                                                                                                                                    (v1 :: Servant.Client.Core.Internal.HasClient.HasClient
-                                                                                                                                                                                                                                                                                                                                                                                                                             Servant.Client.Internal.HttpClient.ClientM
-                                                                                                                                                                                                                                                                                                                                                                                                                             (Servant.API.Verbs.Verb
-                                                                                                                                                                                                                                                                                                                                                                                                                                'Network.HTTP.Types.Method.POST
-                                                                                                                                                                                                                                                                                                                                                                                                                                200
-                                                                                                                                                                                                                                                                                                                                                                                                                                '[Servant.API.ContentTypes.JSON]
-                                                                                                                                                                                                                                                                                                                                                                                                                                (Telegram.Bot.API.MakingRequests.Response
-                                                                                                                                                                                                                                                                                                                                                                                                                                   Telegram.Bot.API.Types.Message)))
-                                                                                                                                                                                                                                                                                                                                                                                                                    (v :: Servant.API.ContentTypes.MimeRender
-                                                                                                                                                                                                                                                                                                                                                                                                                            Servant.API.ContentTypes.JSON
-                                                                                                                                                                                                                                                                                                                                                                                                                            API.DeleteMessageRequest)
+                                                                      (Response Bool)) _ _" forall @ mods :: [*]
+                                                                                                                                                                                                                                                                                                                                                                                                                 @ cts :: [*]
+                                                                                                                                                                                                                                                                                                                                                                                                                 (v1 :: Servant.Client.Core.Internal.HasClient.HasClient
+                                                                                                                                                                                                                                                                                                                                                                                                                          Servant.Client.Internal.HttpClient.ClientM
+                                                                                                                                                                                                                                                                                                                                                                                                                          (Servant.API.Verbs.Verb
+                                                                                                                                                                                                                                                                                                                                                                                                                             'Network.HTTP.Types.Method.POST
+                                                                                                                                                                                                                                                                                                                                                                                                                             200
+                                                                                                                                                                                                                                                                                                                                                                                                                             '[Servant.API.ContentTypes.JSON]
+                                                                                                                                                                                                                                                                                                                                                                                                                             (Telegram.Bot.API.MakingRequests.Response
+                                                                                                                                                                                                                                                                                                                                                                                                                                GHC.Types.Bool)))
+                                                                                                                                                                                                                                                                                                                                                                                                                 (v :: Servant.API.ContentTypes.MimeRender
+                                                                                                                                                                                                                                                                                                                                                                                                                         Servant.API.ContentTypes.JSON
+                                                                                                                                                                                                                                                                                                                                                                                                                         API.DeleteMessageRequest)
   Servant.Client.Core.Internal.HasClient.$fHasClientm:>5 @ Servant.API.ContentTypes.JSON
                                                          @ API.DeleteMessageRequest
                                                          @ Servant.Client.Internal.HttpClient.ClientM
@@ -6833,7 +6811,7 @@ family instance GHC.Generics.Rep [API.DeleteMessageRequest]
                                                               200
                                                               '[Servant.API.ContentTypes.JSON]
                                                               (Telegram.Bot.API.MakingRequests.Response
-                                                                 Telegram.Bot.API.Types.Message))
+                                                                 GHC.Types.Bool))
                                                          @ mods
                                                          @ cts
                                                          v
@@ -6845,19 +6823,19 @@ family instance GHC.Generics.Rep [API.DeleteMessageRequest]
                                                                        'POST
                                                                        200
                                                                        '[JSON]
-                                                                       (Response Message)) _ _" forall @ mods :: [*]
-                                                                                                                                                                                                                                                                                                                                                                                                                         @ cts :: [*]
-                                                                                                                                                                                                                                                                                                                                                                                                                         (v1 :: Servant.Client.Core.Internal.HasClient.HasClient
-                                                                                                                                                                                                                                                                                                                                                                                                                                  Servant.Client.Internal.HttpClient.ClientM
-                                                                                                                                                                                                                                                                                                                                                                                                                                  (Servant.API.Verbs.Verb
-                                                                                                                                                                                                                                                                                                                                                                                                                                     'Network.HTTP.Types.Method.POST
-                                                                                                                                                                                                                                                                                                                                                                                                                                     200
-                                                                                                                                                                                                                                                                                                                                                                                                                                     '[Servant.API.ContentTypes.JSON]
-                                                                                                                                                                                                                                                                                                                                                                                                                                     (Telegram.Bot.API.MakingRequests.Response
-                                                                                                                                                                                                                                                                                                                                                                                                                                        Telegram.Bot.API.Types.Message)))
-                                                                                                                                                                                                                                                                                                                                                                                                                         (v :: Servant.API.ContentTypes.MimeRender
-                                                                                                                                                                                                                                                                                                                                                                                                                                 Servant.API.ContentTypes.JSON
-                                                                                                                                                                                                                                                                                                                                                                                                                                 API.KickChatMemberRequest)
+                                                                       (Response Bool)) _ _" forall @ mods :: [*]
+                                                                                                                                                                                                                                                                                                                                                                                                                      @ cts :: [*]
+                                                                                                                                                                                                                                                                                                                                                                                                                      (v1 :: Servant.Client.Core.Internal.HasClient.HasClient
+                                                                                                                                                                                                                                                                                                                                                                                                                               Servant.Client.Internal.HttpClient.ClientM
+                                                                                                                                                                                                                                                                                                                                                                                                                               (Servant.API.Verbs.Verb
+                                                                                                                                                                                                                                                                                                                                                                                                                                  'Network.HTTP.Types.Method.POST
+                                                                                                                                                                                                                                                                                                                                                                                                                                  200
+                                                                                                                                                                                                                                                                                                                                                                                                                                  '[Servant.API.ContentTypes.JSON]
+                                                                                                                                                                                                                                                                                                                                                                                                                                  (Telegram.Bot.API.MakingRequests.Response
+                                                                                                                                                                                                                                                                                                                                                                                                                                     GHC.Types.Bool)))
+                                                                                                                                                                                                                                                                                                                                                                                                                      (v :: Servant.API.ContentTypes.MimeRender
+                                                                                                                                                                                                                                                                                                                                                                                                                              Servant.API.ContentTypes.JSON
+                                                                                                                                                                                                                                                                                                                                                                                                                              API.KickChatMemberRequest)
   Servant.Client.Core.Internal.HasClient.$fHasClientm:>5 @ Servant.API.ContentTypes.JSON
                                                          @ API.KickChatMemberRequest
                                                          @ Servant.Client.Internal.HttpClient.ClientM
@@ -6866,7 +6844,7 @@ family instance GHC.Generics.Rep [API.DeleteMessageRequest]
                                                               200
                                                               '[Servant.API.ContentTypes.JSON]
                                                               (Telegram.Bot.API.MakingRequests.Response
-                                                                 Telegram.Bot.API.Types.Message))
+                                                                 GHC.Types.Bool))
                                                          @ mods
                                                          @ cts
                                                          v
@@ -6874,11 +6852,11 @@ family instance GHC.Generics.Rep [API.DeleteMessageRequest]
   = API.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>5
       @ mods
       @ cts
-"SPEC/API $fMimeUnrenderTYPEJSONa @ (Response Message)" [orphan] forall (v :: Data.Aeson.Types.FromJSON.FromJSON
-                                                                                (Telegram.Bot.API.MakingRequests.Response
-                                                                                   Telegram.Bot.API.Types.Message))
+"SPEC/API $fMimeUnrenderTYPEJSONa @ (Response Bool)" [orphan] forall (v :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                             (Telegram.Bot.API.MakingRequests.Response
+                                                                                GHC.Types.Bool))
   Servant.API.ContentTypes.$fMimeUnrenderTYPEJSONa @ (Telegram.Bot.API.MakingRequests.Response
-                                                        Telegram.Bot.API.Types.Message)
+                                                        GHC.Types.Bool)
                                                    v
   = API.$s$fHasClientm:>4_$cclientWithRoute_$s$fMimeUnrenderTYPEJSONa
 "SPEC/API $fSelectorMetaMetaSel @ ('Just

@@ -28,7 +28,6 @@ library
   exposed-modules:
       Lib
       API 
-      Heroku
   hs-source-dirs:
       src
   build-depends:
