@@ -28,10 +28,12 @@ library
   exposed-modules:
       Lib
       API 
+      Heroku
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      async
+    , base >=4.7 && <5
     , telegram-bot-simple
     , text
     , regex-pcre

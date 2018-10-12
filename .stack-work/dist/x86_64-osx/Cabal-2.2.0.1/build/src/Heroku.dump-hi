@@ -1,20 +1,20 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-11 13:13:28.459775 UTC
+2018-10-12 21:02:50.441717 UTC
 
-interface moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt:Heroku 8043
-  interface hash: 47aa0cf7671b54cbd1904de7a5eb96fb
-  ABI hash: 963178da3547e5ae29cb27d61f0f79b3
-  export-list hash: c236f8c8909805687b0c10b0afb57a72
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+interface moderator-bot-0.1.0.0:Heroku 8043
+  interface hash: d0b47d64347380a63c599155ce808116
+  ABI hash: eb87de69b53c3bbd0e4ba36b2d3cdef9
+  export-list hash: c138ef42720c4fba10d1e8d5e9ca756b
+  orphan hash: f67ce7fdd46e0efa97cfdaf21e4df1bd
   flag hash: cf6852f6d830525220ba61c1c99ba0e6
-  opt_hash: 45d5e266c9ab751696f96731a7429711
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   sig of: Nothing
   used TH splices: False
   where
 exports:
-  Heroku.runHerokuPing
+  Heroku.serveHerokuPingServer
 module dependencies:
 package dependencies: aeson-1.3.1.1 appar-0.1.4 array-0.5.2.0
                       async-2.2.1 attoparsec-0.13.2.2 attoparsec-iso8601-1.0.1.0
@@ -42,24 +42,24 @@ package dependencies: aeson-1.3.1.1 appar-0.1.4 array-0.5.2.0
                       uri-bytestring-0.3.2.0 utf8-string-1.0.1.1 uuid-types-1.0.3
                       vault-0.3.1.2 vector-0.12.0.1 wai-3.2.1.2 wai-app-static-3.1.6.2
                       warp-3.2.25 word8-0.1.3 zlib-0.6.2
-orphans: basement-0.0.8:Basement.UArray.Base
+orphans: stm-2.4.5.1:Control.Monad.STM
+         network-2.6.3.6:Network.Socket basement-0.0.8:Basement.UArray.Base
          basement-0.0.8:Basement.Block
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          th-lift-instances-0.1.11:Instances.TH.Lift
          th-lift-0.7.11:Language.Haskell.TH.Lift
          vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         hashable-1.2.7.0:Data.Hashable.Generic
+         transformers-0.5.5.0:Control.Monad.Trans.Error
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
-         stm-2.4.5.1:Control.Monad.STM network-2.6.3.6:Network.Socket
-         time-1.8.0.2:Data.Time.Format.Parse
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
-         time-1.8.0.2:Data.Time.Calendar.Gregorian
-         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         transformers-0.5.5.0:Control.Monad.Trans.Error
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
-         text-1.2.3.1:Data.Text binary-0.8.5.1:Data.Binary.Generic
-         bytestring-0.10.8.2:Data.ByteString.Builder
-         text-1.2.3.1:Data.Text.Show base-4.11.1.0:GHC.Float
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.11.1.0:GHC.Float
          base-4.11.1.0:GHC.Base
 family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
@@ -141,9 +141,11 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          vector-0.12.0.1:Data.Vector.Unboxed
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
                          zlib-0.6.2:Codec.Compression.Zlib.Stream
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
 import  -/  base-4.11.1.0:Data.Proxy a80a60a2fdceabfeb4d110d23b808844
 import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.Environment 052ec29b676ed8efc1decd97140a27e3
 import  -/  base-4.11.1.0:Text.Read 6c02630607b565ffcb34e8127673989b
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
 import  -/  servant-0.14.1:Servant.API 453a6de7aee1f7623799122ef550fab8
@@ -158,15 +160,709 @@ import  -/  text-1.2.3.1:Data.Text.Internal 65b2a62b0918b56ea0591106f5d77acc
 import  -/  wai-3.2.1.2:Network.Wai 5fa0068e046eb1067b7a11ceae7c7403
 import  -/  warp-3.2.25:Network.Wai.Handler.Warp d2f7f59528ccdd30696b513ff009743a
 import  -/  warp-3.2.25:Network.Wai.Handler.Warp.Run 745a134574dde924f365bcf16ec109fb
-dd4e8d477e9a015f1797b7e0a5f2946b
+043aa5ba6da38b7eb5bd14a6a8ee0cc3
+  $s$fAllCTRender:a ::
+    Servant.API.ContentTypes.AllCTRender
+      '[Servant.API.ContentTypes.JSON] Data.Text.Internal.Text
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.API.ContentTypes.JSON]
+                  @ Data.Text.Internal.Text
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$callMime
+                     @ Servant.API.ContentTypes.JSON
+                     @ '[]
+                     Servant.API.ContentTypes.$fAcceptTYPEJSON
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N)))
+                    `cast`
+                  (Sym (Servant.API.ContentTypes.N:AllMime[0]
+                            <'[Servant.API.ContentTypes.JSON]>_N))
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$chandleAcceptH
+                     @ Servant.API.ContentTypes.JSON
+                     @ '[]
+                     @ Data.Text.Internal.Text
+                     Servant.API.ContentTypes.$fAcceptTYPEJSON
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N))
+                     Heroku.$s$fAllCTRender:a_$s$fAllMimeRender:a0) -}
+ebb8bf99175595dcfa9f6af60b72dd26
+  $s$fAllCTRender:a_$callMime ::
+    Data.Proxy.Proxy '[Servant.API.ContentTypes.JSON]
+    -> [Network.HTTP.Media.MediaType.Internal.MediaType]
+  {- Arity: 1, Strictness: <L,A>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w2 :: Data.Proxy.Proxy '[Servant.API.ContentTypes.JSON]) ->
+                 GHC.Base.++_$s++
+                   @ Network.HTTP.Media.MediaType.Internal.MediaType
+                   (GHC.Types.[] @ Network.HTTP.Media.MediaType.Internal.MediaType)
+                   Servant.API.ContentTypes.$fAcceptTYPEJSON4
+                   Servant.API.ContentTypes.$fAcceptTYPEJSON2) -}
+08afc81f8dbd1e8fda533ce5be013f28
+  $s$fAllCTRender:a_$s$fAllMimeRender:a0 ::
+    Servant.API.ContentTypes.AllMimeRender
+      '[Servant.API.ContentTypes.JSON] Data.Text.Internal.Text
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.API.ContentTypes.JSON]
+                  @ Data.Text.Internal.Text
+                  (\ (eta :: Data.Proxy.Proxy '[Servant.API.ContentTypes.JSON]) ->
+                   GHC.Types.:
+                     @ Network.HTTP.Media.MediaType.Internal.MediaType
+                     Servant.API.ContentTypes.$fAcceptTYPEJSON4
+                     Servant.API.ContentTypes.$fAcceptTYPEJSON2)
+                    `cast`
+                  (Sym (Servant.API.ContentTypes.N:AllMime[0]
+                            <'[Servant.API.ContentTypes.JSON]>_N))
+                  (Servant.API.ContentTypes.$fAllMimeRender:a0_$callMimeRender
+                     @ Servant.API.ContentTypes.JSON
+                     @ Data.Text.Internal.Text
+                     Heroku.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa) -}
+51e05b7ccf5e237756d2923a1cccbb91
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa ::
+    Servant.API.ContentTypes.MimeRender
+      Servant.API.ContentTypes.JSON Data.Text.Internal.Text
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ *
+                  @ Servant.API.ContentTypes.JSON
+                  @ Data.Text.Internal.Text
+                  Servant.API.ContentTypes.$fAcceptTYPEJSON
+                  (\ (ds :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON)
+                     (eta :: Data.Text.Internal.Text) ->
+                   Data.ByteString.Builder.toLazyByteString
+                     (Data.Aeson.Encoding.Builder.text1 eta)
+                       `cast`
+                     ((forall (r :: <*>_N).
+                       <Data.ByteString.Builder.Internal.BuildStep r>_R
+                       ->_R <Data.ByteString.Builder.Internal.BufferRange>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <Data.ByteString.Builder.Internal.BuildSignal
+                                        r>_R)) ; Sym (Data.ByteString.Builder.Internal.N:Builder[0]))) -}
+76749ebbf79587c9a3454ecdb9f06621
+  $s$fAllMimeRender:a0_$callMimeRender ::
+    Data.Proxy.Proxy '[Servant.API.ContentTypes.JSON]
+    -> Data.Text.Internal.Text
+    -> [(Network.HTTP.Media.MediaType.Internal.MediaType,
+         Data.ByteString.Lazy.Internal.ByteString)]
+  {- Arity: 2, Strictness: <L,A><L,U>, Inline: [0],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w1 :: Data.Proxy.Proxy '[Servant.API.ContentTypes.JSON])
+                   (w2 :: Data.Text.Internal.Text) ->
+                 Servant.API.ContentTypes.$w$callMimeRender1
+                   @ Servant.API.ContentTypes.JSON
+                   @ Data.Text.Internal.Text
+                   Heroku.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa
+                   w2) -}
+d834443daafc45c97e803d2eee2ba87d
+  $s$fHasServerTYPE:>context4_$croute1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (200) -}
+69694dbf1e6eada3cc1a1e711bfb0d1c
+  $s$fHasServerTYPE:>context4_$croute3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/"#) -}
+7eb18ad8fcdef0f381731f1e8e0003cb
+  $s$fHasServerTYPE:>context4_$croute_v2 :: GHC.TypeNats.KnownNat 200
+  {- Unfolding: (case Heroku.$s$fHasServerTYPE:>context4_$croute1 of wild {
+                   GHC.Integer.Type.S# i#
+                   -> case GHC.Prim.>=# i# 0# of lwild {
+                        DEFAULT
+                        -> (GHC.Natural.underflowError @ GHC.Natural.Natural)
+                             `cast`
+                           (Sym (GHC.TypeNats.N:SNat[0]
+                                     <200>_P) ; Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N)
+                        1#
+                        -> (GHC.Natural.NatS# (GHC.Prim.int2Word# i#))
+                             `cast`
+                           (Sym (GHC.TypeNats.N:SNat[0]
+                                     <200>_P) ; Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N) }
+                   GHC.Integer.Type.Jp# dt
+                   -> case GHC.Prim.uncheckedIShiftRL#
+                             (GHC.Prim.sizeofByteArray# dt)
+                             3# of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.sizeofByteArray# dt of wild2 {
+                             DEFAULT
+                             -> (GHC.Natural.NatJ# dt)
+                                  `cast`
+                                (Sym (GHC.TypeNats.N:SNat[0]
+                                          <200>_P) ; Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N)
+                             0#
+                             -> (GHC.Natural.underflowError @ GHC.Natural.Natural)
+                                  `cast`
+                                (Sym (GHC.TypeNats.N:SNat[0]
+                                          <200>_P) ; Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N) }
+                        1#
+                        -> case GHC.Prim.indexWordArray# dt 0# of wild2 { DEFAULT ->
+                           (GHC.Natural.NatS# wild2)
+                             `cast`
+                           (Sym (GHC.TypeNats.N:SNat[0]
+                                     <200>_P) ; Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N) } }
+                   GHC.Integer.Type.Jn# ipv
+                   -> (GHC.Natural.underflowError @ GHC.Natural.Natural)
+                        `cast`
+                      (Sym (GHC.TypeNats.N:SNat[0]
+                                <200>_P) ; Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N) }) -}
+ee812d70e5926119ba83ca6b4a198dc1
+  $sencode ::
+    Data.Text.Internal.Text -> Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 1, Strictness: <L,U(U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: Data.Text.Internal.Text) ->
+                 Data.ByteString.Builder.toLazyByteString
+                   (Data.Aeson.Encoding.Builder.text1 eta)
+                     `cast`
+                   ((forall (r :: <*>_N).
+                     <Data.ByteString.Builder.Internal.BuildStep r>_R
+                     ->_R <Data.ByteString.Builder.Internal.BufferRange>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <Data.ByteString.Builder.Internal.BuildSignal
+                                      r>_R)) ; Sym (Data.ByteString.Builder.Internal.N:Builder[0]))) -}
+da13038fd72185e02fa47e06c20f266d
   $trModule :: GHC.Types.Module
-e924cc7e94589b08e04b24db826a336b
-  type API =
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Heroku.$trModule3
+                   Heroku.$trModule1) -}
+c9cce335d276bf86e4a40c3344defef3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Heroku.$trModule2) -}
+f98f750f13ba4f97cd269b1a2fc8d03d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Heroku"#) -}
+c5b62acf5ec61838cf60b96635d9b4cd
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Heroku.$trModule4) -}
+ee0c7960de346410893cabb7bf7ab6d3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE"#) -}
+8ca34e2cfadbd452dd78e3808f9f8824
+  type Root =
     "/"
     Servant.API.Sub.:> Servant.API.Verbs.Get
                          '[Servant.API.ContentTypes.JSON] Data.Text.Internal.Text
-b7483002f41e010736440f9d01b8edc4
-  runHerokuPing :: GHC.Base.String -> GHC.Types.IO ()
+9c04c23a60798c86add07dbc1c00081b
+  serveHerokuPingServer :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Heroku.serveHerokuPingServer1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+94e7ce423d55f6b0a6647c514c416cc8
+  serveHerokuPingServer1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Heroku.serveHerokuPingServer_name
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> case System.Environment.getEnv2
+                             ipv2
+                             Heroku.serveHerokuPingServer_name
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                      of {}
+                   GHC.Base.Just x
+                   -> Network.Wai.Handler.Warp.Run.run2
+                        (Network.Wai.Handler.Warp.Settings.Settings
+                           (case Text.Read.readEither8
+                                   @ Network.Wai.Handler.Warp.Types.Port
+                                   (Text.ParserCombinators.ReadP.run
+                                      @ Network.Wai.Handler.Warp.Types.Port
+                                      (GHC.Read.$fReadInt_$sreadNumber
+                                         GHC.Read.$fReadInt2
+                                         Text.ParserCombinators.ReadPrec.minPrec
+                                         @ Network.Wai.Handler.Warp.Types.Port
+                                         (Text.Read.readEither7
+                                            @ Network.Wai.Handler.Warp.Types.Port))
+                                      x) of wild1 {
+                              [] -> Heroku.serveHerokuPingServer13
+                              : x1 ds
+                              -> case ds of wild2 {
+                                   [] -> x1 : ipv4 ipv5 -> Heroku.serveHerokuPingServer12 } })
+                           Network.Wai.Handler.Warp.Settings.defaultSettings16
+                           Network.Wai.Handler.Warp.Settings.defaultOnException1
+                             `cast`
+                           (<GHC.Base.Maybe Network.Wai.Internal.Request>_R
+                            ->_R <GHC.Exception.SomeException>_R
+                            ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                           Network.Wai.Handler.Warp.Settings.defaultOnExceptionResponse
+                           Network.Wai.Handler.Warp.Settings.defaultSettings15
+                             `cast`
+                           (<Network.Socket.Types.SockAddr>_R
+                            ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
+                           Network.Wai.Handler.Warp.Settings.defaultSettings14
+                             `cast`
+                           (<Network.Socket.Types.SockAddr>_R
+                            ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                           Network.Wai.Handler.Warp.Settings.defaultSettings13
+                           (GHC.Base.Nothing @ Network.Wai.Handler.Warp.Timeout.Manager)
+                           Network.Wai.Handler.Warp.Settings.defaultSettings12
+                           Network.Wai.Handler.Warp.Settings.defaultSettings12
+                           Network.Wai.Handler.Warp.Settings.defaultSettings11
+                             `cast`
+                           (Sym (GHC.Types.N:IO[0] <()>_R))
+                           Network.Wai.Handler.Warp.Settings.defaultSettings10
+                             `cast`
+                           (<(forall a. GHC.Types.IO a -> GHC.Types.IO a)
+                             -> GHC.Types.IO ()>_R
+                            ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                           GHC.Types.False
+                           Network.Wai.Handler.Warp.Settings.defaultSettings9
+                             `cast`
+                           (<GHC.Types.IO ()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                           Network.Wai.Handler.Warp.Settings.defaultSettings6
+                           Network.Wai.Handler.Warp.Settings.defaultSettings4
+                           Network.Wai.Handler.Warp.Settings.ProxyProtocolNone
+                           Network.Wai.Handler.Warp.Settings.defaultSettings3
+                           GHC.Types.True
+                           Network.Wai.Handler.Warp.Settings.defaultSettings2
+                             `cast`
+                           (<Network.Wai.Internal.Request>_R
+                            ->_R <Network.HTTP.Types.Status.Status>_R
+                            ->_R <GHC.Base.Maybe GHC.Integer.Type.Integer>_R
+                            ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                           Network.Wai.Handler.Warp.Settings.defaultSettings1
+                             `cast`
+                           (<Network.Wai.Internal.Request>_R
+                            ->_R <Data.ByteString.Internal.ByteString>_R
+                            ->_R <GHC.Integer.Type.Integer>_R
+                            ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                           (GHC.Base.Nothing @ GHC.Types.Int))
+                        Heroku.serveHerokuPingServer2
+                        ipv2 } } }) -}
+4d14d277bbe27515244fa24de2339786
+  serveHerokuPingServer10 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      ()
+      (Servant.Server.Internal.Server
+         (Servant.API.Verbs.Verb
+            'Network.HTTP.Types.Method.GET
+            200
+            '[Servant.API.ContentTypes.JSON]
+            Data.Text.Internal.Text))
+    -> Servant.Server.Internal.Router.Router ()
+  {- Unfolding: (Servant.Server.Internal.$w$croute12
+                   @ Network.HTTP.Types.Method.StdMethod
+                   @ '[Servant.API.ContentTypes.JSON]
+                   @ Data.Text.Internal.Text
+                   @ 'Network.HTTP.Types.Method.GET
+                   @ 200
+                   @ '[]
+                   Heroku.$s$fAllCTRender:a
+                   Servant.API.Verbs.$fReflectMethodStdMethodGET_$creflectMethod
+                     `cast`
+                   (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                             <Network.HTTP.Types.Method.StdMethod>_N
+                             <'Network.HTTP.Types.Method.GET>_N))
+                   Heroku.$s$fHasServerTYPE:>context4_$croute_v2
+                   @ ()
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ (Servant.API.Verbs.Verb
+                           'Network.HTTP.Types.Method.GET
+                           200
+                           '[Servant.API.ContentTypes.JSON]
+                           Data.Text.Internal.Text))) -}
+e923fa93457c5fc565fb377d8d9bc8ee
+  serveHerokuPingServer11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Servant.Server.Internal.$wouter
+                   ipv1
+                   4#
+                   (GHC.CString.unpackCString#
+                      Heroku.$s$fHasServerTYPE:>context4_$croute3)
+                   0#
+                   ipv }) -}
+1450b9aa87008a1b14bb63072bdf32e2
+  serveHerokuPingServer12 :: Network.Wai.Handler.Warp.Types.Port
+  {- Strictness: x -}
+311f4c6bcdf52b49a97652216ae9d756
+  serveHerokuPingServer13 :: Network.Wai.Handler.Warp.Types.Port
+  {- Strictness: x -}
+c009bd6e88c113b4afc25b52b198b134
+  serveHerokuPingServer14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PORT"#) -}
+b6fbc3e9e327e8db825ca8ef0f20d70e
+  serveHerokuPingServer2 :: Network.Wai.Application
+  {- Arity: 2,
+     Unfolding: (Servant.Server.Internal.RoutingApplication.toApplication
+                   Heroku.serveHerokuPingServer3) -}
+5869c8660947da778cdd825ac2dd007a
+  serveHerokuPingServer3 ::
+    Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Arity: 2,
+     Unfolding: (Servant.Server.Internal.Router.runRouterEnv
+                   @ ()
+                   Heroku.serveHerokuPingServer4
+                   GHC.Tuple.()) -}
+02a660b0ae8e814252ff4320ec32d500
+  serveHerokuPingServer4 ::
+    Servant.Server.Internal.Router.Router'
+      () Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Strictness: m1,
+     Unfolding: (Servant.Server.Internal.Router.StaticRouter
+                   @ ()
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   Heroku.serveHerokuPingServer5
+                   (GHC.Types.[]
+                      @ (()
+                         -> Servant.Server.Internal.RoutingApplication.RoutingApplication))) -}
+c01d416d6aefcc887db991b5e42ac60f
+  serveHerokuPingServer5 ::
+    Data.Map.Internal.Map
+      Data.Text.Internal.Text
+      (Servant.Server.Internal.Router.Router'
+         () Servant.Server.Internal.RoutingApplication.RoutingApplication)
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Heroku.serveHerokuPingServer11 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of dt { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                 Data.Map.Internal.Bin
+                   @ Data.Text.Internal.Text
+                   @ (Servant.Server.Internal.Router.Router'
+                        () Servant.Server.Internal.RoutingApplication.RoutingApplication)
+                   1#
+                   dt
+                   Heroku.serveHerokuPingServer6
+                   (Data.Map.Internal.Tip
+                      @ Data.Text.Internal.Text
+                      @ (Servant.Server.Internal.Router.Router'
+                           () Servant.Server.Internal.RoutingApplication.RoutingApplication))
+                   (Data.Map.Internal.Tip
+                      @ Data.Text.Internal.Text
+                      @ (Servant.Server.Internal.Router.Router'
+                           ()
+                           Servant.Server.Internal.RoutingApplication.RoutingApplication)) } }) -}
+88cd873e440433b47ec93441fa53285a
+  serveHerokuPingServer6 :: Servant.Server.Internal.Router.Router ()
+  {- Unfolding: (Heroku.serveHerokuPingServer10
+                   Heroku.serveHerokuPingServer7
+                     `cast`
+                   (Servant.Server.Internal.RoutingApplication.Delayed
+                      <()>_R
+                      (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m6[0]
+                                <"/">_N
+                                <Servant.API.Verbs.Verb
+                                   'Network.HTTP.Types.Method.GET
+                                   200
+                                   '[Servant.API.ContentTypes.JSON]
+                                   Data.Text.Internal.Text>_N
+                                <Servant.Server.Internal.Handler.Handler>_N)))_R) -}
+a78ff965f3694b938ef9a816c6594ccd
+  serveHerokuPingServer7 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      ()
+      (Servant.Server.Internal.ServerT
+         Heroku.Root Servant.Server.Internal.Handler.Handler)
+  {- Unfolding: (Servant.Server.Internal.RoutingApplication.Delayed
+                   @ ()
+                   @ (Servant.Server.Internal.ServerT
+                        Heroku.Root Servant.Server.Internal.Handler.Handler)
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   (Servant.Server.Internal.RoutingApplication.emptyDelayed4 @ ())
+                     `cast`
+                   (<()>_R
+                    ->_R (<Network.Wai.Internal.Request>_R
+                          ->_R (<GHC.IORef.IORef
+                                   Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                ->_R Sym (GHC.Types.N:IO[0]
+                                              <Servant.Server.Internal.RoutingApplication.RouteResult
+                                                 ()>_R) ; Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                                   <GHC.Types.IO>_R
+                                                                   <()>_N)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                       <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                          GHC.Types.IO>_R
+                                                                                       <()>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                            <*>_N
+                                                                                                            <Network.Wai.Internal.Request>_R
+                                                                                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                                                  GHC.Types.IO)>_R
+                                                                                                            <()>_N) ; Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed2
+                     `cast`
+                   ((<Network.Wai.Internal.Request>_R
+                     ->_R (<GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Servant.Server.Internal.RoutingApplication.RouteResult
+                                            ()>_R) ; Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                              <GHC.Types.IO>_R
+                                                              <()>_N)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                  <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                     GHC.Types.IO>_R
+                                                                                  <()>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Network.Wai.Internal.Request>_R
+                                                                                                       <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                          (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                                             GHC.Types.IO)>_R
+                                                                                                       <()>_N) ; Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed2
+                     `cast`
+                   ((<Network.Wai.Internal.Request>_R
+                     ->_R (<GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Servant.Server.Internal.RoutingApplication.RouteResult
+                                            ()>_R) ; Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                              <GHC.Types.IO>_R
+                                                              <()>_N)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                  <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                     GHC.Types.IO>_R
+                                                                                  <()>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Network.Wai.Internal.Request>_R
+                                                                                                       <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                          (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                                             GHC.Types.IO)>_R
+                                                                                                       <()>_N) ; Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed2
+                     `cast`
+                   ((<Network.Wai.Internal.Request>_R
+                     ->_R (<GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Servant.Server.Internal.RoutingApplication.RouteResult
+                                            ()>_R) ; Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                              <GHC.Types.IO>_R
+                                                              <()>_N)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                  <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                     GHC.Types.IO>_R
+                                                                                  <()>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Network.Wai.Internal.Request>_R
+                                                                                                       <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                          (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                                             GHC.Types.IO)>_R
+                                                                                                       <()>_N) ; Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed2
+                     `cast`
+                   ((<Network.Wai.Internal.Request>_R
+                     ->_R (<GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Servant.Server.Internal.RoutingApplication.RouteResult
+                                            ()>_R) ; Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                              <GHC.Types.IO>_R
+                                                              <()>_N)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                  <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                     GHC.Types.IO>_R
+                                                                                  <()>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Network.Wai.Internal.Request>_R
+                                                                                                       <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                          (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                                             GHC.Types.IO)>_R
+                                                                                                       <()>_N) ; Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed2
+                     `cast`
+                   ((<Network.Wai.Internal.Request>_R
+                     ->_R (<GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Servant.Server.Internal.RoutingApplication.RouteResult
+                                            ()>_R) ; Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                              <GHC.Types.IO>_R
+                                                              <()>_N)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                  <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                     GHC.Types.IO>_R
+                                                                                  <()>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Network.Wai.Internal.Request>_R
+                                                                                                       <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                          (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                                             GHC.Types.IO)>_R
+                                                                                                       <()>_N) ; Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed2
+                     `cast`
+                   ((<Network.Wai.Internal.Request>_R
+                     ->_R (<GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Servant.Server.Internal.RoutingApplication.RouteResult
+                                            ()>_R) ; Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                              <GHC.Types.IO>_R
+                                                              <()>_N)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                  <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                     GHC.Types.IO>_R
+                                                                                  <()>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Network.Wai.Internal.Request>_R
+                                                                                                       <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                          (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                                             GHC.Types.IO)>_R
+                                                                                                       <()>_N) ; Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed1
+                     `cast`
+                   (<()>_R
+                    ->_R (<Network.Wai.Internal.Request>_R
+                          ->_R (<GHC.IORef.IORef
+                                   Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                ->_R Sym (GHC.Types.N:IO[0]
+                                              <Servant.Server.Internal.RoutingApplication.RouteResult
+                                                 ()>_R) ; Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                                   <GHC.Types.IO>_R
+                                                                   <()>_N)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                       <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                          GHC.Types.IO>_R
+                                                                                       <()>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                            <*>_N
+                                                                                                            <Network.Wai.Internal.Request>_R
+                                                                                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                                                                  GHC.Types.IO)>_R
+                                                                                                            <()>_N) ; Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))
+                   Heroku.serveHerokuPingServer8) -}
+51a0d815977c62d60507afd8999ddd1f
+  serveHerokuPingServer8 ::
+    ()
+    -> ()
+    -> ()
+    -> ()
+    -> ()
+    -> Network.Wai.Internal.Request
+    -> Servant.Server.Internal.RoutingApplication.RouteResult
+         (Servant.Server.Internal.ServerT
+            Heroku.Root Servant.Server.Internal.Handler.Handler)
+  {- Arity: 6, Strictness: <L,A><L,A><L,A><L,A><L,A><L,A>m3,
+     Unfolding: (\ (ds :: ())
+                   (ds1 :: ())
+                   (ds2 :: ())
+                   (ds3 :: ())
+                   (ds4 :: ())
+                   (ds5 :: Network.Wai.Internal.Request) ->
+                 Heroku.serveHerokuPingServer_result) -}
+88bf2cee0adf355e866ed853ce018fcb
+  serveHerokuPingServer9 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr
+            Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s,
+                    Data.Either.Right
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      @ Data.Text.Internal.Text
+                      (Data.Text.Show.unpackCString# "OK"#) #)) -}
+b147da62f0fa1e5e56865778082f8248
+  serveHerokuPingServer_name :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Heroku.serveHerokuPingServer14) -}
+20054712cf7adb7bd6eb55290b8b74fd
+  serveHerokuPingServer_result ::
+    Servant.Server.Internal.RoutingApplication.RouteResult
+      (Servant.Server.Internal.ServerT
+         Heroku.Root Servant.Server.Internal.Handler.Handler)
+  {- Strictness: m3,
+     Unfolding: (Servant.Server.Internal.RoutingApplication.Route
+                   @ (Servant.Server.Internal.ServerT
+                        Heroku.Root Servant.Server.Internal.Handler.Handler)
+                   Heroku.serveHerokuPingServer9
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <Data.Either.Either
+                                Servant.Server.Internal.ServantErr.ServantErr
+                                Data.Text.Internal.Text>_R) ; (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                        <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                                                        <GHC.Types.IO>_R
+                                                                        <Data.Text.Internal.Text>_N) ; (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <Data.Text.Internal.Text>_N ; (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                                                                                                                                                                                        <Network.HTTP.Types.Method.StdMethod>_N
+                                                                                                                                                                                                        <'Network.HTTP.Types.Method.GET>_N
+                                                                                                                                                                                                        <200>_N
+                                                                                                                                                                                                        <'[Servant.API.ContentTypes.JSON]>_N
+                                                                                                                                                                                                        <Data.Text.Internal.Text>_N
+                                                                                                                                                                                                        <Servant.Server.Internal.Handler.Handler>_N)) ; Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m6[0]
+                                                                                                                                                                                                                                                                      <"/">_N
+                                                                                                                                                                                                                                                                      <Servant.API.Verbs.Verb
+                                                                                                                                                                                                                                                                         'Network.HTTP.Types.Method.GET
+                                                                                                                                                                                                                                                                         200
+                                                                                                                                                                                                                                                                         '[Servant.API.ContentTypes.JSON]
+                                                                                                                                                                                                                                                                         Data.Text.Internal.Text>_N
+                                                                                                                                                                                                                                                                      <Servant.Server.Internal.Handler.Handler>_N))))))) -}
+"SPEC/Heroku $fAllCTRender:a @ JSON @ '[] @ Text" [orphan] forall (v2 :: Servant.API.ContentTypes.AllMimeRender
+                                                                           '[Servant.API.ContentTypes.JSON]
+                                                                           Data.Text.Internal.Text)
+                                                                  (v1 :: Servant.API.ContentTypes.AllMime
+                                                                           '[])
+                                                                  (v :: Servant.API.ContentTypes.Accept
+                                                                          Servant.API.ContentTypes.JSON)
+  Servant.API.ContentTypes.$fAllCTRender:a @ Servant.API.ContentTypes.JSON
+                                           @ '[]
+                                           @ Data.Text.Internal.Text
+                                           v
+                                           v1
+                                           v2
+  = Heroku.$s$fAllCTRender:a
+"SPEC/Heroku $fAllCTRender:a_$callMime @ JSON @ '[]" [orphan] [0] forall (w1 :: Servant.API.ContentTypes.AllMime
+                                                                                  '[])
+                                                                         (w :: Servant.API.ContentTypes.Accept
+                                                                                 Servant.API.ContentTypes.JSON)
+  Servant.API.ContentTypes.$fAllCTRender:a_$callMime @ Servant.API.ContentTypes.JSON
+                                                     @ '[]
+                                                     w
+                                                     w1
+  = Heroku.$s$fAllCTRender:a_$callMime
+"SPEC/Heroku $fAllMimeRender:a0 @ JSON @ Text" [orphan] forall (v :: Servant.API.ContentTypes.MimeRender
+                                                                       Servant.API.ContentTypes.JSON
+                                                                       Data.Text.Internal.Text)
+  Servant.API.ContentTypes.$fAllMimeRender:a0 @ Servant.API.ContentTypes.JSON
+                                              @ Data.Text.Internal.Text
+                                              v
+  = Heroku.$s$fAllCTRender:a_$s$fAllMimeRender:a0
+"SPEC/Heroku $fAllMimeRender:a0_$callMimeRender @ JSON @ Text" [orphan] [0] forall (w :: Servant.API.ContentTypes.MimeRender
+                                                                                           Servant.API.ContentTypes.JSON
+                                                                                           Data.Text.Internal.Text)
+  Servant.API.ContentTypes.$fAllMimeRender:a0_$callMimeRender @ Servant.API.ContentTypes.JSON
+                                                              @ Data.Text.Internal.Text
+                                                              w
+  = Heroku.$s$fAllMimeRender:a0_$callMimeRender
+"SPEC/Heroku $fMimeRenderTYPEJSONa @ Text" [orphan] forall (v :: Data.Aeson.Types.ToJSON.ToJSON
+                                                                   Data.Text.Internal.Text)
+  Servant.API.ContentTypes.$fMimeRenderTYPEJSONa @ Data.Text.Internal.Text
+                                                 v
+  = Heroku.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa
+"SPEC/Heroku encode @ Text" [orphan] forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                           Data.Text.Internal.Text)
+  Data.Aeson.encode @ Data.Text.Internal.Text $dToJSON
+  = Heroku.$sencode
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

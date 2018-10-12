@@ -11,6 +11,17 @@
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 #endif /* MIN_VERSION_moderator_bot */
 
+/* package async-2.2.1 */
+#ifndef VERSION_async
+#define VERSION_async "2.2.1"
+#endif /* VERSION_async */
+#ifndef MIN_VERSION_async
+#define MIN_VERSION_async(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  2 || \
+  (major1) == 2 && (major2) == 2 && (minor) <= 1)
+#endif /* MIN_VERSION_async */
+
 /* package base-4.11.1.0 */
 #ifndef VERSION_base
 #define VERSION_base "4.11.1.0"
@@ -243,10 +254,10 @@
 #endif /* MIN_TOOL_VERSION_runghc */
 
 #ifndef CURRENT_PACKAGE_KEY
-#define CURRENT_PACKAGE_KEY "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
+#define CURRENT_PACKAGE_KEY "moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE"
 #endif /* CURRENT_PACKAGE_KEY */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "moderator-bot-0.1.0.0-EZHRBCh9vgP5Cj13NuPVgt"
+#define CURRENT_COMPONENT_ID "moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

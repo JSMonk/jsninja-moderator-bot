@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/js_monk/Projects/moderator-bot/.stack-work/install/x86_64-osx/lts-12.11/8.4.3/bin"
-libdir     = "/Users/js_monk/Projects/moderator-bot/.stack-work/install/x86_64-osx/lts-12.11/8.4.3/lib/x86_64-osx-ghc-8.4.3/moderator-bot-0.1.0.0-Ck3bETENnZ78zngpzp7v79-moderator-bot-exe"
+libdir     = "/Users/js_monk/Projects/moderator-bot/.stack-work/install/x86_64-osx/lts-12.11/8.4.3/lib/x86_64-osx-ghc-8.4.3/moderator-bot-0.1.0.0-DLu3xhGLgSt9G02PKsjMhv-moderator-bot-exe"
 dynlibdir  = "/Users/js_monk/Projects/moderator-bot/.stack-work/install/x86_64-osx/lts-12.11/8.4.3/lib/x86_64-osx-ghc-8.4.3"
 datadir    = "/Users/js_monk/Projects/moderator-bot/.stack-work/install/x86_64-osx/lts-12.11/8.4.3/share/x86_64-osx-ghc-8.4.3/moderator-bot-0.1.0.0"
 libexecdir = "/Users/js_monk/Projects/moderator-bot/.stack-work/install/x86_64-osx/lts-12.11/8.4.3/libexec/x86_64-osx-ghc-8.4.3/moderator-bot-0.1.0.0"
