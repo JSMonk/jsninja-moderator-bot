@@ -1,14 +1,14 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-12 21:02:50.695487 UTC
+2018-10-13 21:59:24.699482 UTC
 
-interface moderator-bot-0.1.0.0:Lib 8043
-  interface hash: 029a0a254b730117ddce1b2b8e4b1c9d
-  ABI hash: 5f0a74f2c9abb36f42679f96774b0fa0
+interface moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE:Lib 8043
+  interface hash: 74e895575b5a28cda6d6d87a7699ac60
+  ABI hash: 17b51b81cf7cfbad85b9a25ac2e1199c
   export-list hash: 37e50ad2682e0fef2108dcdae1dc6343
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: be022818a1059e1d97974599f911b559
-  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  opt_hash: 45d5e266c9ab751696f96731a7429711
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   sig of: Nothing
   used TH splices: False
@@ -145,7 +145,8 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
                          http-api-data-0.3.8.1:Web.Internal.FormUrlEncoded
                          http-client-0.5.13.1:Network.HTTP.Client iproute-1.7.5:Data.IP.Addr
-                         iproute-1.7.5:Data.IP.Range moderator-bot-0.1.0.0:API
+                         iproute-1.7.5:Data.IP.Range
+                         moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE:API
                          monad-control-1.0.2.3:Control.Monad.Trans.Control
                          network-uri-2.6.1.0:Network.URI
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
@@ -197,13 +198,13 @@ import  -/  base-4.11.1.0:System.Environment 052ec29b676ed8efc1decd97140a27e3
 import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
-import  -/  API 0b940f394d592f138c3dc917be96d677
-  exports: 97e8bc17a1215dd45810045b8d898dae
-  banUser ccce2d32ecae3d4fab0fcc4277a1e1d9
-  deleteMessage c1ff96f7b72281ee4b2168a6c3f54492
-import  -/  Heroku eb87de69b53c3bbd0e4ba36b2d3cdef9
-  exports: c138ef42720c4fba10d1e8d5e9ca756b
-  serveHerokuPingServer 9c04c23a60798c86add07dbc1c00081b
+import  -/  API 03a86b51f5d741f3f06394d1761ae00a
+  exports: fbfd631113c5a9910deebd9c2ccd6094
+  banUser ce2075d9c23347645ebeafbc2bcce74f
+  deleteMessage 71cc35c015f769b370c666055575e5aa
+import  -/  Heroku 31b5fe1e56a71c2d12487730048ae020
+  exports: 86ebe9f8bdacb04c0cb9e3aaf4694f25
+  serveHerokuPingServer ba2b4336b8c8b52ec9e49086c3a980e4
 import  -/  regex-pcre-0.94.4:Text.Regex.PCRE 7cf82165bfebf50df3cbf3b5c3ff2886
 import  -/  regex-pcre-0.94.4:Text.Regex.PCRE.Wrap a87f8397990453bf15dad9a918c5c5a4
 import  -/  servant-client-0.14:Servant.Client ea1dced3f8279a9d759caf8528fbf520
@@ -221,257 +222,28 @@ import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.UpdateParser 62e81d05f
 import  -/  text-1.2.3.1:Data.Text 084e5e9d9e353b790b1093ddc9e8062b
 import  -/  text-1.2.3.1:Data.Text.Internal 65b2a62b0918b56ea0591106f5d77acc
 import  -/  text-1.2.3.1:Data.Text.Show 6160c4f890e5da05d66a5bf5e472bc99
-faf6a2dd55f0e4ec43b86e719de2fefe
+b127fc91fb9e5de49e68422c34add0ff
   $tc'NoOp :: GHC.Types.TyCon
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.TyCon
-                   14948689574558454437##
-                   10717274845071776477##
-                   Lib.$trModule
-                   Lib.$tc'NoOp2
-                   0#
-                   Lib.$tc'NoOp1) -}
-74407e4ff85b7987e73be6e682e7efa6
-  $tc'NoOp1 :: GHC.Types.KindRep
-  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
-377a1fa43d7414235362e60fbdef19ff
-  $tc'NoOp2 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS Lib.$tc'NoOp3) -}
-219b2dc269e228cff91392dbbfd9d983
-  $tc'NoOp3 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("'NoOp"#) -}
-0b20209734fd38b50956a607d16906ae
+f8a8d60c42a22120ee4b3cb7de5a2633
   $tc'ReactOnMessage :: GHC.Types.TyCon
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.TyCon
-                   7137377506337253045##
-                   7334799678030057840##
-                   Lib.$trModule
-                   Lib.$tc'ReactOnMessage2
-                   0#
-                   Lib.$tc'ReactOnMessage1) -}
-e26a2b4529350176cccbb782ec9eb525
-  $tc'ReactOnMessage1 :: GHC.Types.KindRep
-  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-10815d729a1fe3af5bd124b4e99bdb07
-  $tc'ReactOnMessage2 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS Lib.$tc'ReactOnMessage3) -}
-fa32e214d308a8068d741d90f29d38a4
-  $tc'ReactOnMessage3 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("'ReactOnMessage"#) -}
-16f1c080d34c4887ba07b00bfbffc782
+8d3052756d2245f1a3258f1ba3689be2
+  $tc'ShouldBeBanned :: GHC.Types.TyCon
+96903bf27fa94066e9ac05cc14ee4f41
   $tc'ShouldBeDeleted :: GHC.Types.TyCon
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.TyCon
-                   6374549178904937129##
-                   5484088136711645707##
-                   Lib.$trModule
-                   Lib.$tc'ShouldBeDeleted1
-                   0#
-                   Lib.$tc'ReactOnMessage1) -}
-51b2f12999d753b9a874500cee29de25
-  $tc'ShouldBeDeleted1 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS Lib.$tc'ShouldBeDeleted2) -}
-3c92abcfc7224ea8458700fac59eb15d
-  $tc'ShouldBeDeleted2 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("'ShouldBeDeleted"#) -}
-be63c53263fd9efaebed5446b6997394
+a6b9ab2dee5c53e263960959256bc8e3
   $tcAction :: GHC.Types.TyCon
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.TyCon
-                   16687964543722201868##
-                   9977856940433579807##
-                   Lib.$trModule
-                   Lib.$tcAction1
-                   0#
-                   GHC.Types.krep$*) -}
-f8f16c66a6a7413b05fb6f37e4524545
-  $tcAction1 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS Lib.$tcAction2) -}
-26c8361f2ac2e5567c46a30a898aad6b
-  $tcAction2 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Action"#) -}
-d02fe755a99738d2e3e80e028700ff72
+b252410c84728c7f20ada87a8bdc3d57
   $trModule :: GHC.Types.Module
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.Module Lib.$trModule3 Lib.$trModule1) -}
-6647c542ca9625a93407d2a9d9a0ebd3
-  $trModule1 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS Lib.$trModule2) -}
-8813ef97a691d290fd8e3cb2f7d63bbd
-  $trModule2 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Lib"#) -}
-a4f9a5d7ef4e0dca2daebe559dcbed05
-  $trModule3 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS Lib.$trModule4) -}
-abb30af1cfe5509cd3dcabb66f3d2bd9
-  $trModule4 :: GHC.Prim.Addr#
-  {- HasNoCafRefs,
-     Unfolding: ("moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE"#) -}
-3a9da42bcea4efe07bc8694c7be4b075
-  $wouter ::
-    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
-    -> GHC.Prim.Int#
-    -> [GHC.Types.Char]
-    -> GHC.Prim.Int#
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Text.Internal.Text #)
-  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
-     Inline: [0] -}
-5e75b173aecca2ebc08f990a2d87920a
+e3a0d4f94cc05b25ce5982777c9ba072
   data Action
     = NoOp
     | ShouldBeDeleted Telegram.Bot.API.GettingUpdates.Update
+    | ShouldBeBanned Telegram.Bot.API.GettingUpdates.Update
     | ReactOnMessage Telegram.Bot.API.GettingUpdates.Update
 9f12d0cf2032d58bbb8efdb152f81abe
   type Model = ()
-1f9a1bee922f76e4e7d364d75e1eaebe
+f37c91aff3725c8370d3c96d6c3a2aac
   serveBot :: GHC.Types.IO ()
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: InlineRule (0, True, True)
-                Lib.serveBot1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-29675a173a126038d2635bb02e8f9158
-  serveBot1 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Control.Concurrent.Async.async2
-                        @ ()
-                        Control.Concurrent.Async.rawForkIO
-                        Heroku.serveHerokuPingServer1
-                          `cast`
-                        (Sym (GHC.Types.N:IO[0] <()>_R))
-                        s of ds1 { (#,#) ipv ipv1 ->
-                 case GHC.IO.Handle.Text.hPutStr2
-                        GHC.IO.Handle.FD.stdout
-                        Lib.serveBot7
-                        GHC.Types.True
-                        ipv of ds2 { (#,#) ipv2 ipv3 ->
-                 case (GHC.Magic.noinline
-                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
-                         GHC.IO.Encoding.getForeignEncoding)
-                        `cast`
-                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
-                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
-                 case GHC.Foreign.charIsRepresentable3
-                        @ (GHC.Base.Maybe GHC.Base.String)
-                        ipv5
-                        Lib.serveBot_name
-                        System.Environment.getEnv3
-                          `cast`
-                        (<Foreign.C.String.CString>_R
-                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
-                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
-                 case ipv7 of wild {
-                   GHC.Base.Nothing
-                   -> case System.Environment.getEnv2 ipv6 Lib.serveBot_name
-                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-                      of {}
-                   GHC.Base.Just x
-                   -> case Network.HTTP.Client.Manager.newManager1
-                             Network.HTTP.Client.TLS.tlsManagerSettings
-                             ipv6 of ds { (#,#) ipv8 ipv9 ->
-                      case Lib.serveBot5
-                             Telegram.Bot.API.GettingUpdates.updateChatId
-                             Lib.serveBot2 of ww { Telegram.Bot.Simple.BotApp.Internal.BotApp ww1 ww2 ww3 ww4 ->
-                      case Telegram.Bot.Simple.BotApp.$wstartBot
-                             @ (Data.HashMap.Base.HashMap
-                                  (GHC.Base.Maybe Telegram.Bot.API.Types.ChatId) Lib.Model)
-                             @ (GHC.Base.Maybe Telegram.Bot.API.Types.ChatId, Lib.Action)
-                             ww1
-                             ww2
-                             ww3
-                             ww4
-                             (Servant.Client.Internal.HttpClient.ClientEnv
-                                ipv9
-                                (case Telegram.Bot.API.MakingRequests.$wbotBaseUrl
-                                        (case GHC.Magic.runRW#
-                                                @ ('GHC.Types.TupleRep
-                                                     '['GHC.Types.TupleRep '[],
-                                                       'GHC.Types.LiftedRep])
-                                                @ (# GHC.Prim.State# GHC.Prim.RealWorld,
-                                                     Data.Text.Internal.Text #)
-                                                (\ (s1 :: GHC.Prim.State#
-                                                            GHC.Prim.RealWorld)[OneShot] ->
-                                                 case GHC.Prim.newByteArray#
-                                                        @ GHC.Prim.RealWorld
-                                                        10#
-                                                        s1 of ds5 { (#,#) ipv10 ipv11 ->
-                                                 Lib.$wouter
-                                                   ipv11
-                                                   4#
-                                                   x
-                                                   0#
-                                                   ipv10 }) of ds5 { (#,#) ipv10 ipv11 ->
-                                         ipv11
-                                           `cast`
-                                         (Sym (Telegram.Bot.API.MakingRequests.N:Token[0])) }) of ww7 { (#,,,#) ww8 ww9 ww10 ww11 ->
-                                 Servant.Client.Core.Internal.BaseUrl.BaseUrl ww8 ww9 ww10 ww11 })
-                                (GHC.Base.Nothing
-                                   @ (GHC.Conc.Sync.TVar Network.HTTP.Client.Types.CookieJar)))
-                             ipv8 of ds5 { (#,#) ipv10 ipv11 ->
-                      (# ipv10, GHC.Tuple.() #) } } } } } } } }) -}
-6f012b85bf080745e52ed3a680ef5005
-  serveBot2 ::
-    Telegram.Bot.Simple.BotApp.Internal.BotApp Lib.Model Lib.Action
-  {- Strictness: m,
-     Unfolding: (Telegram.Bot.Simple.BotApp.Internal.BotApp
-                   @ Lib.Model
-                   @ Lib.Action
-                   GHC.Tuple.()
-                   Lib.serveBot4
-                   Lib.serveBot3
-                   (GHC.Types.[]
-                      @ (Telegram.Bot.Simple.BotApp.Internal.BotJob
-                           Lib.Model Lib.Action))) -}
-ba6644604d3f613ebfa923ab4fcfbfb7
-  serveBot3 ::
-    Lib.Action
-    -> Lib.Model -> Telegram.Bot.Simple.Eff.Eff Lib.Action Lib.Model
-  {- Arity: 2, Strictness: <S,1*U><L,U>m -}
-72c9144b878562c0db3d08dfca5b2f6a
-  serveBot4 ::
-    Telegram.Bot.API.GettingUpdates.Update
-    -> Lib.Model -> GHC.Base.Maybe Lib.Action
-  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m2,
-     Unfolding: (\ (x :: Telegram.Bot.API.GettingUpdates.Update)
-                   (y :: Lib.Model) ->
-                 GHC.Base.Just @ Lib.Action (Lib.ReactOnMessage x)) -}
-14a1be119e614533b05f84eb2d6b0605
-  serveBot5 ::
-    (Telegram.Bot.API.GettingUpdates.Update
-     -> GHC.Base.Maybe Telegram.Bot.API.Types.ChatId)
-    -> Telegram.Bot.Simple.BotApp.Internal.BotApp Lib.Model Lib.Action
-    -> Telegram.Bot.Simple.BotApp.Internal.BotApp
-         (Data.HashMap.Base.HashMap
-            (GHC.Base.Maybe Telegram.Bot.API.Types.ChatId) Lib.Model)
-         (GHC.Base.Maybe Telegram.Bot.API.Types.ChatId, Lib.Action)
-  {- Unfolding: (Telegram.Bot.Simple.Conversation.conversationBot
-                   @ Telegram.Bot.API.Types.ChatId
-                   @ Lib.Model
-                   @ Lib.Action
-                   Telegram.Bot.API.Types.$fEqChatId
-                   Telegram.Bot.API.Types.$fHashableChatId) -}
-6bf3c29ea4069220fd8cf0d2da36df5b
-  serveBot6 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("TELEGRAM_TOKEN"#) -}
-53480ef86d099628fcea30a41bcef785
-  serveBot7 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Lib.serveBot8) -}
-367f6e6e1c2fc0dc85316cdc1a08de2e
-  serveBot8 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Moderator bot started"#) -}
-714f388cb620f34276219d1b65aca58a
-  serveBot_name :: GHC.Base.String
-  {- Unfolding: (GHC.CString.unpackCString# Lib.serveBot6) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

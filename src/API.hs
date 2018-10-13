@@ -45,7 +45,7 @@ type BanUser = "kickChatMember"
 
 deleteMessage :: Update -> ClientM (Response Bool)
 deleteMessage upd = 
-  client (Proxy @DeleteMessage) $ requestData 
+  client (Proxy @DeleteMessage) requestData 
   where
     requestData = DeleteMessageRequest { deleteMessageChatId = chatId'
                                        , deleteMessageMessageId = messageId' } 
