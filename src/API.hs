@@ -7,8 +7,7 @@ module API
   , banUser
   ) where
 
-import Data.Aeson
-import Data.Coerce (coerce, Coercible)
+import Data.Coerce (coerce)
 import Data.Maybe (fromJust)
 import Data.Text (Text)
 import Data.Proxy
@@ -17,49 +16,30 @@ import GHC.Generics (Generic)
 import Servant.API
 import Servant.Client hiding (Response)
 import Telegram.Bot.API
-import Telegram.Bot.API.Internal.Utils
-
-data DeleteMessageRequest = DeleteMessageRequest 
-  { deleteMessageChatId :: ChatId
-  , deleteMessageMessageId :: MessageId 
-  } deriving (Generic)
-
-instance ToJSON   DeleteMessageRequest where toJSON = gtoJSON
-instance FromJSON DeleteMessageRequest where parseJSON = gparseJSON
-
-data KickChatMemberRequest = KickChatMemberRequest
-  { kickMessageChatId :: ChatId
-  , kickMessageUserId :: UserId 
-  } deriving (Generic)
-
-instance ToJSON   KickChatMemberRequest where toJSON = gtoJSON
-instance FromJSON KickChatMemberRequest where parseJSON = gparseJSON
 
 type DeleteMessage = "deleteMessage" 
-  :> ReqBody '[JSON] DeleteMessageRequest
-  :> Post '[JSON] (Response Bool)
+  :> QueryParam "chat_id" Integer
+  :> QueryParam "message_id" Int32
+  :> Get '[JSON] (Response Bool)
 
 type BanUser = "kickChatMember"
-  :> ReqBody '[JSON] KickChatMemberRequest
-  :> Post '[JSON] (Response Bool)
+  :> QueryParam "chat_id" Integer
+  :> QueryParam "user_id" Int32
+  :> Get '[JSON] (Response Bool)
 
 deleteMessage :: Update -> ClientM (Response Bool)
 deleteMessage upd = 
-  client (Proxy @DeleteMessage) requestData 
+  client (Proxy @DeleteMessage) chatId' messageId'
   where
-    requestData = DeleteMessageRequest { deleteMessageChatId = chatId'
-                                       , deleteMessageMessageId = messageId' } 
-    chatId' =  fromJust $ chatId . messageChat <$> msg
-    messageId' =  fromJust $ messageMessageId <$> msg
+    chatId' =  coerce . chatId . messageChat <$> msg
+    messageId' =  coerce . messageMessageId <$> msg
     msg = updateMessage upd
 
 banUser :: Update -> ClientM (Response Bool)
 banUser upd =
-  client (Proxy @BanUser) $ requestData
+  client (Proxy @BanUser) chatId' userId'
   where
-    requestData = KickChatMemberRequest { kickMessageChatId = chatId'
-                                        , kickMessageUserId = userId' }
-    chatId' = fromJust $ chatId . messageChat <$> msg
-    userId' = fromJust $ userId <$> messageFrom'
+    chatId' = coerce . chatId . messageChat <$> msg
+    userId' = coerce . userId <$> messageFrom'
     messageFrom' = msg >>= messageFrom
     msg = updateMessage upd

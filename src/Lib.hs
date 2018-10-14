@@ -11,9 +11,6 @@ import Servant.Client (ClientM)
 import System.Environment (getEnv)
 import Telegram.Bot.API
 import Telegram.Bot.Simple
-import Telegram.Bot.API.MakingRequests (botBaseUrl)
-import Telegram.Bot.Simple.Eff (liftClientM)
-import Telegram.Bot.Simple.UpdateParser
 import Text.Regex.PCRE
 import Heroku (serveHerokuPingServer)
 
@@ -46,8 +43,8 @@ terminatorEvidence usr =
   where
     userName' = fromJust . userUsername $ usr
 
-isTerminatorGretings :: Update -> Bool
-isTerminatorGretings upd =
+isTerminatorGreatings :: Update -> Bool
+isTerminatorGreatings upd =
   isTerminatorBot && isGreatings txt
   where
     isTerminatorBot = isJust maybeTerminatorBot && fromJust maybeTerminatorBot
@@ -107,7 +104,7 @@ handleAction action model = case action of
   ReactOnMessage msg -> model <# do
       return action
     where
-      action = if isSpam msg || isTerminatorGretings msg 
+      action = if isSpam msg || isTerminatorGreatings msg 
                then ShouldBeDeleted msg
                else NoOp
 

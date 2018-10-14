@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-13 21:59:24.699482 UTC
+2018-10-14 22:24:32.588843 UTC
 
 interface moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE:Lib 8043
-  interface hash: 74e895575b5a28cda6d6d87a7699ac60
-  ABI hash: 17b51b81cf7cfbad85b9a25ac2e1199c
-  export-list hash: 37e50ad2682e0fef2108dcdae1dc6343
+  interface hash: da70b213a3d43f375e7e2538fbf7e5e9
+  ABI hash: f0b7d7bc7a9df0b635a430106633eab4
+  export-list hash: eaa196ece829f0f3eec35b03196100c7
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: be022818a1059e1d97974599f911b559
   opt_hash: 45d5e266c9ab751696f96731a7429711
@@ -146,7 +146,6 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          http-api-data-0.3.8.1:Web.Internal.FormUrlEncoded
                          http-client-0.5.13.1:Network.HTTP.Client iproute-1.7.5:Data.IP.Addr
                          iproute-1.7.5:Data.IP.Range
-                         moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE:API
                          monad-control-1.0.2.3:Control.Monad.Trans.Control
                          network-uri-2.6.1.0:Network.URI
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
@@ -198,7 +197,7 @@ import  -/  base-4.11.1.0:System.Environment 052ec29b676ed8efc1decd97140a27e3
 import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
-import  -/  API 03a86b51f5d741f3f06394d1761ae00a
+import  -/  API b011ed60fcdd85305c735ac0192e7314
   exports: fbfd631113c5a9910deebd9c2ccd6094
   banUser ce2075d9c23347645ebeafbc2bcce74f
   deleteMessage 71cc35c015f769b370c666055575e5aa
@@ -218,7 +217,6 @@ import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.BotApp fdf66262ec6d9bf
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.BotApp.Internal 736f5ce4b8e0ec4167fca6d7c76843ba
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.Conversation 4515e6d7c19614db47b75832491ed0d3
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.Eff 135610dffc1d99daaeed5d48bcb02028
-import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.Simple.UpdateParser 62e81d05f63792e77f988a8d61f597d5
 import  -/  text-1.2.3.1:Data.Text 084e5e9d9e353b790b1093ddc9e8062b
 import  -/  text-1.2.3.1:Data.Text.Internal 65b2a62b0918b56ea0591106f5d77acc
 import  -/  text-1.2.3.1:Data.Text.Show 6160c4f890e5da05d66a5bf5e472bc99

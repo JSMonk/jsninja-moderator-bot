@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-13 21:59:24.18643 UTC
+2018-10-14 22:24:31.857767 UTC
 
-interface moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE:API [family instance module] 8043
-  interface hash: 01e5857c7dcb8fa3d2ccbf06b4e81d56
-  ABI hash: 03a86b51f5d741f3f06394d1761ae00a
+interface moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE:API 8043
+  interface hash: 0c68537e71e9222b88bcad8f64fedaf1
+  ABI hash: b011ed60fcdd85305c735ac0192e7314
   export-list hash: fbfd631113c5a9910deebd9c2ccd6094
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: a095c279f5c55715a4bc1695f0bb7b89
@@ -167,9 +167,6 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          vector-0.12.0.1:Data.Vector.Unboxed
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
                          zlib-0.6.2:Codec.Compression.Zlib.Stream
-import  -/  aeson-1.3.1.1:Data.Aeson 7e1e6b86bf8fc3f86d877f0fc4f71e63
-import  -/  aeson-1.3.1.1:Data.Aeson.Types.FromJSON 8ec1c1f6af4326a513bdd1e6ce679bf3
-import  -/  aeson-1.3.1.1:Data.Aeson.Types.ToJSON 54f91a91f41df012536656a45d2f926d
 import  -/  base-4.11.1.0:Data.Coerce ea4f957d546b0899ed091ca0a8d7dbfa
 import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
 import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
@@ -178,131 +175,43 @@ import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-4.11.1.0:GHC.Generics 4d1469b3e29804a05a1be33d11accff6
 import  -/  base-4.11.1.0:GHC.Int dbb9fa419302fe275e335328af678cb6
 import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type f3d5169c3d3830854b19f6565b265403
 import  -/  servant-0.14.1:Servant.API 453a6de7aee1f7623799122ef550fab8
 import  -/  servant-0.14.1:Servant.API.ContentTypes 714b6dbf126825f720f60754ec216786
-import  -/  servant-0.14.1:Servant.API.ReqBody 34b4fd3ff30d974344c20ccf807ffc32
+import  -/  servant-0.14.1:Servant.API.QueryParam 6ea5496f57fc9282814041c19bc76c8d
 import  -/  servant-0.14.1:Servant.API.Sub c48a78e5336fc338c11fe781c6201ad1
 import  -/  servant-0.14.1:Servant.API.Verbs 04b1afc92bedbf9446d462af979caa88
 import  -/  servant-client-0.14:Servant.Client ea1dced3f8279a9d759caf8528fbf520
 import  -/  servant-client-0.14:Servant.Client.Internal.HttpClient 8f2e1fb49f970679591c696f24735c2c
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API 6ca018101f90c5e6d749d9ba865258f8
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.GettingUpdates 0d80d428e89ab6f501996a4170ff5b30
-import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.Internal.Utils 97767bc68d07e41bdfb5644a96ca2e4d
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.MakingRequests 8c19ad86a20364240643274fc55deccd
 import  -/  telegram-bot-simple-0.2.0:Telegram.Bot.API.Types df7d31f53399293cb49dfb8ffda16667
 import  -/  text-1.2.3.1:Data.Text 084e5e9d9e353b790b1093ddc9e8062b
-88c7170158335c46969cba4f49b031c1
-  $fFromJSONDeleteMessageRequest ::
-    Data.Aeson.Types.FromJSON.FromJSON API.DeleteMessageRequest
-  DFunId
-98c34bfaefc37b5466642dd630ac32af
-  $fFromJSONKickChatMemberRequest ::
-    Data.Aeson.Types.FromJSON.FromJSON API.KickChatMemberRequest
-  DFunId
-88c7170158335c46969cba4f49b031c1
-  $fGenericDeleteMessageRequest ::
-    GHC.Generics.Generic API.DeleteMessageRequest
-  DFunId
-98c34bfaefc37b5466642dd630ac32af
-  $fGenericKickChatMemberRequest ::
-    GHC.Generics.Generic API.KickChatMemberRequest
-  DFunId
-88c7170158335c46969cba4f49b031c1
-  $fToJSONDeleteMessageRequest ::
-    Data.Aeson.Types.ToJSON.ToJSON API.DeleteMessageRequest
-  DFunId
-98c34bfaefc37b5466642dd630ac32af
-  $fToJSONKickChatMemberRequest ::
-    Data.Aeson.Types.ToJSON.ToJSON API.KickChatMemberRequest
-  DFunId
-293d2d7823e907c62e5572b71945e536
-  $tc'DeleteMessageRequest :: GHC.Types.TyCon
-954e4a7feeab3d992a89766c94b82200
-  $tc'KickChatMemberRequest :: GHC.Types.TyCon
-b9489b37b90935874026c19d2488f373
-  $tcDeleteMessageRequest :: GHC.Types.TyCon
-cade4708a0d8291edeaccce2adf59864
-  $tcKickChatMemberRequest :: GHC.Types.TyCon
 ae01e6adfbe060bb90e93b83ed869de4
   $trModule :: GHC.Types.Module
-9f06d4c8f147e8ff9801e95fc84fe8f6
+7fea1ba631a870a55fbc9770177abb8d
   type BanUser =
     "kickChatMember"
-    Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
-                          '[Servant.API.ContentTypes.JSON] API.KickChatMemberRequest
-                        Servant.API.Sub.:> Servant.API.Verbs.Post
-                                             '[Servant.API.ContentTypes.JSON]
-                                             (Telegram.Bot.API.MakingRequests.Response
-                                                GHC.Types.Bool))
-0b9b12b2a16df86bb26770d6f6a798d0
+    Servant.API.Sub.:> (Servant.API.QueryParam.QueryParam
+                          "chat_id" GHC.Integer.Type.Integer
+                        Servant.API.Sub.:> (Servant.API.QueryParam.QueryParam
+                                              "user_id" GHC.Int.Int32
+                                            Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                 '[Servant.API.ContentTypes.JSON]
+                                                                 (Telegram.Bot.API.MakingRequests.Response
+                                                                    GHC.Types.Bool)))
+aab907bf850a0b84e8290f657436f65c
   type DeleteMessage =
     "deleteMessage"
-    Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
-                          '[Servant.API.ContentTypes.JSON] API.DeleteMessageRequest
-                        Servant.API.Sub.:> Servant.API.Verbs.Post
-                                             '[Servant.API.ContentTypes.JSON]
-                                             (Telegram.Bot.API.MakingRequests.Response
-                                                GHC.Types.Bool))
-88c7170158335c46969cba4f49b031c1
-  data DeleteMessageRequest
-    = DeleteMessageRequest {deleteMessageChatId :: Telegram.Bot.API.Types.ChatId,
-                            deleteMessageMessageId :: Telegram.Bot.API.Types.MessageId}
-98c34bfaefc37b5466642dd630ac32af
-  data KickChatMemberRequest
-    = KickChatMemberRequest {kickMessageChatId :: Telegram.Bot.API.Types.ChatId,
-                             kickMessageUserId :: Telegram.Bot.API.Types.UserId}
-88c7170158335c46969cba4f49b031c1
-  axiom API.Rep_DeleteMessageRequest::
-      GHC.Generics.Rep API.DeleteMessageRequest
-        = GHC.Generics.D1
-            ('GHC.Generics.MetaData
-               "DeleteMessageRequest"
-               "API"
-               "moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE"
-               'GHC.Types.False)
-            (GHC.Generics.C1
-               ('GHC.Generics.MetaCons
-                  "DeleteMessageRequest" 'GHC.Generics.PrefixI 'GHC.Types.True)
-               (GHC.Generics.S1
-                  ('GHC.Generics.MetaSel
-                     ('GHC.Base.Just "deleteMessageChatId")
-                     'GHC.Generics.NoSourceUnpackedness
-                     'GHC.Generics.NoSourceStrictness
-                     'GHC.Generics.DecidedLazy)
-                  (GHC.Generics.Rec0 Telegram.Bot.API.Types.ChatId)
-                GHC.Generics.:*: GHC.Generics.S1
-                                   ('GHC.Generics.MetaSel
-                                      ('GHC.Base.Just "deleteMessageMessageId")
-                                      'GHC.Generics.NoSourceUnpackedness
-                                      'GHC.Generics.NoSourceStrictness
-                                      'GHC.Generics.DecidedLazy)
-                                   (GHC.Generics.Rec0 Telegram.Bot.API.Types.MessageId)))
-98c34bfaefc37b5466642dd630ac32af
-  axiom API.Rep_KickChatMemberRequest::
-      GHC.Generics.Rep API.KickChatMemberRequest
-        = GHC.Generics.D1
-            ('GHC.Generics.MetaData
-               "KickChatMemberRequest"
-               "API"
-               "moderator-bot-0.1.0.0-KvQwBlNg1dOIvkbGnTa6nE"
-               'GHC.Types.False)
-            (GHC.Generics.C1
-               ('GHC.Generics.MetaCons
-                  "KickChatMemberRequest" 'GHC.Generics.PrefixI 'GHC.Types.True)
-               (GHC.Generics.S1
-                  ('GHC.Generics.MetaSel
-                     ('GHC.Base.Just "kickMessageChatId")
-                     'GHC.Generics.NoSourceUnpackedness
-                     'GHC.Generics.NoSourceStrictness
-                     'GHC.Generics.DecidedLazy)
-                  (GHC.Generics.Rec0 Telegram.Bot.API.Types.ChatId)
-                GHC.Generics.:*: GHC.Generics.S1
-                                   ('GHC.Generics.MetaSel
-                                      ('GHC.Base.Just "kickMessageUserId")
-                                      'GHC.Generics.NoSourceUnpackedness
-                                      'GHC.Generics.NoSourceStrictness
-                                      'GHC.Generics.DecidedLazy)
-                                   (GHC.Generics.Rec0 Telegram.Bot.API.Types.UserId)))
+    Servant.API.Sub.:> (Servant.API.QueryParam.QueryParam
+                          "chat_id" GHC.Integer.Type.Integer
+                        Servant.API.Sub.:> (Servant.API.QueryParam.QueryParam
+                                              "message_id" GHC.Int.Int32
+                                            Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                 '[Servant.API.ContentTypes.JSON]
+                                                                 (Telegram.Bot.API.MakingRequests.Response
+                                                                    GHC.Types.Bool)))
 ce2075d9c23347645ebeafbc2bcce74f
   banUser ::
     Telegram.Bot.API.GettingUpdates.Update
@@ -313,38 +222,6 @@ ce2075d9c23347645ebeafbc2bcce74f
     Telegram.Bot.API.GettingUpdates.Update
     -> Servant.Client.Internal.HttpClient.ClientM
          (Telegram.Bot.API.MakingRequests.Response GHC.Types.Bool)
-88c7170158335c46969cba4f49b031c1
-  deleteMessageChatId ::
-    API.DeleteMessageRequest -> Telegram.Bot.API.Types.ChatId
-  RecSel Left API.DeleteMessageRequest
-88c7170158335c46969cba4f49b031c1
-  deleteMessageMessageId ::
-    API.DeleteMessageRequest -> Telegram.Bot.API.Types.MessageId
-  RecSel Left API.DeleteMessageRequest
-98c34bfaefc37b5466642dd630ac32af
-  kickMessageChatId ::
-    API.KickChatMemberRequest -> Telegram.Bot.API.Types.ChatId
-  RecSel Left API.KickChatMemberRequest
-98c34bfaefc37b5466642dd630ac32af
-  kickMessageUserId ::
-    API.KickChatMemberRequest -> Telegram.Bot.API.Types.UserId
-  RecSel Left API.KickChatMemberRequest
-instance Data.Aeson.Types.FromJSON.FromJSON [API.DeleteMessageRequest]
-  = API.$fFromJSONDeleteMessageRequest
-instance Data.Aeson.Types.FromJSON.FromJSON [API.KickChatMemberRequest]
-  = API.$fFromJSONKickChatMemberRequest
-instance GHC.Generics.Generic [API.DeleteMessageRequest]
-  = API.$fGenericDeleteMessageRequest
-instance GHC.Generics.Generic [API.KickChatMemberRequest]
-  = API.$fGenericKickChatMemberRequest
-instance Data.Aeson.Types.ToJSON.ToJSON [API.DeleteMessageRequest]
-  = API.$fToJSONDeleteMessageRequest
-instance Data.Aeson.Types.ToJSON.ToJSON [API.KickChatMemberRequest]
-  = API.$fToJSONKickChatMemberRequest
-family instance GHC.Generics.Rep [API.KickChatMemberRequest]
-  = API.Rep_KickChatMemberRequest
-family instance GHC.Generics.Rep [API.DeleteMessageRequest]
-  = API.Rep_DeleteMessageRequest
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
