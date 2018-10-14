@@ -1,8 +1,0 @@
-Configuring newtype-0.2...
-clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
-Preprocessing library for newtype-0.2..
-Building library for newtype-0.2..
-[1 of 1] Compiling Control.Newtype  ( Control/Newtype.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Control/Newtype.o )
-ignoring (possibly broken) abi-depends field for packages
-Installing library in /Users/js_monk/.stack/snapshots/x86_64-osx/lts-12.11/8.4.3/lib/x86_64-osx-ghc-8.4.3/newtype-0.2-ITmrBJ3PFy1E3eiFCi9Xkw
-Registering library for newtype-0.2..
