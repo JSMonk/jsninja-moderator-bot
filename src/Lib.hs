@@ -3,15 +3,16 @@ module Lib
     ( serveBot
     ) where
 import Control.Monad (void)
+import Control.Exception (catch)
 import Control.Concurrent.Async (async)
-import API (deleteMessage, banUser)
 import Data.Maybe (isJust, fromJust, isNothing)
 import Data.Text (Text, unpack, pack)
-import Servant.Client (ClientM)
+import Servant.Client (ClientM, ServantError)
 import System.Environment (getEnv)
 import Telegram.Bot.API
 import Telegram.Bot.Simple
 import Text.Regex.PCRE
+import API (deleteMessage, banUser)
 import Heroku (serveHerokuPingServer)
 
 urlTemplate :: String
@@ -110,9 +111,15 @@ run token = do
   env <- defaultTelegramClientEnv token
   startBot_ (conversationBot updateChatId moderator) env
 
-serveBot :: IO ()
-serveBot = do
+turnOnBot :: IO ()
+turnOnBot = do
   async serveHerokuPingServer 
   putStrLn "Moderator bot started"
   token <- Token . pack <$> getEnv "TELEGRAM_TOKEN"
   run token
+
+restartBot :: ServantError -> IO ()
+restartBot _ = serveBot
+
+serveBot :: IO ()
+serveBot = catch turnOnBot restartBot
