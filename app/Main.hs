@@ -1,6 +1,7 @@
 module Main where
 
 import Lib
+import Control.Monad.Exception (catch)
 
 main :: IO ()
-main = serveBot
+main = catch (serveBot) (main)

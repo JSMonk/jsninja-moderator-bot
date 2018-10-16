@@ -18,10 +18,7 @@ urlTemplate :: String
 urlTemplate = "(https?:\\/\\/)?(t(elegram)?\\.me|telegram\\.org)\\/([\\w\\_]{5,32})\\/?"
 
 greatingTemplate :: String
-greatingTemplate = "будет жить. Поприветствуем!"
-
-telegramAPI :: String
-telegramAPI = "https://api.telegram.org/bot"
+greatingTemplate = "будет жить."
 
 type Model = ()
 
